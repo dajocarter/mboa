@@ -1,0 +1,134 @@
+[
+	{
+		"question": "All of the following are true about the spleen except:",
+
+		"answers": {
+			"A": {
+				"text": "In open circulation, penicillar arterioles dump blood directly into splenic cords",
+				"value": false
+			},
+			"B": {
+				"text": "Stave cells present antigens to B lymphocytes in white pulp forming lymphoid nodules",
+				"value": true
+			},
+			"C": {
+				"text": "White pulp provides a location for B cells to proliferate and differentiate",
+				"value": false
+			},
+			"D": {
+				"text": "Reticulin fibers fill the stroma of the spleen like in lymph nodes",
+				"value": false
+			},
+			"E": {
+				"text": "T cells surround arterioles in the spleen, known as periarteriole lymphatic sheaths (PALS)",
+				"value": false
+			}
+		}
+	},
+	{
+		"question": "During an infection, lymph nodes increase in size due to:",
+
+		"answers": {
+			"A": {
+				"text": "B cell proliferation forming lymphoid nodules (follicles) in the medulla",
+				"value": false
+			},
+			"B": {
+				"text": "Enlargement of the subcapsular sinus with plasma cells",
+				"value": false
+			},
+			"C": {
+				"text": "Antigen presentation by follicular dendritic cells to B cells in the cortex",
+				"value": true
+			},
+			"D": {
+				"text": "Congestion of the medullary sinuses with antigen presenting cells (APCs)",
+				"value": false
+			},
+			"E": {
+				"text": "Clonal proliferation of T cells in the cortex",
+				"value": false
+			}
+		}
+	},
+	{
+		"question": "An embryologic malformation in the 3rd pharyngeal (branchial) pouch results in decreased differentiation of thymic epithelial cells (TECs) leading to thymic hypolasia. What pathology would you expect from this smaller thymus?",
+
+		"answers": {
+			"A": {
+				"text": "Decreased antigen-presentation to developing thymocytes in the medulla (positive selection) and the cortex (negative selection)",
+				"value": false
+			},
+			"B": {
+				"text": "Increased tight barriers between peripheral blood and the thymic stroma",
+				"value": false
+			},
+			"C": {
+				"text": "Failure of Hassall's (thymic) corpuscles to form leading to decreased cytokine production that promote the differentiation of T-lymphocytes",
+				"value": true
+			},
+			"D": {
+				"text": "An abundance of T-lymphocytes leading to overactive adaptive immune responses and autoimmunity",
+				"value": false
+			},
+			"E": {
+				"text": "Both A and C are possibilities",
+				"value": false
+			}	
+		}
+	},
+	{
+		"question": "M cells:",
+
+		"answers": {
+			"A": {
+				"text": "Function to increase efficiency of lymphoid nodule activity in the appendix",
+				"value": false
+			},
+			"B": {
+				"text": "Concentrate antigens in basal intracellular pockets for antigen presenting cells (APCs)",
+				"value": true
+			},
+			"C": {
+				"text": "Produce IgA mediating inflammatory reactions for defense of the mucosal surface",
+				"value": false
+			},
+			"D": {
+				"text": "Produce hormones and other signaling molecules in response to antigen presentation in primary lymphoid organs",
+				"value": false
+			},
+			"E": {
+				"text": "Are synonymous with enterocytes",
+				"value": false
+			}	
+		}
+	},
+	{
+		"question": "Name the cell at the arrow tip.",
+
+		"img": "pretest.png",
+
+		"answers": {
+			"A": {
+				"text": "Lymphocyte",
+				"value": true
+			},
+			"B": {
+				"text": "Monocyte",
+				"value": false
+			},
+			"C": {
+				"text": "Basophilic erythroblast (N1)",
+				"value": false
+			},
+			"D": {
+				"text": "Neutrophil",
+				"value": false
+			},
+			"E": {
+				"text": "Metamyelocyte",
+				"value": false
+			}
+		}
+	}
+]
