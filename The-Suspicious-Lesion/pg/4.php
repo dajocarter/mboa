@@ -2,8 +2,6 @@
 
 require_once("../../templates/config.php");
 
-$pageTitle = "The Suspicious Lesion";
-
 include(ROOT_PATH . "/The-Suspicious-Lesion/index.php"); 
 
 ?>
