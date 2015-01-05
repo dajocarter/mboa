@@ -2,13 +2,12 @@
 
 require_once("../../templates/config.php");
 
-$pageTitle = "A Mysterious Mass";
-
 include(ROOT_PATH . "/A-Mysterious-Mass/index.php"); 
 
 ?>
 
 <p>Note that secondary lymphoid organs include the spleen, lymph nodes, and MALT. Dense aggregations of MALT can be found in:</p>
+
 <div class="form">
 	<label>1.)
 		<input type="text">
@@ -23,6 +22,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	</label> <br>
 	<p class="italic"> (hint: in the submucosa of the ileum, the terminal part of the small intestine)</p>
 </div>
-<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/2.php">Reevaluate the thymus classification as a lymphoid organ</a>
+
+<p><a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/2.php">Reevaluate the thymus classification as a lymphoid organ</a></p>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>
