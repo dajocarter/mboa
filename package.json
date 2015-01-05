@@ -1,21 +1,21 @@
 {
-  "name": "Cases",
+  "name": "MyBrainOnAnatomy",
   "version": "1.0.0",
-  "description": "Histology Cases",
+  "description": "MyBrainOnAnatomy",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PollyNomial/Cases.git"
+    "url": "https://github.com/betabarb/betabarb.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PollyNomial/Cases/issues"
+    "url": "https://github.com/betabarb/betabarb.github.io/issues"
   },
-  "homepage": "https://github.com/PollyNomial/Cases",
+  "homepage": "https://github.com/betabarb/betabarb.github.io",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",

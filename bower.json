@@ -1,11 +1,11 @@
 {
-  "name": "Cases",
-  "version": "4.3.0",
-  "homepage": "https://github.com/PollyNomial/Cases",
+  "name": "MyBrainOnAnatomy",
+  "version": "1.0",
+  "homepage": "https://github.com/betabarb/betabarb.github.io",
   "authors": [
     "David Carter"
   ],
-  "description": "Histology Cases",
+  "description": "MyBrainOnAnatomy",
   "moduleType": [
     "node"
   ],
