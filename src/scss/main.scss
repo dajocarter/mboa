@@ -23,6 +23,14 @@
 	font-style: italic;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
+.note, p.note, span.note {
+	font-size: 0.75em;
+}
+
 /********** PRETEST ***********/
 
 .list-group-item img {
@@ -51,4 +59,18 @@
 
 .img-responsive {
 	margin: 20px auto;
+}
+
+table {
+	width: 100%;
+}
+
+td:nth-child(even),
+th:nth-child(even) {
+	padding-left: 10%;
+}
+
+td:last-child,
+th:last-child {
+	text-align: center;
 }
