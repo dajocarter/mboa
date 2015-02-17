@@ -31,25 +31,30 @@
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-            </button>
+            </button-->
             <a class="navbar-brand" href="<?php echo BASE_URL; ?>">My Brain On Anatomy</a>
           </div>
-          <!-- div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-              <div class="form-group">
-                <input type="text" placeholder="Email" class="form-control">
-              </div>
-              <div class="form-group">
-                <input type="password" placeholder="Password" class="form-control">
-              </div>
-              <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-          </div -->
+          <div id="navbar" class="navbar-collapse collapse">
+            <!--ul>
+              <li>
+                <a href="/Pre-Test">Pre-Test</a>
+              </li>
+              <li>
+                <a href="/A-Mysterious-Mass">A Mysterious Mass</a>
+              </li>
+              <li>
+                <a href="/A-Night-in-the-ER">A Night in the E.R.</a>
+              </li>
+              <li>
+                <a href="/The-Suspicious-Lesion">The Suspicious Lesion</a>
+              </li>
+            </ul-->
+          </div>
         </div>
       </nav>
 

@@ -8,7 +8,7 @@ include(ROOT_PATH . "templates/header.php"); ?>
 
   <div class="row">
     <h1>Check out my Histology Cases!</h1>
-    <ul>
+    <ul class="list">
       <li>
         <a href="/Pre-Test">Pre-Test</a>
       </li>
