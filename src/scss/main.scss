@@ -27,15 +27,49 @@
 	text-decoration: underline;
 }
 
+.purple {
+	color: purple;
+}
+
+.red {
+	color: red;
+}
+
+.dim {
+	background-color: darkgray;
+	border-color: gray;
+	color: gray;
+}
+
 .note, p.note, span.note {
 	font-size: 0.75em;
 }
 
+.row {
+	margin: 0;
+}
+
+.list {
+	padding-left: 15px;
+}
+
+/********** HEADER ***********/
+#navbar {
+	li {
+		display: inline-block;
+	}
+}
+
 /********** PRETEST ***********/
 
-.list-group-item img {
-	display: block;
-	max-width: 100%;
+.list-group-item { 
+	img {
+		display: block;
+		max-width: 100%;
+	}
+	.btn {
+		margin: 20px;
+	}
 }
 
 .list-group-item-text {
@@ -52,8 +86,12 @@
 	text-align: center;
 
 	div {
-		margin-right: -15px;
+		margin-bottom: 10px; 
 		min-width: 104px;
+
+		&.list-item {
+			display: inline-block;
+		}
 	}
 }	
 
@@ -61,8 +99,19 @@
 	margin: 20px auto;
 }
 
+@media (min-width: 767px) {
+	.img-responsive {
+		max-width: 767px;
+	}
+}
+
 table {
 	width: 100%;
+	border: 1px solid black;
+	* {
+		border: 1px solid black;
+		text-align: center;
+	}
 }
 
 td:nth-child(even),
