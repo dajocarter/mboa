@@ -16,7 +16,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	</ol>
 
 	<div class="answers clearfix">
-		<div class="threecol">
+		<div class="threecol first">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/flow1.php" class="btn btn-default">Number 1</a>
 		</div>
 		<div class="threecol">
@@ -25,7 +25,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 		<div class="threecol">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/flow3.php" class="btn btn-default">Number 3</a>
 		</div>
-		<div class="threecol">
+		<div class="threecol last">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/flow4.php" class="btn btn-default">Number 4</a>
 		</div>
 	</div>

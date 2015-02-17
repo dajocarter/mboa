@@ -10,7 +10,23 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <span class="bold">Can you label the following lymph node slide?</span></p>
 <img src="<?php echo BASE_URL; ?>assets/img/lymph_node.png" class="img-responsive" alt="lymph_node">
-
+<div class="answers clearfix">
+	<div class="list-item first">
+		<label>A.) <input type="text"></label>
+	</div>
+	<div class="list-item">
+		<label>B.) <input type="text"></label>
+	</div>
+	<div class="list-item">
+		<label>C.) <input type="text"></label>
+	</div>
+	<div class="list-item">
+		<label>D.) <input type="text"></label>
+	</div>
+	<div class="list-item last">
+		<label>E.) <input type="text"></label>
+	</div>
+</div>
 <p><a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/1.php">Return to investigate the slide from the mysterious mediastinal mass</a></p>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

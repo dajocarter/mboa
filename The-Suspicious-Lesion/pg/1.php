@@ -22,13 +22,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	<p class="bold">You conclude this histology sample was taken from:</p>
 
 	<div class="answers clearfix">
-		<div class="fourcol">
+		<div class="fourcol first">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/thymus.php" class="btn btn-default">Thymus</a>
 		</div>
 		<div class="fourcol">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymph_node.php" class="btn btn-default">Lymph Node</a>
 		</div>
-		<div class="fourcol">
+		<div class="fourcol last">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/spleen.php" class="btn btn-default">Spleen</a>
 		</div>
 	</div>

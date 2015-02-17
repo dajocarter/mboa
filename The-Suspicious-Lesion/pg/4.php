@@ -16,13 +16,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	<p class="bold">Lymph from breast tissue drains into the:</p>
 
 	<div class="answers clearfix">
-		<div class="fourcol">
+		<div class="fourcol first">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/sup_cervical.php" class="btn btn-default">Superficial Cervical Lymph Nodes</a>
 		</div>
 		<div class="fourcol">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/axillary.php" class="btn btn-default">Axillary Lymph Nodes</a>
 		</div>
-		<div class="fourcol">
+		<div class="fourcol last">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/inguinal.php" class="btn btn-default">Inguinal Lymph Nodes</a>
 		</div>
 	</div>

@@ -26,13 +26,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	<p class="bold">What <span class="underline">region</span> of the lymph node is structure B located in?</p>
 
 	<div class="answers clearfix">
-		<div class="fourcol">
+		<div class="fourcol first">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/cortex.php" class="btn btn-default">Cortex</a>
 		</div>
 		<div class="fourcol">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/paracortex.php" class="btn btn-default">Paracortex</a>
 		</div>
-		<div class="fourcol">
+		<div class="fourcol last">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/medulla.php" class="btn btn-default">Medulla</a>
 		</div>
 	</div>

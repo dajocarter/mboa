@@ -27,13 +27,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 	<p class="bold">The dark black lines represent:</p>
 	<div class="answers clearfix">
-		<div class="fourcol">
+		<div class="fourcol first">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type1.php" class="btn btn-default">Type I Collagen</a>
 		</div>
 		<div class="fourcol">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type2.php" class="btn btn-default">Type II Collagen</a>
 		</div>
-		<div class="fourcol">
+		<div class="fourcol last">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type3.php" class="btn btn-default">Type III Collagen</a>
 		</div>
 	</div>

@@ -20,13 +20,13 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <p class="bold">If lymphocytes pass the positive selection test in the cortex, they move onto their next test in the:</p>
 
 <div class="answers clearfix">
-	<div class="fourcol">
+	<div class="fourcol first">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/sub_sinus.php" class="btn btn-default">Subcapsular Sinus</a>
 	</div>
 	<div class="fourcol">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/paracortex.php" class="btn btn-default">Paracortex</a>
 	</div>
-	<div class="fourcol">
+	<div class="fourcol last">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/medulla.php" class="btn btn-default">Medulla</a>
 	</div>
 </div>

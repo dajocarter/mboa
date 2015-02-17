@@ -37,13 +37,13 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <span class="bold">Lymphocytes are considered a component of:</span></p>
 
 <div class="answers clearfix">
-	<div class="fourcol">
+	<div class="fourcol first">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/innate.php" class="btn btn-default">Innate Immunity</a>
 	</div>
 	<div class="fourcol">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/adaptive.php" class="btn btn-default">Adaptive Immunity</a>
 	</div>
-	<div class="fourcol">
+	<div class="fourcol last">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/inherent.php" class="btn btn-default">Inherent Immunity</a>
 	</div>
 </div>

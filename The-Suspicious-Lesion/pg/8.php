@@ -24,13 +24,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	<p class="bold">The condition the patient is referring to is known as:</p>
 
 	<div class="answers clearfix">
-		<div class="fourcol">
+		<div class="fourcol first">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphedema.php" class="btn btn-default">Lymphedema</a>
 		</div>
 		<div class="fourcol">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphoma.php" class="btn btn-default">Lymphoma</a>
 		</div>
-		<div class="fourcol">
+		<div class="fourcol last">
 			<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphadenopathy.php" class="btn btn-default">Lymphadenopathy</a>
 		</div>
 	</div>

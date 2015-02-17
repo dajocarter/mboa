@@ -10,7 +10,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<img src="<?php echo BASE_URL; ?>assets/img/mm-pg1.png" class="img-responsive" alt="Responsive image">
 	<p>You conclude the mass originated from:</p>
 	<div class="answers clearfix">
-		<div class="threecol">
+		<div class="threecol first">
 			<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/thyroid.php" class="btn btn-default">Thyroid</a>
 		</div>
 		<div class="threecol">
@@ -19,7 +19,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 		<div class="threecol">
 			<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/thymus.php" class="btn btn-default">Thymus</a>
 		</div>
-		<div class="threecol">
+		<div class="threecol last">
 			<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/parathyroid.php" class="btn btn-default">Parathyroid</a>
 		</div>
 	</div>
