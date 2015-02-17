@@ -15,22 +15,22 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	<div class="answers clearfix">
 		<div class="sixcol first">
 			<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ul.php">
-				<img src="<?php echo BASE_URL; ?>assets/img/ul.png" class="img-responsive" alt="">
+				<img src="<?php echo BASE_URL; ?>assets/img/UL.png" class="img-responsive" alt="">
 			</a>
 		</div>
 		<div class="sixcol last">
 			<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ur.php">
-				<img src="<?php echo BASE_URL; ?>assets/img/ur.png" class="img-responsive" alt="">
+				<img src="<?php echo BASE_URL; ?>assets/img/UR.png" class="img-responsive" alt="">
 			</a>
 		</div>
 		<div class="sixcol first">
 			<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ll.php">
-				<img src="<?php echo BASE_URL; ?>assets/img/ll.png" class="img-responsive" alt="">
+				<img src="<?php echo BASE_URL; ?>assets/img/LL.png" class="img-responsive" alt="">
 			</a>
 		</div>
 		<div class="sixcol last">
 			<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/lr.php">
-				<img src="<?php echo BASE_URL; ?>assets/img/lr.png" class="img-responsive" alt="">
+				<img src="<?php echo BASE_URL; ?>assets/img/LR.png" class="img-responsive" alt="">
 			</a>
 		</div>
 	</div>
