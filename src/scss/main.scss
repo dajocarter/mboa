@@ -77,6 +77,42 @@
 	padding: 5px 0;
 }
 
+.graph-bar-outline {
+	display: none;
+	float: left;
+	vertical-align: middle;
+	margin-left: 36px;
+	background-color: #f0f0f0;
+	width: 200px;
+	height: 10px;
+}
+
+.graph-bar-color {
+	display: none;
+	height: 10px;
+	background-color: #ff3e41;
+}
+
+.graph-bar-percent {
+	display: none;
+	float: left;
+	margin-left: 10px;
+	line-height: 1rem;
+	font-size: 12px;
+	font-weight: normal;
+	color: #777;
+}
+
+@media (max-width: 390px) {
+	.graph-bar-percent {
+		margin: 5px 0 0 36px;
+	}
+}
+
+.btn a {
+	color: white;
+}
+
 /********** CASES ***********/
 .cases p {
 	font-size: 1.3em;

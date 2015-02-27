@@ -20,4 +20,10 @@
 	/*** mysql password ***/
 	$password = 'sKdsjzJvrtVC6mXJ';
 
-	$db = new PDO("mysql:host=$hostname;port=7888;dbname=$username", $username, $password);
+	try {
+		$db = new PDO("mysql:host=$hostname;port=7888;dbname=$username", $username, $password);
+		$db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	}
+	catch(PDOException $error) {
+	    echo $error->getMessage();
+	}

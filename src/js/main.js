@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //##### send add record Ajax request to results.php #########
-    $("#quizSubmit").click(function() {      
+    $(".list-group-item.buttons").on('click', '#quizSubmit', function() {
     	// construct a post data structure
     	// and grade quiz
         var userChoices = []; 
@@ -18,9 +18,9 @@ $(document).ready(function() {
         
         var data = userChoices.join("&");
         var thisButton = $(this);
-        jQuery.ajax({
+        $.ajax({
         	type: "POST",
-	        url: "results.php", // Where to make Ajax calls
+	        url: "post-results.php", // Where to make Ajax calls
 	        data: data, // Form inputs
 	        success: function (response) {
 	        	// Add compare button to view results
@@ -35,20 +35,44 @@ $(document).ready(function() {
     });
 
 	//##### Send get Ajax request to results.php #########
-    $("#viewResults").click(function() {
-        jQuery.ajax({
-	        type: "GET", // HTTP method POST or GET
-	        url: "results.php", //Where to make Ajax calls
-	        dataType: "text", // Data type, HTML, json etc.
-	        data: myData, //Form variables
-	        success: function (response) {
-	            //on success, hide  element user wants to delete.
-	            $('#item_' + DbNumberID).fadeOut();
-	        },
-	        error: function (xhr, ajaxOptions, thrownError) {
-	            //On error, we alert user
-	            alert(thrownError);
-	        }
-        });
+    $(".list-group-item.buttons").on('click', '#viewResults', function() {
+    	$.get("get-results.php", function(response) {
+    		// Scroll to top
+    		$("html, body").animate({ scrollTop: 0 }, "slow");
+
+    		// Mark correct answers
+    		var correct = ["B", "C", "C", "B", "A"];
+    		for (var i = 0; i < correct.length; i++) {
+    			var selector = "#graph-q" + (i + 1) + "-" + correct[i];
+    			$(selector).children('.graph-bar-color').css({
+    				"background-color": "#44cf6c"
+    			});
+    		};
+
+    		// Show outline box
+            $('.graph-bar-outline').show();
+
+			// Get the total number of responses for each option for each question
+            $.each( response, function( question, answers ) {
+			  $.each( answers, function( answer, count ) {
+			  	// Don't do this for the sum!
+			  	if (answer === "sum") {
+			  		return true;
+			  	}
+			  	// Calculate Percentage
+			  	var percent = Math.round( ((count / answers["sum"]) * 100) );
+			  	// Display It
+			  	$('#percent-' + question + "-" + answer).text(percent + "%").show();
+			  	// Fill in bar appropriately
+			  	$('#graph-' + question + "-" + answer)
+			  		.children('.graph-bar-color')
+				  	.show()
+			  		.css({ "width": (percent * 2) + "px" });
+			  });
+			});
+    	}, "json");
+		
+		// Hide the buttons div since we're done with them now
+        $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
     });
 });
