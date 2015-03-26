@@ -17,8 +17,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 (function(e){e.respond={};respond.update=function(){};respond.mediaQueriesSupported=e.matchMedia&&e.matchMedia("only all").matches;if(respond.mediaQueriesSupported){return}var w=e.document,s=w.documentElement,i=[],k=[],q=[],o={},h=30,f=w.getElementsByTagName("head")[0]||s,g=w.getElementsByTagName("base")[0],b=f.getElementsByTagName("link"),d=[],a=function(){var D=b,y=D.length,B=0,A,z,C,x;for(;B<y;B++){A=D[B],z=A.href,C=A.media,x=A.rel&&A.rel.toLowerCase()==="stylesheet";if(!!z&&x&&!o[z]){if(A.styleSheet&&A.styleSheet.rawCssText){m(A.styleSheet.rawCssText,z,C);o[z]=true}else{if((!/^([a-zA-Z:]*\/\/)/.test(z)&&!g)||z.replace(RegExp.$1,"").split("/")[0]===e.location.host){d.push({href:z,media:C})}}}}u()},u=function(){if(d.length){var x=d.shift();n(x.href,function(y){m(y,x.href,x.media);o[x.href]=true;u()})}},m=function(I,x,z){var G=I.match(/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi),J=G&&G.length||0,x=x.substring(0,x.lastIndexOf("/")),y=function(K){return K.replace(/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,"$1"+x+"$2$3")},A=!J&&z,D=0,C,E,F,B,H;if(x.length){x+="/"}if(A){J=1}for(;D<J;D++){C=0;if(A){E=z;k.push(y(I))}else{E=G[D].match(/@media *([^\{]+)\{([\S\s]+?)$/)&&RegExp.$1;k.push(RegExp.$2&&y(RegExp.$2))}B=E.split(",");H=B.length;for(;C<H;C++){F=B[C];i.push({media:F.split("(")[0].match(/(only\s+)?([a-zA-Z]+)\s?/)&&RegExp.$2||"all",rules:k.length-1,hasquery:F.indexOf("(")>-1,minw:F.match(/\(min\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:F.match(/\(max\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}}j()},l,r,v=function(){var z,A=w.createElement("div"),x=w.body,y=false;A.style.cssText="position:absolute;font-size:1em;width:1em";if(!x){x=y=w.createElement("body");x.style.background="none"}x.appendChild(A);s.insertBefore(x,s.firstChild);z=A.offsetWidth;if(y){s.removeChild(x)}else{x.removeChild(A)}z=p=parseFloat(z);return z},p,j=function(I){var x="clientWidth",B=s[x],H=w.compatMode==="CSS1Compat"&&B||w.body[x]||B,D={},G=b[b.length-1],z=(new Date()).getTime();if(I&&l&&z-l<h){clearTimeout(r);r=setTimeout(j,h);return}else{l=z}for(var E in i){var K=i[E],C=K.minw,J=K.maxw,A=C===null,L=J===null,y="em";if(!!C){C=parseFloat(C)*(C.indexOf(y)>-1?(p||v()):1)}if(!!J){J=parseFloat(J)*(J.indexOf(y)>-1?(p||v()):1)}if(!K.hasquery||(!A||!L)&&(A||H>=C)&&(L||H<=J)){if(!D[K.media]){D[K.media]=[]}D[K.media].push(k[K.rules])}}for(var E in q){if(q[E]&&q[E].parentNode===f){f.removeChild(q[E])}}for(var E in D){var M=w.createElement("style"),F=D[E].join("\n");M.type="text/css";M.media=E;f.insertBefore(M,G.nextSibling);if(M.styleSheet){M.styleSheet.cssText=F}else{M.appendChild(w.createTextNode(F))}q.push(M)}},n=function(x,z){var y=c();if(!y){return}y.open("GET",x,true);y.onreadystatechange=function(){if(y.readyState!=4||y.status!=200&&y.status!=304){return}z(y.responseText)};if(y.readyState==4){return}y.send(null)},c=(function(){var x=false;try{x=new XMLHttpRequest()}catch(y){x=new ActiveXObject("Microsoft.XMLHTTP")}return function(){return x}})();a();respond.update=a;function t(){j(true)}if(e.addEventListener){e.addEventListener("resize",t,false)}else{if(e.attachEvent){e.attachEvent("onresize",t)}}})(this);;$(document).ready(function() {
     //##### send add record Ajax request to results.php #########
     $(".list-group-item.buttons").on('click', '#quizSubmit', function() {
-    	// construct a post data structure
-    	// and grade quiz
+    	// Grade quiz
         var userChoices = []; 
         var answers = ["B", "C", "C", "B", "A"];
         
@@ -31,22 +30,22 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
         		$(this).parent('label').addClass("correct");
         	}
         });
-        
+        // Construct a post data structure
         var data = userChoices.join("&");
         var thisButton = $(this);
         $.ajax({
         	type: "POST",
 	        url: "post-results.php", // Where to make Ajax calls
 	        data: data, // Form inputs
-	        success: function (response) {
-	        	// Add compare button to view results
-	        	$('.list-group-item.buttons').append('<button class="btn btn-primary" id="viewResults">See how you did</button>');
-	            // Disable the submit button
-	            thisButton.prop("disabled", true);
-	        },
-	        error: function (xhr, ajaxOptions, thrownError) {
-	            alert(thrownError);
-	        }
+        })
+        .done(function (response) {
+            // Add compare button to view results
+            $('.list-group-item.buttons').append('<button class="btn btn-primary" id="viewResults">See how you did</button>');
+            // Disable the submit button
+            thisButton.prop("disabled", true);
+        })
+        .fail(function (xhr, ajaxOptions, thrownError) {
+            alert(thrownError);
         });
     });
 
@@ -90,5 +89,140 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 		
 		// Hide the buttons div since we're done with them now
         $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
+    });
+
+    $('.check-input').each(function() {
+        var answers = [
+            "Simple cuboidal epithelium", // 0
+            "Subcapsular sinus", 
+            "Lymphoid follicle", 
+            "Cortex", 
+            "Paracortex", 
+            "Medulla", // 5
+            "RANKL", 
+            "Medulla",
+            "Capsule",
+            "Cortex",
+            "Septa", // 10
+            "Tonsils", 
+            "Appendix", 
+            "Peyer’s patches",
+            "Bone marrow", 
+            "ctyokines", //15
+            "Basophilic",
+            "Form boundaries",
+            "APCs",
+            "Cytoreticulum",
+            "Cytokine secretion", //20
+            "High endothelial venules"
+        ];
+
+        var hints = [
+            "The space deep to the capsule", 
+            "An aggregation of proliferating B cells", // 1
+            "The superficial region of lymph nodes containing nodules of B cells", 
+            "A region of lymph nodes containing T cells, dendritic cells, and HEVs", 
+            "The deepest region of lymph nodes consisting of sinuses and cord packed with lymphocytes, plasma cells, and macrophages",
+            "Region where thymocytes undergo negative (clonal) deletion",
+            "Thin connective tissue covering",  // 6
+            "Region where thymocytes undergo positive (clonal) selection",
+            "Extensions of the capsule separating the parenchyma into lobes",
+            "Lymphatic tissue in nasopharynx and oropharynx",
+            "A diverticulum off the first part of the large intestine", // 10
+            "In the submucosa of the ileum, the terminal part of the small intestine",
+            "One of two locations that aid the body in developing central tolerance by producing mature, immunocompentent T-lymphocytes.",
+            "Name for small signaling proteins", //13
+            "Thymocytes have abundant RER and Golgi for synthesizing TCR and CD4 and CD8 glycoproteins and therefore appear as densely packed basophilic clusters of cells.",
+            "Blood-thymus barrier – squamous TECs joined by desmosomes and tight junctions line microvasculature, isolating the cortex (TECs + endothelial cells of BV + pericytes = BTB) – prevents unregulated exposure of thymocytes to antigens. Also, squamous TECs linked by tight junctions forming a functional sheet between these regions k/a: corticomedullary barrier",
+            "Stellate TECs are also APCs expressing MHC I and II presenting antigens to thymocytes", // 16
+            "Stellate TECs joined by desmosomes form a cytoreticulum (supportive structure) to which macrophages and developing lymphocytes attach instead of reticulin fibers",
+            "Thymic (Hassall’s) corpuscles secrete cytokines (diverse group of peptides and glycoproteins with paracrine action) for T-cell development",
+            "Skin, mucous membranes (GI, respiratory, and UG tracts), and cells including: neutrophils, NK (natural killer) cells, leukocytes (excluding lymphocytes) and their secretions:<ul><li>HCl and organic acids (lowers local pH killing microorganisms directly or inhibiting their growth)</li><li>defensins (cationic polypeptides that disrupt bacteria cell walls)</li><li>lysozyme (hydrolyzes bacterial cell walls)</li><li>complement (proteins in blood plasma, mucus, and macrophages that react with bacterial surface components)</li><li>interferons (paracrine factors from leukocytes and virus-infected cells signaling NK cells to kill them).</li></ul>",
+            "This system is slow to respond when initially presented with a foreign antigen by APCs, however, a population of memory lymphocytes produced from the initial exposure rapidly combats subsequent infections.",
+            "Cells are presented with self- and foreign antigens by epithelioreticular cells. If lymphocytes recognize self-MHC displaying the self- and foreign antigens, they survive.",
+            "Cells that recognize and tightly bind selfantigen displayed by TECs and dendritic cells with MHC II are eliminated. This step blocks autoimmunity. Cells that survive this test (only ~2% from original population in cortex!) become either cytotoxic CD8+ T lymphocytes (by losing CD4 and retaining CD8) or helper CD4+ T lymphocytes (by losing CD8 and retaining CD4). This stage is known as the single-positive stage. These mature T lymphocytes leave the thymic medulla and enter circulation.",
+            "Slide 126 – younger thymus shows capsule sending connective tissue septa in the parenchyma creating incomplete lobules with an outer darkly staining cortex surrounding lightly staining medulla.<br>Slide 123 – thymus reaches maximum weight in adolescence (12-19 years old) then gradually involutes (20-60 years old) and hypertrophies, decreasing in activity, and fills with adipose. Fatty replacement leaves the thymus at 15g by age 60 (the thymus weighs 25g at birth and 40g in adolescence).",
+            "Autoreactive CD4+ T-lymphocytes stimulate B-lymphocytes to produce pathogenic antibodies targeted to muscle endplate AchR."
+        ];
+
+        $(this).bind('input keyup click', function() {
+            var index = $(this).data('ansindex');
+            var ans = answers[index];
+            if ($.type(ans) === 'string') {
+                if ($(this).val().toUpperCase() === ans.toUpperCase()) {
+                    $(this).addClass('correct');
+                    $(this).siblings('.ion-ios-help').hide();
+                    $(this).siblings('.ion-ios-checkmark').show();
+                    $('#rankl').siblings('.hint').fadeIn('slow');
+                }
+                else {
+                    $(this).removeClass('correct');
+                    $(this).siblings('.ion-ios-help').show();
+                    $(this).siblings('.ion-ios-checkmark').hide();
+                }
+            }
+            else if ($.type(ans) === 'array') {
+                if ($.inArray($(this).val(), ans) > -1) {
+                    $(this).addClass('correct');
+                    $(this).siblings('.ion-ios-help').hide();
+                    $(this).siblings('.ion-ios-checkmark').show();
+                }
+                else {
+                    $(this).removeClass('correct');
+                    $(this).siblings('.ion-ios-help').show();
+                    $(this).siblings('.ion-ios-checkmark').hide();
+                }
+            }
+        });
+        
+        $(this).siblings('.ion-ios-help').bind('click', function() {
+            var index = $(this).siblings('.check-input').data('hintindex');
+            var hint = hints[index];
+            $(this).fadeOut('slow');
+            var a = $(this).parents('.list-item').find('.hint'), b = $(this).siblings('.hint');
+            if (a.length > 0) {
+                $('<p>' + hint + '</p>').prependTo(a);
+                a.fadeIn('slow');
+            }
+            else if (b.length > 0) {
+                $('<p>' + hint + '</p>').prependTo(b);
+                b.fadeIn('slow');
+            }
+        });
+
+        $(this).siblings('.ion-alert-circled').bind('click', function() {
+            var index = $(this).siblings('.check-input').data('hintindex');
+            var hint = hints[index];
+            $(this).fadeOut('slow');
+            var a = $(this).parents('.list-item').find('.hint'), b = $(this).siblings('.hint');
+            if (a.length > 0) {
+                $('<p>' + hint + '</p>').prependTo(a);
+                a.fadeIn('slow');
+            }
+            else if (b.length > 0) {
+                $('<p>' + hint + '</p>').prependTo(b);
+                b.fadeIn('slow');
+            }
+        });
+    });
+
+    $('.hint').each(function() {
+        var hint = $(this);
+        hint.find('.ion-ios-close').bind('click', function() {
+            hint.fadeOut('slow');
+            if (hint.parents('.list-item').find('.ion-ios-checkmark').is(":hidden")) {
+                hint.parents('.list-item').find('.ion-ios-help').fadeIn('slow');
+            }
+            else if (hint.siblings('.ion-ios-checkmark').is(":hidden")) {
+                hint.siblings('.ion-ios-help').fadeIn('slow');
+            }
+            else if (hint.parents('.list-item').find('.ion-alert-circled').is(":hidden")) {
+                hint.parents('.list-item').find('ion-alert-circled').fadeIn('slow');
+            }
+            else if (hint.siblings('.ion-alert-circled').is(":hidden")) {
+                hint.siblings('.ion-alert-circled').fadeIn('slow');
+            }
+
+        });
     });
 });

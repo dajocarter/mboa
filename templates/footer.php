@@ -1,7 +1,9 @@
-		<hr>
+		</div>
+    
+    <hr>
 
       	<footer>
-        	<p>&copy;<?php echo date('Y'); ?> <span class="signature">dajocarter</span></p>
+        	<p class="signature">&copy;<?php echo date('Y'); ?> <span>dajocarter</span></p>
       	</footer>
     </div> 
     
