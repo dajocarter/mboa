@@ -6,6 +6,6 @@ $pageTitle = "A Night in the E.R.";
 
 include(ROOT_PATH . "templates/header.php"); ?>
 
-	<h1>A Night in the E.R.</h1>
+	<h1 class="title">A Night in the E.R.</h1>
 
 	<div class="container cases">
