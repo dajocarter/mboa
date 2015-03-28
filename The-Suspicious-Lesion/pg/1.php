@@ -17,7 +17,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 </ul>
 <p>After core needle biopsy of the lesion and H&amp;E staining, the following slide is seen:</p>
 
-<img src="<?php echo BASE_URL; ?>assets/img/tsl-pg1.png" class="img-responsive" alt="">
+<img id="big" src="<?php echo BASE_URL; ?>assets/img/tsl-pg1.png" class="img-responsive" alt="">
 
 <p class="bold">You conclude this histology sample was taken from:</p>
 

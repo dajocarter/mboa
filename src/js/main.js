@@ -75,6 +75,22 @@ $(document).ready(function() {
         $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
     });
 
+    $('td input').bind('click', function() {
+        console.log("hello");
+        var answers = ["high", "low", "normal", "normal"];
+        var index = $(this).attr('name');
+        if($('input:radio[name=' + index + ']:checked').val() === answers[index]) {
+            console.log("i am correct");
+            $('input:radio[name=' + index + ']').parent().removeClass();
+            $(this).parent().addClass('correct');
+        }
+        else {
+            console.log("i am wrong");
+            $('input:radio[name=' + index + ']').parent().removeClass();
+            $(this).parent().addClass('wrong');
+        }
+    });
+
     $('.check-input').each(function() {
         var answers = [
             "Simple cuboidal epithelium", // 0

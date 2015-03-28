@@ -16,16 +16,16 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 </ol>
 
 <div class="grid-container clearfix">
-	<div class="list-item fourth first">
+	<div class="list-item fourth first tablet-first-half">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/flow1.php" class="btn btn-default">Number 1</a>
 	</div>
-	<div class="list-item fourth">
+	<div class="list-item fourth tablet-second-half">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/flow2.php" class="btn btn-default">Number 2</a>
 	</div>
-	<div class="list-item fourth">
+	<div class="list-item fourth tablet-first-half">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/flow3.php" class="btn btn-default">Number 3</a>
 	</div>
-	<div class="list-item fourth last">
+	<div class="list-item fourth last tablet-second-half">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/flow4.php" class="btn btn-default">Number 4</a>
 	</div>
 </div>

@@ -8,27 +8,27 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <p>Correct! The thymus has a thin capsule that extends CT septa into the parenchyma separating the cortex and medulla into incomplete lobules. <span class="bold">Can you label the following thymus slide?</span></p>
 
+<img src="<?php echo BASE_URL; ?>assets/img/MM-Pg-2.png" class="img-responsive" alt="thymus">
 <div class="grid-container clearfix">
-	<div class="list-item fourth first">
+	<div class="list-item fourth first tablet-first-half">
 		<label>A.) <input type="text" class="check-input" data-ansindex="7" data-hintindex="5"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item fourth">
+	<div class="list-item fourth tablet-second-half">
 		<label>B.) <input type="text" class="check-input" data-ansindex="8" data-hintindex="6"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item fourth">
+	<div class="list-item fourth tablet-first-half">
 		<label>C.) <input type="text" class="check-input" data-ansindex="9" data-hintindex="7"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item fourth">
+	<div class="list-item fourth tablet-second-half">
 		<label>D.) <input type="text" class="check-input" data-ansindex="10" data-hintindex="8"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 </div>
-<img src="<?php echo BASE_URL; ?>assets/img/MM-Pg-2.png" class="img-responsive" alt="thymus">
 
-<p class="bold">The thymus is considered a ________________ lymphoid organ.</p>
+<p class="bold margin-top">The thymus is considered a ________________ lymphoid organ.</p>
 <div class="grid-container clearfix">
 	<div class="list-item third first">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/primary.php" class="btn btn-default">Primary</a>

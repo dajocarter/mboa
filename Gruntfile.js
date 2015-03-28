@@ -42,7 +42,6 @@ module.exports = function(grunt) {
 		        },
 		        files: {
 		            'src/css/imports.css':'src/scss/imports.scss',
-		            'src/css/custom-grid.css':'src/scss/custom-grid.scss',
 		            'src/css/main.css':'src/scss/main.scss'
 		        }
 		    }
