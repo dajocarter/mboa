@@ -3,7 +3,7 @@
     <hr>
 
       	<footer>
-        	<p class="signature">&copy;<?php echo date('Y'); ?> <span>dajocarter</span></p>
+        	<p class="note">&copy;<?php echo date('Y'); ?> <a href="//dajocarter.com">dajocarter</a></p>
       	</footer>
     </div> 
     

@@ -8,10 +8,10 @@ $mobile: 480px;
 	font-size: 2em;
 }
 
-.signature {
-	font-size: .75em;
-	span {
+.note {
+	a {
 		font-family: 'Permanent Marker', cursive;
+		text-decoration: none;
 	}
 }
 
@@ -40,15 +40,14 @@ $mobile: 480px;
 .red {
 	color: red;
 }
+.pink {
+	color: pink;
+}
 
 .dim {
 	background-color: darkgray;
 	border-color: gray;
 	color: gray;
-}
-
-.note, p.note, span.note {
-	font-size: 0.75em;
 }
 
 .row {
@@ -149,6 +148,10 @@ $mobile: 480px;
 
 .cases p {
 	font-size: 1.3em;
+
+	&.note {
+		font-size: .75em;
+	}
 }
 
 .img-responsive {
@@ -209,11 +212,24 @@ table {
 		border: 1px solid black;
 		text-align: center;
 	}
+	a {
+		border: 0;
+	}
 }
 
-td:nth-child(even),
-th:nth-child(even) {
-	padding-left: 10%;
+thead tr:last-child th:last-child {
+	width: 13%;
+}
+
+tbody tr td:nth-child(2) {
+	text-align: left;
+	padding-left: 10px;
+}
+
+tbody tr td:first-child,
+thead tr:last-child th:first-child,
+thead tr:last-child th:last-child {
+	width: 13%;
 }
 
 td:last-child,
