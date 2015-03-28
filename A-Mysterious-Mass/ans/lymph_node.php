@@ -23,11 +23,11 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 		<label>C.) <input type="text" class="check-input" data-ansindex="3" data-hintindex="2"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item second-row first">
+	<div class="list-item second-row half first">
 		<label>D.) <input type="text" class="check-input" data-ansindex="4" data-hintindex="3"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item second-row last">
+	<div class="list-item second-row half last">
 		<label>E.) <input type="text" class="check-input" data-ansindex="5" data-hintindex="4"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
