@@ -12,23 +12,23 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 	<p class="bold">Click on the histology slide below that depicts the organ injured.</p>
 
-	<div class="answers clearfix">
-		<div class="sixcol first">
+	<div class="grid-container clearfix">
+		<div class="list-item half first">
 			<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ul.php">
 				<img src="<?php echo BASE_URL; ?>assets/img/UL.png" class="img-responsive" alt="">
 			</a>
 		</div>
-		<div class="sixcol last">
+		<div class="list-item half last">
 			<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ur.php">
 				<img src="<?php echo BASE_URL; ?>assets/img/UR.png" class="img-responsive" alt="">
 			</a>
 		</div>
-		<div class="sixcol first">
+		<div class="list-item second-row half first">
 			<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ll.php">
 				<img src="<?php echo BASE_URL; ?>assets/img/LL.png" class="img-responsive" alt="">
 			</a>
 		</div>
-		<div class="sixcol last">
+		<div class="list-item second-row half last">
 			<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/lr.php">
 				<img src="<?php echo BASE_URL; ?>assets/img/LR.png" class="img-responsive" alt="">
 			</a>

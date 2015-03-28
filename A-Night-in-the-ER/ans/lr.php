@@ -8,8 +8,31 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 ?>
 
-<p>Hassall’s corpuscles are large (up to 100 um!) keratinized concentric aggregates of thymic epithelial cells found in the medulla. Although their function is not completely understood, they do secrete <input type="text"><span class="italic">(name for small signaling proteins)</span> that promote T-lymphocyte development.</p>
-<img src="<?php echo BASE_URL; ?>assets/img/hassall.png" class="img-responsive" alt="hassall">
+<p>Lymph nodes have a cortex and medulla, with lymphoid nodules composed mainly of Blymphocytes in the cortex and cords of cells separated by sinuses in the medulla. However, lymph nodes filter lymph, not blood, and would not produce the profuse bleeding that the patient is experiencing.</p>
+<p class="bold">Can you label the following lymph node slide?</p>
+<img src="<?php echo BASE_URL; ?>assets/img/MM-LymphNode-Image_ER-Palatine-Tonsil.png" class="img-responsive">
+<div class="grid-container clearfix">
+	<div class="list-item first third">
+		<label>A.) <input type="text" class="check-input" data-ansindex="1" data-hintindex="0"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
+	</div>
+	<div class="list-item third">
+		<label>B.) <input type="text" class="check-input" data-ansindex="2" data-hintindex="1"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
+	</div>
+	<div class="list-item last third">
+		<label>C.) <input type="text" class="check-input" data-ansindex="3" data-hintindex="2"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
+	</div>
+	<div class="list-item second-row half first">
+		<label>D.) <input type="text" class="check-input" data-ansindex="4" data-hintindex="3"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
+	</div>
+	<div class="list-item second-row half last">
+		<label>E.) <input type="text" class="check-input" data-ansindex="5" data-hintindex="4"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
+	</div>
+</div>
 <a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/3.php">Go back to reconsider the supportive stroma of the thymus</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>
