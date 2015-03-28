@@ -6,8 +6,20 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 ?>
 
-<p>The medulla of a lymph node is the innermost region. It contains medullary <input type="text"> (reticular fibers filled with reticular cells and lymphocytes [mostly B-lymphocytes], macrophages, dendritic cells, and plasma cells) and medullary <input type="text"> (endothelial-lined lymphatic spaces).</p>
+<p>The medulla of a lymph node is the innermost region. It contains <span class="bold">medullary</span></p>
+<div>
+	<input type="text" class="check-input" data-ansindex="37" data-hintindex="42">
+	<i class="input icon ion-ios-help"></i><i class="input icon ion-ios-checkmark"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div>
+</div>
 
-<p><a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/5.php">Return to meditate on the lymph node regions</a></p>
+<p>and <span class="bold">medullary</span></p>
+<div>
+	<input type="text" class="check-input" data-ansindex="38" data-hintindex="43">
+	<i class="input icon ion-ios-help"></i><i class="input icon ion-ios-checkmark"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div>
+</div>
+
+<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/5.php">Return to meditate on the lymph node regions</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>
