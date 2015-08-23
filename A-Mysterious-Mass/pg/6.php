@@ -15,22 +15,33 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item last half">
-		<img src="<?php echo BASE_URL; ?>assets/img/mm-negative-selection.png">
+		<figure>
+			<img class="img-responsive" src="<?php echo BASE_URL; ?>assets/img/mm-negative-selection.png">
+			<figcaption>Source: <a target="_blank" href="//accessiblebiosci.blogspot.com/2013/08/negative-selectivi-t-dzhagalov-et-al.html">http://accessiblebiosci.blogspot.com/2013/08/negative-selectivi-t-dzhagalov-et-al.html</a></figcaption>
+		</figure>
 	</div>
 </div>
 
 <h3>Histo Scavenger Hunt!</h3>
-<p>Take a snapshot of a thymic (Hassall’s) corpuscle in the medulla, from <a href="//medsci.indiana.edu/histo/virtual/msci_76.html">Slide 76: Thymus, H&amp;E.</a></p>
+<p>Take a snapshot of a thymic (Hassall’s) corpuscle in the medulla, from <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_76.html">Slide 76: Thymus, H&amp;E.</a></p>
 
 
 <p>Normally the thymus involutes with age.</p>
-<p class="bold">What is the difference between <a href="//medsci.indiana.edu/histo/virtual/msci_123.html">Slide 123 Thymus, H&amp;E</a> and <a href="http://medsci.indiana.edu/histo/virtual/msci_126.html">Slide 126 Thymus, H&amp;E</a>?</p>
-<div>
+<p class="bold">What is the difference between <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_123.html">Slide 123 Thymus, H&amp;E</a> and <a target="_blank" href="http://medsci.indiana.edu/histo/virtual/msci_126.html">Slide 126 Thymus, H&amp;E</a>?</p>
+<div class="margin">
 	<textarea class="check-input" data-hintindex="23"></textarea>
 	<i class="input icon ion-alert-circled"></i>
 	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
+<div class="grid-container margin clearfix">
+	<div class="list-item first half">
+		<img src="<?php echo BASE_URL; ?>assets/img/MM-Pg6-Slide123.png">
+	</div>
+	<div class="list-item last half">
+		<img src="<?php echo BASE_URL; ?>assets/img/MM-Pg6-Slide126.png">
+	</div>
+</div>
 
-<p>The results from a blood test that you ordered are in. <a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/7.php">Go check-in with your patient.</a></p>
+<p class="back-link">The results from a blood test that you ordered are in. <a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/7.php">Go check-in with your patient.</a></p>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

@@ -8,9 +8,12 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 ?>
 
-<p>Lymph nodes have a cortex and medulla, with lymphoid nodules composed mainly of Blymphocytes in the cortex and cords of cells separated by sinuses in the medulla. However, lymph nodes filter lymph, not blood, and would not produce the profuse bleeding that the patient is experiencing.</p>
+<p>Lymph nodes have a cortex and medulla, with lymphoid nodules composed mainly of B-lymphocytes in the cortex and cords of cells separated by sinuses in the medulla. However, lymph nodes filter lymph, not blood, and would not produce the profuse bleeding that the patient is experiencing.</p>
 <p class="bold">Can you label the following lymph node slide?</p>
-<img src="<?php echo BASE_URL; ?>assets/img/MM-LymphNode-Image_ER-Palatine-Tonsil.png" class="img-responsive">
+<figure>
+	<img src="<?php echo BASE_URL; ?>assets/img/MM-LymphNode-Image_ER-Palatine-Tonsil.png" class="img-responsive">
+	<figcaption></figcaption>
+</figure>
 <div class="grid-container clearfix">
 	<div class="list-item first third">
 		<label>A.) <input type="text" class="check-input" data-ansindex="1" data-hintindex="0"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
@@ -33,6 +36,6 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 </div>
-<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/3.php">Go back to reconsider the supportive stroma of the thymus</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/1.php">Return to slides</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

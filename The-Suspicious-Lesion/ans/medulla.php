@@ -13,13 +13,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
 
-<p>and <span class="bold">medullary</span></p>
+<p class="margin-top">and <span class="bold">medullary</span></p>
 <div>
 	<input type="text" class="check-input" data-ansindex="38" data-hintindex="43">
 	<i class="input icon ion-ios-help"></i><i class="input icon ion-ios-checkmark"></i>
 	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
 
-<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/5.php">Return to meditate on the lymph node regions</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/5.php">Return to meditate on the lymph node regions</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

@@ -10,6 +10,9 @@ include(ROOT_PATH . "templates/header.php"); ?>
   <h1>Check out my Histology Cases!</h1>
   <ul class="list">
     <li>
+      <a href="/Learning-Objectives">Learning Objectives</a>
+    </li>
+    <li>
       <a href="/Pre-Test">Pre-Test</a>
     </li>
     <li>Cases
@@ -43,8 +46,22 @@ include(ROOT_PATH . "templates/header.php"); ?>
         </li> 
       </ul>
     </li>
-    <li>
-      <a href="http://youtube.com">What is a flipped class?</a>
+    <li>What is a flipped class?
+      <ul>
+        <li>
+          <a target="_blank" href="//elearninginfographics.com/what-is-a-flipped-classroom-infographic-plus-the-educator-guide-to-flipped-classroom/">What is a Flipped Classroom Infographic</a>
+        </li>
+        <li>
+          <a target="_blank" href="//www.youtube.com/watch?v=iQWvc6qhTds">Flipping the Classroom: Explained</a>
+        </li>
+      </ul>
+    </li>
+    <li>Download the HAPS 2015 Workshop Presentation
+      <ul>
+        <li>
+          <a href="files/pptx.php">Download as .pptx</a>
+        </li>
+      </ul>
     </li>
   </ul>
 

@@ -17,11 +17,14 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 </ul>
 <p>After core needle biopsy of the lesion and H&amp;E staining, the following slide is seen:</p>
 
-<img id="big" src="<?php echo BASE_URL; ?>assets/img/tsl-pg1.png" class="img-responsive" alt="">
+<figure>
+	<img id="big" src="<?php echo BASE_URL; ?>assets/img/tsl-pg1.png" class="img-responsive" alt="">
+	<figcaption></figcaption>
+</figure>
 
 <p class="bold">You conclude this histology sample was taken from:</p>
 
-<div class="grid-container clearfix">
+<div class="grid-container margin-top clearfix">
 	<div class="list-item third first">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/thymus.php" class="btn btn-default">Thymus</a>
 	</div>

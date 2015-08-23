@@ -23,6 +23,6 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	</div>
 </div>
 
-<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/2.php">Reevaluate the thymus classification as a lymphoid organ</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/2.php">Reevaluate the thymus classification as a lymphoid organ</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

@@ -11,13 +11,13 @@
 
 	// Database connection details
 	
-	/*** mysql hostname ***/
+	/*** mysql hostname ***
 	$hostname = 'localhost';
 
-	/*** mysql username ***/
+	/*** mysql username ***
 	$username = 'mybrainonanatomy';
 
-	/*** mysql password ***/
+	/*** mysql password ***
 	$password = 'sKdsjzJvrtVC6mXJ';
 
 	try {
@@ -27,3 +27,4 @@
 	catch(PDOException $error) {
 	    echo $error->getMessage();
 	}
+*/

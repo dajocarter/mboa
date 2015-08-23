@@ -12,8 +12,11 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 <p>that promote T-lymphocyte development.</p>
 
-<img src="<?php echo BASE_URL; ?>assets/img/hassall.png" class="img-responsive" alt="hassall">
+<figure>
+	<img src="<?php echo BASE_URL; ?>assets/img/hassall.png" class="img-responsive" alt="hassall">
+	<figcaption></figcaption>
+</figure>
 
-<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/3.php">Go back to reconsider the supportive stroma of the thymus</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/3.php">Go back to reconsider the supportive stroma of the thymus</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

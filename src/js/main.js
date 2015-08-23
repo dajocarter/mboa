@@ -1,10 +1,24 @@
 $(document).ready(function() {
     //##### send add record Ajax request to results.php #########
-    $(".list-group-item.buttons").on('click', '#quizSubmit', function() {
+    $('#quizSubmit').click(function(e) {
+        e.preventDefault();
     	// Grade quiz
         var userChoices = []; 
         var answers = ["B", "C", "C", "B", "A"];
+
+        for (var i = 0; i < answers.length; i++) {
+            var str = 'q' + (i+1) + '-' + answers[i];
+            var selector = ".list-group-item-text[for='" + str + "']";
+            $(selector).addClass("correct");
+        };
+
+        // Scroll to top
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+
+        // Hide the buttons div since we're done with them now
+        $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
         
+        /*
         $("input:checked").each(function (index) {
         	var choice = "q" + (index + 1) + "=" + $(this).val();
 
@@ -14,6 +28,7 @@ $(document).ready(function() {
         		$(this).parent('label').addClass("correct");
         	}
         });
+
         // Construct a post data structure
         var data = userChoices.join("&");
         var thisButton = $(this);
@@ -30,11 +45,11 @@ $(document).ready(function() {
         })
         .fail(function (xhr, ajaxOptions, thrownError) {
             alert(thrownError);
-        });
+        }); */
     });
 
 	//##### Send get Ajax request to results.php #########
-    $(".list-group-item.buttons").on('click', '#viewResults', function() {
+    /*$(".list-group-item.buttons").on('click', '#viewResults', function() {
     	$.get("get-results.php", function(response) {
     		// Scroll to top
     		$("html, body").animate({ scrollTop: 0 }, "slow");
@@ -75,6 +90,7 @@ $(document).ready(function() {
         $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
     });
 
+    /************ GRADE THE TABLE *************/
     $('td input').bind('click', function() {
         console.log("hello");
         var answers = ["high", "low", "normal", "normal"];
@@ -93,28 +109,28 @@ $(document).ready(function() {
 
     $('.check-input').each(function() {
         var answers = [
-            "Simple cuboidal epithelium", // 0
+            ["Simple cuboidal epithelium", "Simple cuboidal"], // 0
             "Subcapsular sinus", 
-            "Lymphoid follicle", 
+            ["lymph follicle", "lymph nodule", "lymphoid follicle", "lymphoid nodule"], 
             "Cortex", 
             "Paracortex", 
             "Medulla", // 5
-            "RANKL", 
+            ["RANKL", "RANK Ligand", "RANK ligand", "Rank ligand"], 
             "Medulla",
             "Capsule",
             "Cortex",
             "Septa", // 10
             "Tonsils", 
-            "Appendix", 
-            "Peyer’s patches",
+            ["appendix", "Vermiform appendix", "vermiform appendix"], 
+            ["Peyer's patches", "Peyers patches", "peyers patches", "peyer's patches", "Peyer's Patches"],
             "Bone marrow", 
-            "Ctyokines", // 15
+            ["Cytokines", "cytokines"], // 15
             "Basophilic",
             "Form boundaries",
             "APCs",
             "Cytoreticulum",
             "Cytokine secretion", // 20
-            "High endothelial venules",
+            ["High endothelial venules", "HEVs", "HEV"],
             "Stratified squamous epithelium",
             "Stave cells",
             "Thymus",
@@ -122,17 +138,17 @@ $(document).ready(function() {
             "Marginal zone", 
             "Central arteriole",
             "Germinal center",
-            ["lymphoid nodule", "follicle"],
+            ["lymphoid nodule", "follicle"], // Repeat of #2
             "Stratified squamous epithelium", // 30
             "Crypt",
             "White pulp",
             "Red pulp",
             "Trabecula",
             "Eosin", // 35
-            ["Silver stain", "periodic acid-Schiff (PAS) reaction", "PAS reaction"],
+            ["Silver stain", "periodic acid-Schiff reaction", "PAS reaction"],
             "sinuses",
             "cords",
-            ["High endothelial venules", "HEVs"],
+            ["High endothelial venules", "HEVs"], // Repeat of #21
             "Afferent lymphatic vessels" // 40
         ];
 
@@ -165,7 +181,7 @@ $(document).ready(function() {
             "Multiple layers with flat apical cells", // 25,
             "Filters blood destroying old erythrocytes, other blood cells, and particulate debris from the blood (cells flowing through open circulation in the spleen must squeeze past the unique endothelial (stave) cells of sinusoids to re-enter circulation. Those unable to do so are engulfed by macrophages).",
             "Provides germinal centers in white pulp for B cell proliferation and differentiation in response to antigen presentation producing immunological response against blood-borne antigens",
-            "Site of hematopoiesis during fetal development (yolk sac &rarr; liver/spleen &rarr; bonemarrow)", // 28
+            "Site of hematopoiesis during fetal development (yolk sac &rarr; liver/spleen &rarr; bone marrow)", // 28
             "White pulp provides a site for antigen presentation and proliferation/differentiation of lymphocytes. White pulp consists of masses of T cells surrounding a central arteriole forming periarteriolar lymphoid sheath (PALS) and the lymphoid nodules of B-cells.",
             "Red pulp is composed of reticular tissue containing vascular sinusoids and splenic cords (of Bilroth = densely packed lymphocytes, macrophages, reticular fibroblasts). The red pulp is filled with blood cells of all types and the spleen filters the blood through the red pulp removing particulate debris and old (~120 day life span!) or damaged blood cells.",
             "Splenic artery &rarr; trabecular artery &rarr; central arteriole &rarr; penicillar arteriole &rarr; splenic sinusoids &rarr; trabecular veins &rarr; splenic vein",
@@ -186,12 +202,14 @@ $(document).ready(function() {
             "The medulla of the lymph node is composed of medullary cords packed with cells (T-lymphocytes, B-lymphocytes, plasma cells, macrophages, dendritic cells, and reticular cells) and endothelial lined medullary sinuses that contain efferent lymph and fewer cells draining toward the efferent lymphatic vessel at the lymph node hilum.",
             "Removal of lymph nodes and formation of scar tissue forms a blockage to the flow of lymph. Arm mobility and sensory loss may also be factors associated with lymphedema."
         ];
-
+        /********************** GRADE INPUTS *************************/
         $(this).bind('input keyup click', function() {
             var index = $(this).data('ansindex');
             var ans = answers[index];
+            var choice = $(this).val();
+            
             if ($.type(ans) === 'string') {
-                if ($(this).val().toUpperCase() === ans.toUpperCase()) {
+                if (choice === ans) {
                     $(this).addClass('correct');
                     $(this).siblings('.ion-ios-help').hide();
                     $(this).siblings('.ion-ios-checkmark').show();
@@ -204,7 +222,16 @@ $(document).ready(function() {
                 }
             }
             else if ($.type(ans) === 'array') {
-                if ($.inArray($(this).val(), ans) > -1) {
+                var index = -1;
+                ans.some(function(elt, idx) {
+                    console.log('choice is', choice);
+                    console.log('option is', elt);
+                    if (choice === elt) {
+                        index = idx;
+                        return true;
+                    }
+                });
+                if (index > -1) {
                     $(this).addClass('correct');
                     $(this).siblings('.ion-ios-help').hide();
                     $(this).siblings('.ion-ios-checkmark').show();
@@ -216,18 +243,24 @@ $(document).ready(function() {
                 }
             }
         });
-        
+        /************************** SHOW HINT **************************/
         $(this).siblings('.ion-ios-help').bind('click', function() {
             var index = $(this).siblings('.check-input').data('hintindex');
             var hint = hints[index];
             $(this).fadeOut('slow');
             var a = $(this).parents('.list-item').find('.hint'), b = $(this).siblings('.hint');
-            if (a.length > 0) {
+            if (a.length > 0 && a.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(a);
                 a.fadeIn('slow');
             }
-            else if (b.length > 0) {
+            else if (a.length > 0 && a.children().length > 0) {
+                a.fadeIn('slow');
+            }
+            else if (b.length > 0 && b.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(b);
+                b.fadeIn('slow');
+            }
+            else if (b.length > 0 && b.children().length > 0) {
                 b.fadeIn('slow');
             }
         });
@@ -237,17 +270,23 @@ $(document).ready(function() {
             var hint = hints[index];
             $(this).fadeOut('slow');
             var a = $(this).parents('.list-item').find('.hint'), b = $(this).siblings('.hint');
-            if (a.length > 0) {
+            if (a.length > 0 && a.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(a);
                 a.fadeIn('slow');
             }
-            else if (b.length > 0) {
+            else if (a.length > 0 && a.children().length > 0) {
+                a.fadeIn('slow');
+            }
+            else if (b.length > 0 && b.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(b);
+                b.fadeIn('slow');
+            }
+            else if (b.length > 0 && b.children().length > 0) {
                 b.fadeIn('slow');
             }
         });
     });
-
+    /********************* HIDE/SHOW HINT ICONS **********************/
     $('.hint').each(function() {
         var hint = $(this);
         hint.find('.ion-ios-close').bind('click', function() {
@@ -266,5 +305,14 @@ $(document).ready(function() {
             }
 
         });
+    });
+    /************ POPUP YOUTUBE VIDEOS **************/
+    $('.popup-video').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
     });
 });

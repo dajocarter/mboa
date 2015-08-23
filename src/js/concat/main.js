@@ -16,11 +16,25 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 /*! Respond.js v1.1.0: min/max-width media query polyfill. (c) Scott Jehl. MIT/GPLv2 Lic. j.mp/respondjs  */
 (function(e){e.respond={};respond.update=function(){};respond.mediaQueriesSupported=e.matchMedia&&e.matchMedia("only all").matches;if(respond.mediaQueriesSupported){return}var w=e.document,s=w.documentElement,i=[],k=[],q=[],o={},h=30,f=w.getElementsByTagName("head")[0]||s,g=w.getElementsByTagName("base")[0],b=f.getElementsByTagName("link"),d=[],a=function(){var D=b,y=D.length,B=0,A,z,C,x;for(;B<y;B++){A=D[B],z=A.href,C=A.media,x=A.rel&&A.rel.toLowerCase()==="stylesheet";if(!!z&&x&&!o[z]){if(A.styleSheet&&A.styleSheet.rawCssText){m(A.styleSheet.rawCssText,z,C);o[z]=true}else{if((!/^([a-zA-Z:]*\/\/)/.test(z)&&!g)||z.replace(RegExp.$1,"").split("/")[0]===e.location.host){d.push({href:z,media:C})}}}}u()},u=function(){if(d.length){var x=d.shift();n(x.href,function(y){m(y,x.href,x.media);o[x.href]=true;u()})}},m=function(I,x,z){var G=I.match(/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi),J=G&&G.length||0,x=x.substring(0,x.lastIndexOf("/")),y=function(K){return K.replace(/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,"$1"+x+"$2$3")},A=!J&&z,D=0,C,E,F,B,H;if(x.length){x+="/"}if(A){J=1}for(;D<J;D++){C=0;if(A){E=z;k.push(y(I))}else{E=G[D].match(/@media *([^\{]+)\{([\S\s]+?)$/)&&RegExp.$1;k.push(RegExp.$2&&y(RegExp.$2))}B=E.split(",");H=B.length;for(;C<H;C++){F=B[C];i.push({media:F.split("(")[0].match(/(only\s+)?([a-zA-Z]+)\s?/)&&RegExp.$2||"all",rules:k.length-1,hasquery:F.indexOf("(")>-1,minw:F.match(/\(min\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:F.match(/\(max\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}}j()},l,r,v=function(){var z,A=w.createElement("div"),x=w.body,y=false;A.style.cssText="position:absolute;font-size:1em;width:1em";if(!x){x=y=w.createElement("body");x.style.background="none"}x.appendChild(A);s.insertBefore(x,s.firstChild);z=A.offsetWidth;if(y){s.removeChild(x)}else{x.removeChild(A)}z=p=parseFloat(z);return z},p,j=function(I){var x="clientWidth",B=s[x],H=w.compatMode==="CSS1Compat"&&B||w.body[x]||B,D={},G=b[b.length-1],z=(new Date()).getTime();if(I&&l&&z-l<h){clearTimeout(r);r=setTimeout(j,h);return}else{l=z}for(var E in i){var K=i[E],C=K.minw,J=K.maxw,A=C===null,L=J===null,y="em";if(!!C){C=parseFloat(C)*(C.indexOf(y)>-1?(p||v()):1)}if(!!J){J=parseFloat(J)*(J.indexOf(y)>-1?(p||v()):1)}if(!K.hasquery||(!A||!L)&&(A||H>=C)&&(L||H<=J)){if(!D[K.media]){D[K.media]=[]}D[K.media].push(k[K.rules])}}for(var E in q){if(q[E]&&q[E].parentNode===f){f.removeChild(q[E])}}for(var E in D){var M=w.createElement("style"),F=D[E].join("\n");M.type="text/css";M.media=E;f.insertBefore(M,G.nextSibling);if(M.styleSheet){M.styleSheet.cssText=F}else{M.appendChild(w.createTextNode(F))}q.push(M)}},n=function(x,z){var y=c();if(!y){return}y.open("GET",x,true);y.onreadystatechange=function(){if(y.readyState!=4||y.status!=200&&y.status!=304){return}z(y.responseText)};if(y.readyState==4){return}y.send(null)},c=(function(){var x=false;try{x=new XMLHttpRequest()}catch(y){x=new ActiveXObject("Microsoft.XMLHTTP")}return function(){return x}})();a();respond.update=a;function t(){j(true)}if(e.addEventListener){e.addEventListener("resize",t,false)}else{if(e.attachEvent){e.attachEvent("onresize",t)}}})(this);;$(document).ready(function() {
     //##### send add record Ajax request to results.php #########
-    $(".list-group-item.buttons").on('click', '#quizSubmit', function() {
+    $('#quizSubmit').click(function(e) {
+        e.preventDefault();
     	// Grade quiz
         var userChoices = []; 
         var answers = ["B", "C", "C", "B", "A"];
+
+        for (var i = 0; i < answers.length; i++) {
+            var str = 'q' + (i+1) + '-' + answers[i];
+            var selector = ".list-group-item-text[for='" + str + "']";
+            $(selector).addClass("correct");
+        };
+
+        // Scroll to top
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+
+        // Hide the buttons div since we're done with them now
+        $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
         
+        /*
         $("input:checked").each(function (index) {
         	var choice = "q" + (index + 1) + "=" + $(this).val();
 
@@ -30,6 +44,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
         		$(this).parent('label').addClass("correct");
         	}
         });
+
         // Construct a post data structure
         var data = userChoices.join("&");
         var thisButton = $(this);
@@ -46,11 +61,11 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
         })
         .fail(function (xhr, ajaxOptions, thrownError) {
             alert(thrownError);
-        });
+        }); */
     });
 
 	//##### Send get Ajax request to results.php #########
-    $(".list-group-item.buttons").on('click', '#viewResults', function() {
+    /*$(".list-group-item.buttons").on('click', '#viewResults', function() {
     	$.get("get-results.php", function(response) {
     		// Scroll to top
     		$("html, body").animate({ scrollTop: 0 }, "slow");
@@ -91,6 +106,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
         $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
     });
 
+    /************ GRADE THE TABLE *************/
     $('td input').bind('click', function() {
         console.log("hello");
         var answers = ["high", "low", "normal", "normal"];
@@ -109,28 +125,28 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 
     $('.check-input').each(function() {
         var answers = [
-            "Simple cuboidal epithelium", // 0
+            ["Simple cuboidal epithelium", "Simple cuboidal"], // 0
             "Subcapsular sinus", 
-            "Lymphoid follicle", 
+            ["lymph follicle", "lymph nodule", "lymphoid follicle", "lymphoid nodule"], 
             "Cortex", 
             "Paracortex", 
             "Medulla", // 5
-            "RANKL", 
+            ["RANKL", "RANK Ligand", "RANK ligand", "Rank ligand"], 
             "Medulla",
             "Capsule",
             "Cortex",
             "Septa", // 10
             "Tonsils", 
-            "Appendix", 
-            "Peyer’s patches",
+            ["appendix", "Vermiform appendix", "vermiform appendix"], 
+            ["Peyer's patches", "Peyers patches", "peyers patches", "peyer's patches", "Peyer's Patches"],
             "Bone marrow", 
-            "Ctyokines", // 15
+            ["Cytokines", "cytokines"], // 15
             "Basophilic",
             "Form boundaries",
             "APCs",
             "Cytoreticulum",
             "Cytokine secretion", // 20
-            "High endothelial venules",
+            ["High endothelial venules", "HEVs", "HEV"],
             "Stratified squamous epithelium",
             "Stave cells",
             "Thymus",
@@ -138,17 +154,17 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             "Marginal zone", 
             "Central arteriole",
             "Germinal center",
-            ["lymphoid nodule", "follicle"],
+            ["lymphoid nodule", "follicle"], // Repeat of #2
             "Stratified squamous epithelium", // 30
             "Crypt",
             "White pulp",
             "Red pulp",
             "Trabecula",
             "Eosin", // 35
-            ["Silver stain", "periodic acid-Schiff (PAS) reaction", "PAS reaction"],
+            ["Silver stain", "periodic acid-Schiff reaction", "PAS reaction"],
             "sinuses",
             "cords",
-            ["High endothelial venules", "HEVs"],
+            ["High endothelial venules", "HEVs"], // Repeat of #21
             "Afferent lymphatic vessels" // 40
         ];
 
@@ -181,7 +197,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             "Multiple layers with flat apical cells", // 25,
             "Filters blood destroying old erythrocytes, other blood cells, and particulate debris from the blood (cells flowing through open circulation in the spleen must squeeze past the unique endothelial (stave) cells of sinusoids to re-enter circulation. Those unable to do so are engulfed by macrophages).",
             "Provides germinal centers in white pulp for B cell proliferation and differentiation in response to antigen presentation producing immunological response against blood-borne antigens",
-            "Site of hematopoiesis during fetal development (yolk sac &rarr; liver/spleen &rarr; bonemarrow)", // 28
+            "Site of hematopoiesis during fetal development (yolk sac &rarr; liver/spleen &rarr; bone marrow)", // 28
             "White pulp provides a site for antigen presentation and proliferation/differentiation of lymphocytes. White pulp consists of masses of T cells surrounding a central arteriole forming periarteriolar lymphoid sheath (PALS) and the lymphoid nodules of B-cells.",
             "Red pulp is composed of reticular tissue containing vascular sinusoids and splenic cords (of Bilroth = densely packed lymphocytes, macrophages, reticular fibroblasts). The red pulp is filled with blood cells of all types and the spleen filters the blood through the red pulp removing particulate debris and old (~120 day life span!) or damaged blood cells.",
             "Splenic artery &rarr; trabecular artery &rarr; central arteriole &rarr; penicillar arteriole &rarr; splenic sinusoids &rarr; trabecular veins &rarr; splenic vein",
@@ -202,12 +218,14 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             "The medulla of the lymph node is composed of medullary cords packed with cells (T-lymphocytes, B-lymphocytes, plasma cells, macrophages, dendritic cells, and reticular cells) and endothelial lined medullary sinuses that contain efferent lymph and fewer cells draining toward the efferent lymphatic vessel at the lymph node hilum.",
             "Removal of lymph nodes and formation of scar tissue forms a blockage to the flow of lymph. Arm mobility and sensory loss may also be factors associated with lymphedema."
         ];
-
+        /********************** GRADE INPUTS *************************/
         $(this).bind('input keyup click', function() {
             var index = $(this).data('ansindex');
             var ans = answers[index];
+            var choice = $(this).val();
+            
             if ($.type(ans) === 'string') {
-                if ($(this).val().toUpperCase() === ans.toUpperCase()) {
+                if (choice === ans) {
                     $(this).addClass('correct');
                     $(this).siblings('.ion-ios-help').hide();
                     $(this).siblings('.ion-ios-checkmark').show();
@@ -220,7 +238,16 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
                 }
             }
             else if ($.type(ans) === 'array') {
-                if ($.inArray($(this).val(), ans) > -1) {
+                var index = -1;
+                ans.some(function(elt, idx) {
+                    console.log('choice is', choice);
+                    console.log('option is', elt);
+                    if (choice === elt) {
+                        index = idx;
+                        return true;
+                    }
+                });
+                if (index > -1) {
                     $(this).addClass('correct');
                     $(this).siblings('.ion-ios-help').hide();
                     $(this).siblings('.ion-ios-checkmark').show();
@@ -232,18 +259,24 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
                 }
             }
         });
-        
+        /************************** SHOW HINT **************************/
         $(this).siblings('.ion-ios-help').bind('click', function() {
             var index = $(this).siblings('.check-input').data('hintindex');
             var hint = hints[index];
             $(this).fadeOut('slow');
             var a = $(this).parents('.list-item').find('.hint'), b = $(this).siblings('.hint');
-            if (a.length > 0) {
+            if (a.length > 0 && a.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(a);
                 a.fadeIn('slow');
             }
-            else if (b.length > 0) {
+            else if (a.length > 0 && a.children().length > 0) {
+                a.fadeIn('slow');
+            }
+            else if (b.length > 0 && b.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(b);
+                b.fadeIn('slow');
+            }
+            else if (b.length > 0 && b.children().length > 0) {
                 b.fadeIn('slow');
             }
         });
@@ -253,17 +286,23 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             var hint = hints[index];
             $(this).fadeOut('slow');
             var a = $(this).parents('.list-item').find('.hint'), b = $(this).siblings('.hint');
-            if (a.length > 0) {
+            if (a.length > 0 && a.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(a);
                 a.fadeIn('slow');
             }
-            else if (b.length > 0) {
+            else if (a.length > 0 && a.children().length > 0) {
+                a.fadeIn('slow');
+            }
+            else if (b.length > 0 && b.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(b);
+                b.fadeIn('slow');
+            }
+            else if (b.length > 0 && b.children().length > 0) {
                 b.fadeIn('slow');
             }
         });
     });
-
+    /********************* HIDE/SHOW HINT ICONS **********************/
     $('.hint').each(function() {
         var hint = $(this);
         hint.find('.ion-ios-close').bind('click', function() {
@@ -282,5 +321,14 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             }
 
         });
+    });
+    /************ POPUP YOUTUBE VIDEOS **************/
+    $('.popup-video').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
     });
 });

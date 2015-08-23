@@ -12,9 +12,9 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <i class="input icon ion-alert-circled"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
-<div class="grid-container clearfix">
+<div class="grid-container margin clearfix">
 	<div class="list-item half first">
-		<p>You alleviate your patient’s unease by explaining that the margins of her positive lymph nodes were free of disease after the SNL biopsy and a CAD is not necessary. As an additional measure, you advise for a bone and liver scan. Luckily no additional metastasis was seen.</p>
+		<p class="margin-top">You alleviate your patient’s unease by explaining that the margins of her positive lymph nodes were free of disease after the SNL biopsy and a CAD is not necessary. As an additional measure, you advise for a bone and liver scan. Luckily no additional metastasis was seen.</p>
 
 		<p class="bold">From the original histology slide, what vessels were infiltrated with tumor cells?</p>
 		<div>
@@ -22,13 +22,16 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 			<i class="input icon ion-ios-checkmark"></i>
 			<div class="hint"><i class="icon ion-ios-close"></i></div>
 		</div>
-		<div>
+		<div class="margin-top">
 			<input type="text" class="check-input" data-ansindex="40">
 			<i class="input icon ion-ios-checkmark"></i>
 			<div class="hint"><i class="icon ion-ios-close"></i></div>
 		</div>
 	</div>
-	<img src="<?php echo BASE_URL; ?>assets/img/SL-LN-tumor-cells.png" class="img-responsive threecol last" alt="">
+	<figure class="list-item last half">
+		<img src="<?php echo BASE_URL; ?>assets/img/SL-LN-tumor-cells.png" class="img-responsive" alt="">
+		<figcaption></figcaption>
+	</figure>
 </div>
 
 <p>Your eventual diagnosis is infiltrating ductal carcinoma with micrometastasis. Based on the case presented, select your patient’s stage of breast cancer.</p>

@@ -25,7 +25,10 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 </div>
 
 <p><span class="bold">Periarteriolar lymphoid sheath (PALS)</span> surrounds the central arteriole playing an important role in immunological surveillance.</p>
-<img src="<?php echo BASE_URL; ?>assets/img/collagen.png" class="img-responsive" alt="collagen">
+<figure>
+	<img src="<?php echo BASE_URL; ?>assets/img/collagen.png" class="img-responsive" alt="collagen">
+	<figcaption></figcaption>
+</figure>
 
 <p class="bold">PALS are formed <span class="underline">mainly</span> from:</p>
 <div class="grid-container clearfix">

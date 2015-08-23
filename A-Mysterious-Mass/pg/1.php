@@ -7,7 +7,10 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 ?>
 
 <p>A 33-year-old male presents with ptosis (drooping eyelid), trouble masticating and swallowing, and notices he feels fatigued quickly. An anterior mediastinal mass, 3.5cm in diameter, was found after a CT scan. Histological analysis after biopsy resulted in the slide below.</p>
-<img src="<?php echo BASE_URL; ?>assets/img/mm-pg1.png" class="img-responsive" alt="Responsive image">
+<figure>
+	<img src="<?php echo BASE_URL; ?>assets/img/mm-pg1.png" class="img-responsive" alt="Responsive image">
+	<figcaption></figcaption>
+</figure>
 <p>You conclude the mass originated from:</p>
 <div class="grid-container clearfix">
 	<div class="list-item first fourth tablet-first-half">

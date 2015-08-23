@@ -10,14 +10,21 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <p>You realize the patient may become immunologically compromised by this injury from damage to the white pulp.</p>
 
-<p class="bold">What is white pulp and how does it participate in immunity?</p>
+<p class="bold margin-top">What is white pulp and how does it participate in immunity?</p>
 <textarea class="check-input" data-hintindex="29"></textarea>
 <i class="input icon ion-alert-circled"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
-<p>The patient has lost a massive amount of blood and his vital signs are as follows:</p>
+<p class="margin-top">The patient has lost a massive amount of blood and his vital signs are as follows:</p>
 <table>
 	<thead>
+		<tr class='scaffolding'>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
 		<tr>
 			<th rowspan="2">Vitals</th>
 			<th rowspan="2">Recorded</th>
@@ -25,38 +32,45 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 		</tr>
 		<tr>
 			<th>High</th>
-			<th>Low</th>
 			<th>Normal</th>
+			<th>Low</th>
 		</tr>
 	</thead>
 	<tbody>
+		<tr class='scaffolding'>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
 		<tr>
 			<td>Heart Rate</td>
 			<td>104 bpm</td>
 			<td><input type="radio" name="0" value="high"></td>
-			<td><input type="radio" name="0" value="low"></td>
 			<td><input type="radio" name="0" value="normal"></td>
+			<td><input type="radio" name="0" value="low"></td>
 		</tr>
 		<tr>
 			<td>Blood Pressure</td>
 			<td>84/52 mm Hg</td>
 			<td><input type="radio" name="1" value="high"></td>
-			<td><input type="radio" name="1" value="low"></td>
 			<td><input type="radio" name="1" value="normal"></td>
+			<td><input type="radio" name="1" value="low"></td>
 		</tr>
 		<tr>
 			<td>Respiratory Rate</td>
 			<td>18 breaths per minute</td>
 			<td><input type="radio" name="2" value="high"></td>
-			<td><input type="radio" name="2" value="low"></td>
 			<td><input type="radio" name="2" value="normal"></td>
+			<td><input type="radio" name="2" value="low"></td>
 		</tr>
 		<tr>
 			<td>Body Tempurature</td>
 			<td>98.3&deg; F</td>
 			<td><input type="radio" name="3" value="high"></td>
-			<td><input type="radio" name="3" value="low"></td>
 			<td><input type="radio" name="3" value="normal"></td>
+			<td><input type="radio" name="3" value="low"></td>
 		</tr>
 		<tr>
 			<td>Physical Appearance</td>
@@ -66,14 +80,14 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	</tbody>
 </table>
 
-<p class="bold">Based on this information, and the previous histological analysis, you decide to:</p>
+<p class="bold margin">Based on this information, and the previous histological analysis, you decide to:</p>
 
 <div class="grid-container clearfix">
 	<div class="list-item first half">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/CTscan.php" class="sixcol first">Perform a blood transfusion and CT scan the abdomen and pelvis</a>
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/operate.php" class="sixcol first">Perform a blood transfusion and CT scan the abdomen and pelvis</a>
 	</div>
 	<div class="list-item last half">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/operate.php" class="sixcol last">Rush the patient to the operating room for exploratory surgery and possible splenectomy</a>
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/CTscan.php" class="sixcol last">Rush the patient to the operating room for exploratory surgery and possible splenectomy</a>
 	</div>
 </div>
 

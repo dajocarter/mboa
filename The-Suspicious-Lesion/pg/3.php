@@ -7,7 +7,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 ?>
 
 <p>Yes! The primary lymphoid organs include the bone marrow and thymus, while secondary lymphoid organs include: spleen, lymph nodes, and MALT. Dense aggregations of MALT can be found in:</p>
-<div class="grid-container clearfix">
+<div class="grid-container margin-top clearfix">
 	<div class="list-item first third">
 		<label>1.) <input type="text" class="check-input" data-ansindex="11" data-hintindex="9"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
@@ -22,11 +22,14 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	</div>
 </div>
 
-<p>A closer view of this tissue with another stain reveals the following:</p>
-<img src="<?php echo BASE_URL; ?>assets/img/collagen.png" class="img-responsive" alt="collagen">
+<p class="margin-top">A closer view of this tissue with another stain reveals the following:</p>
+<figure>
+	<img src="<?php echo BASE_URL; ?>assets/img/collagen.png" class="img-responsive" alt="collagen">
+	<figcaption></figcaption>
+</figure>
 
-<p class="bold">The dark black lines represent:</p>
-<div class="grid-container clearfix">
+<p class="bold margin-top">The dark black lines represent:</p>
+<div class="grid-container margin-top clearfix">
 	<div class="list-item third first">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type1.php" class="btn btn-default">Type I Collagen</a>
 	</div>

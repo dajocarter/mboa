@@ -12,6 +12,6 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	<i class="input icon ion-alert-circled"></i>
 	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
-<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/3.php">Go back and reevaluate the dark black lines</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/3.php">Go back and reevaluate the dark black lines</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>
