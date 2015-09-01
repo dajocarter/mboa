@@ -12,9 +12,9 @@ include(ROOT_PATH . "templates/header.php"); ?>
     <li>
       <a href="/Learning-Objectives">Learning Objectives</a>
     </li>
-    <li>
+    <!--li>
       <a href="/Pre-Test">Pre-Test</a>
-    </li>
+    </li-->
     <li>Cases
       <ul>
         <li>
