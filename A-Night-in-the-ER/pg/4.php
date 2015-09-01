@@ -12,8 +12,8 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <p class="bold">What is red pulp and what is its function?</p>
 <textarea class="check-input" data-hintindex="30"></textarea>
-<i class="input icon ion-alert-circled"></i>
-<div class="hint"><i class="icon ion-ios-close"></i></div>
+<!--i class="input icon ion-alert-circled"></i>
+<div class="hint"><i class="icon ion-ios-close"></i></div-->
 
 <p class="bold">Which of the following is the correct order of blood flow in <span class="italic underline">open circulation</span> through the spleen?</p>
 

@@ -11,8 +11,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 		<p>Awesome! Those lymphocytes that recognize MHC pass the positive selection test in the cortex and move onto the negative selection (clonal deletion) test in the medulla.</p>
 		<p class="bold">What is negative selection?</p> 
 		<textarea class="check-input" data-hintindex="22"></textarea>
-		<i class="input icon ion-alert-circled"></i>
-		<div class="hint"><i class="icon ion-ios-close"></i></div>
+		<!--i class="input icon ion-alert-circled"></i>
+		<div class="hint"><i class="icon ion-ios-close"></i></div-->
 	</div>
 	<div class="list-item last half">
 		<figure>
@@ -30,8 +30,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <p class="bold">What is the difference between <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_123.html">Slide 123 Thymus, H&amp;E</a> and <a target="_blank" href="http://medsci.indiana.edu/histo/virtual/msci_126.html">Slide 126 Thymus, H&amp;E</a>?</p>
 <div class="margin">
 	<textarea class="check-input" data-hintindex="23"></textarea>
-	<i class="input icon ion-alert-circled"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div>
+	<!--i class="input icon ion-alert-circled"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div-->
 </div>
 <div class="grid-container margin clearfix">
 	<div class="list-item first half">

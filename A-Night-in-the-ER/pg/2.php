@@ -29,16 +29,19 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <div class="grid-container clearfix">
 	<div class="list-item first third">
-		<label>1.) <textarea class="check-input" data-hintindex="26"></textarea><i class="input icon ion-alert-circled"></i></label>
-		<div class="hint"><i class="icon ion-ios-close"></i></div>
+		<label>1.) <textarea class="check-input" data-hintindex="26"></textarea>
+		<!--i class="input icon ion-alert-circled"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div-->
 	</div>
 	<div class="list-item third">
-		<label>2.) <textarea class="check-input" data-hintindex="27"></textarea><i class="input icon ion-alert-circled"></i></label>
-		<div class="hint"><i class="icon ion-ios-close"></i></div>
+		<label>2.) <textarea class="check-input" data-hintindex="27"></textarea>
+		<!--i class="input icon ion-alert-circled"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div-->
 	</div>
 	<div class="list-item last third">
-		<label>3.) <textarea class="check-input" data-hintindex="28"></textarea><i class="input icon ion-alert-circled"></i></label>
-		<div class="hint"><i class="icon ion-ios-close"></i></div>
+		<label>3.) <textarea class="check-input" data-hintindex="28"></textarea>
+		<!--i class="input icon ion-alert-circled"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div-->
 	</div>
 </div>
 

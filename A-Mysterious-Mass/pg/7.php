@@ -22,8 +22,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <p class="bold">Explain how a T-lymphocyte problem from the thymus contribute to antibody production that is targeting muscle seen in myasthenia gravis.</p>
 <textarea class="check-input" data-hintindex="24"></textarea>
-<i class="input icon ion-alert-circled"></i>
-<div class="hint"><i class="icon ion-ios-close"></i></div>
+<!--i class="input icon ion-alert-circled"></i>
+<div class="hint"><i class="icon ion-ios-close"></i></div-->
 
 
 <p class="back-link">You advise for a <a class="popup-video" href="http://www.youtube.com/watch?v=VylU8SFE6R4">thymectomy</a> (complete surgical resection of the thymus). The thoracoscopic operation was successful. Surgical margins were negative and there was no evidence of macroscopic or microscopic capsular invasion. Intravenous infusion of immunoglobulin G (IgG) helped to remove circulating pathogenic antibodies and the patient improved.</p>

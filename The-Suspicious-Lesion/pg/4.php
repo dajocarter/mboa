@@ -18,8 +18,8 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <p class="margin-top">Identify cells embedded in this reticulin meshwork of the lymph node and indicate their functional significance to the body.</p>
 <div>
 	<textarea class="check-input" data-hintindex="39"></textarea>
-	<i class="input icon ion-alert-circled"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div>
+	<!--i class="input icon ion-alert-circled"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div-->
 </div>
 
 <p class="bold margin-top">Lymph from breast tissue drains into the:</p>

@@ -10,8 +10,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <p class="bold margin-top">Why is this system slow to respond initially but faster with subsequent infections?</p> 
 <div>
 	<textarea class="check-input" data-hintindex="20"></textarea>
-	<i class="icon ion-alert-circled input"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div>
+	<!--i class="icon ion-alert-circled input"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div-->
 </div>
 
 
@@ -41,8 +41,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <p class="bold margin-top">What events occur during positive selection?</p> 
 <div>
 	<textarea class="check-input" data-hintindex="21"></textarea>
-	<i class="icon ion-alert-circled input"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div>
+	<!--i class="icon ion-alert-circled input"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div-->
 </div>
 
 

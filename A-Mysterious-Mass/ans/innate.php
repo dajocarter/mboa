@@ -10,8 +10,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <p class="bold">List examples of innate immunity throughout the body.</p>
 <div>
 	<textarea class="check-input" data-hintindex="19"></textarea>
-	<i class="icon ion-alert-circled input"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div>
+	<!--i class="icon ion-alert-circled input"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div-->
 </div>
 
 <a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/4.php">Go back and reflect on lymphocytes and immunity</a>

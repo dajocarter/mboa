@@ -9,8 +9,8 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <p>Correct! Lymphedema is an accumulation of interstitial fluid in the affected region.</p>
 <p class="bold">How would a complete axillary node dissection (CAD) lead to lymphedema?</p>
 <textarea class="check-input" data-hintindex="47"></textarea>
-<i class="input icon ion-alert-circled"></i>
-<div class="hint"><i class="icon ion-ios-close"></i></div>
+<!--i class="input icon ion-alert-circled"></i>
+<div class="hint"><i class="icon ion-ios-close"></i></div-->
 
 <div class="grid-container margin clearfix">
 	<div class="list-item half first">

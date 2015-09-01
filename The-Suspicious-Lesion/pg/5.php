@@ -16,15 +16,15 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <p class="bold margin-top">What are the functions of lymph nodes?</p>
 <div>
 	<textarea class="check-input" data-hintindex="40"></textarea>
-	<i class="input icon ion-alert-circled"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div>
+	<!--i class="input icon ion-alert-circled"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div-->
 </div>
 
 <p class="bold margin-top">The patient’s slide exhibits numerous structures seen at label A. What is this structure and how did it form?</p>
 <div>
 	<textarea class="check-input" data-hintindex="41"></textarea>
-	<i class="input icon ion-alert-circled"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div>
+	<!--i class="input icon ion-alert-circled"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div-->
 </div>
 <figure>
 	<img src="<?php echo BASE_URL; ?>assets/img/tsl-pg5.jpg" class="img-responsive" alt="Secondary lymphoid follicle">
