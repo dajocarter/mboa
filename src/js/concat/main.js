@@ -125,28 +125,28 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 
     $('.check-input').each(function() {
         var answers = [
-            ["Simple cuboidal epithelium", "Simple cuboidal"], // 0
-            "Subcapsular sinus", 
-            ["lymph follicle", "lymph nodule", "lymphoid follicle", "lymphoid nodule"], 
-            "Cortex", 
-            "Paracortex", 
-            "Medulla", // 5
+            ["Simple cuboidal epithelium", "Simple cuboidal", "simple cuboidal epithelium", "simple cuboidal", "Simple Cuboidal Epithelium", "Simple Cuboidal"], // 0
+            ["Subcapsular sinus", "subcapsular sinus", "Subcapsular Sinus"], 
+            ["lymph follicle", "lymph nodule", "lymphoid follicle", "lymphoid nodule", "Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule", "Lymph Follicle", "Lymph Nodule", "Lymphoid Follicle", "Lymphoid Nodule"], 
+            ["Cortex", "cortex"], 
+            ["Paracortex", "paracortex"], 
+            ["Medulla", "medulla"], // 5
             ["RANKL", "RANK Ligand", "RANK ligand", "Rank ligand"], 
-            "Medulla",
-            "Capsule",
-            "Cortex",
-            "Septa", // 10
-            "Tonsils", 
-            ["appendix", "Vermiform appendix", "vermiform appendix"], 
+            ["Medulla", "medulla"],
+            ["Capsule", "capsule"],
+            ["Cortex", "cortex"],
+            ["Septa", "septa"], // 10
+            ["Tonsil", "tonsil", "Tonsils", "tonsils"], 
+            ["Appendix", "appendix", "Vermiform appendix", "Vermiform Appendix", "vermiform appendix"], 
             ["Peyer's patches", "Peyers patches", "peyers patches", "peyer's patches", "Peyer's Patches"],
-            "Bone marrow", 
+            ["Bone marrow", "bone marrow", "Bone Marrow"], 
             ["Cytokines", "cytokines"], // 15
-            "Basophilic",
+            ["Basophilic", "basophilic"],
             "Form boundaries",
             "APCs",
             "Cytoreticulum",
             "Cytokine secretion", // 20
-            ["High endothelial venules", "HEVs", "HEV"],
+            ["High endothelial venules", "High endothelial venule", "high endothelial venules", "high endothelial venule", "High Endothelial Venules", "High Endothelial Venule", "HEVs", "HEV"],
             "Stratified squamous epithelium",
             "Stave cells",
             "Thymus",
@@ -182,12 +182,12 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             "A diverticulum off the first part of the large intestine", // 10
             "In the submucosa of the ileum, the terminal part of the small intestine",
             "One of two locations that aid the body in developing central tolerance by producing mature, immunocompentent T-lymphocytes.",
-            "Name for small signaling proteins", //13
+            "Name for small signaling proteins", // 13
             "Thymocytes have abundant RER and Golgi for synthesizing TCR and CD4 and CD8 glycoproteins and therefore appear as densely packed basophilic clusters of cells.",
-            "Blood-thymus barrier – squamous TECs joined by desmosomes and tight junctions line microvasculature, isolating the cortex (TECs + endothelial cells of BV + pericytes = BTB) – prevents unregulated exposure of thymocytes to antigens. Also, squamous TECs linked by tight junctions forming a functional sheet between these regions k/a: corticomedullary barrier",
-            "Stellate TECs are also APCs expressing MHC I and II presenting antigens to thymocytes", // 16
-            "Stellate TECs joined by desmosomes form a cytoreticulum (supportive structure) to which macrophages and developing lymphocytes attach instead of reticulin fibers",
-            "Thymic (Hassall’s) corpuscles secrete cytokines (diverse group of peptides and glycoproteins with paracrine action) for T-cell development",
+            "Form boundaries", // 15
+            "APCs", // 16
+            "Cytoreticulum", // 17
+            "Cytokine secretion", // 18
             "Skin, mucous membranes (GI, respiratory, and UG tracts), and cells including: neutrophils, NK (natural killer) cells, leukocytes (excluding lymphocytes) and their secretions:<ul><li>HCl and organic acids (lowers local pH killing microorganisms directly or inhibiting their growth)</li><li>defensins (cationic polypeptides that disrupt bacteria cell walls)</li><li>lysozyme (hydrolyzes bacterial cell walls)</li><li>complement (proteins in blood plasma, mucus, and macrophages that react with bacterial surface components)</li><li>interferons (paracrine factors from leukocytes and virus-infected cells signaling NK cells to kill them).</li></ul>",
             "This system is slow to respond when initially presented with a foreign antigen by APCs, however, a population of memory lymphocytes produced from the initial exposure rapidly combats subsequent infections.",
             "Cells are presented with self- and foreign antigens by epithelioreticular cells. If lymphocytes recognize self-MHC displaying the self- and foreign antigens, they survive.",

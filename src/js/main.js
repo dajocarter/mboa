@@ -109,28 +109,28 @@ $(document).ready(function() {
 
     $('.check-input').each(function() {
         var answers = [
-            ["Simple cuboidal epithelium", "Simple cuboidal"], // 0
-            "Subcapsular sinus", 
-            ["lymph follicle", "lymph nodule", "lymphoid follicle", "lymphoid nodule"], 
-            "Cortex", 
-            "Paracortex", 
-            "Medulla", // 5
+            ["Simple cuboidal epithelium", "Simple cuboidal", "simple cuboidal epithelium", "simple cuboidal", "Simple Cuboidal Epithelium", "Simple Cuboidal"], // 0
+            ["Subcapsular sinus", "subcapsular sinus", "Subcapsular Sinus"], 
+            ["lymph follicle", "lymph nodule", "lymphoid follicle", "lymphoid nodule", "Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule", "Lymph Follicle", "Lymph Nodule", "Lymphoid Follicle", "Lymphoid Nodule"], 
+            ["Cortex", "cortex"], 
+            ["Paracortex", "paracortex"], 
+            ["Medulla", "medulla"], // 5
             ["RANKL", "RANK Ligand", "RANK ligand", "Rank ligand"], 
-            "Medulla",
-            "Capsule",
-            "Cortex",
-            "Septa", // 10
-            "Tonsils", 
-            ["appendix", "Vermiform appendix", "vermiform appendix"], 
+            ["Medulla", "medulla"],
+            ["Capsule", "capsule"],
+            ["Cortex", "cortex"],
+            ["Septa", "septa"], // 10
+            ["Tonsil", "tonsil", "Tonsils", "tonsils"], 
+            ["Appendix", "appendix", "Vermiform appendix", "Vermiform Appendix", "vermiform appendix"], 
             ["Peyer's patches", "Peyers patches", "peyers patches", "peyer's patches", "Peyer's Patches"],
-            "Bone marrow", 
+            ["Bone marrow", "bone marrow", "Bone Marrow"], 
             ["Cytokines", "cytokines"], // 15
-            "Basophilic",
+            ["Basophilic", "basophilic"],
             "Form boundaries",
             "APCs",
             "Cytoreticulum",
             "Cytokine secretion", // 20
-            ["High endothelial venules", "HEVs", "HEV"],
+            ["High endothelial venules", "High endothelial venule", "high endothelial venules", "high endothelial venule", "High Endothelial Venules", "High Endothelial Venule", "HEVs", "HEV"],
             "Stratified squamous epithelium",
             "Stave cells",
             "Thymus",
