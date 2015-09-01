@@ -6,7 +6,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 ?>
 
-<p>Lymph nodes do have a capsule extending trabeculae into the parenchyma that is densely packed with lymphocytes. Lymph nodes also have morphologically distinct regions, however notice the lack of a paracortex, medullary cords, medullary sinuses, and lymphoid follicles in the patient’s slide that are seen in lymph nodes. 
+<p>Lymph nodes have a capsule extending trabeculae into the parenchyma that is densely packed with lymphocytes. Lymph nodes also have morphologically distinct regions, however notice the lack of a paracortex, medullary cords, medullary sinuses, and lymphoid follicles in the patient’s slide that are seen in lymph nodes. 
 
 <span class="bold">Can you label the following lymph node slide?</span></p>
 <figure>

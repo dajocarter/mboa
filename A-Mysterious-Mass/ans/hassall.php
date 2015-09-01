@@ -6,7 +6,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 ?>
 
-<p>Hassall’s corpuscles are large (up to 100 um!) keratinized concentric aggregates of thymic epithelial cells found in the medulla. Although their function is not completely understood, they do secrete </p>
+<p>Hassall’s corpuscles are large (up to 100 um!), keratinized concentric aggregates of thymic epithelial cells found in the medulla. Although their function is not completely understood, they do secrete </p>
 <input type="text" class="check-input" data-ansindex="15" data-hintindex="13">
 <i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>

@@ -46,7 +46,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 </div>
 
 
-<p class="bold margin-top">If lymphocytes pass the positive selection test in the cortex, they move onto their next test in the:</p>
+<p class="bold margin-top">If lymphocytes pass the positive selection test in the thymic cortex, they move onto their next test in the:</p>
 
 <div class="grid-container margin-top clearfix">
 	<div class="list-item third first">

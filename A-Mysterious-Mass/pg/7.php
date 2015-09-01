@@ -20,7 +20,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	</div>
 </div>
 
-<p class="bold">Explain how a T-lymphocyte problem from the thymus contribute to antibody production that is targeting muscle seen in myasthenia gravis.</p>
+<p class="bold">Explain how a T-lymphocyte problem from the thymus contributes to antibody production that is targeting muscle seen in myasthenia gravis.</p>
 <textarea class="check-input" data-hintindex="24"></textarea>
 <!--i class="input icon ion-alert-circled"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div-->

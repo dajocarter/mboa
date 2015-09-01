@@ -6,7 +6,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 ?>
 
-<p>The thyroid gland is composed of numerous epithelial <span class="italic">thyroid follicles</span> each composed of a central <span class="italic">colloid</span>-filled lumen (containing large gelatinous proteins known as thyroglobulin, which are precursors to thyroid hormones) surrounded by <span class="italic">follicular cells</span>. <span class="italic">Parafollicular (C) cells</span> are located within and between follicles and secrete <span class="italic">calcitonin</span> in response to high blood calcium levels.</p>
+<p>The thyroid gland is composed of numerous epithelial <span class="italic">thyroid follicles</span> each composed of a central colloid-filled lumen (containing large gelatinous proteins known as thyroglobulin, which are precursors to thyroid hormones) surrounded by <span class="italic">follicular cells</span>. <span class="italic">Parafollicular (C) cells</span> are located within and between follicles and secrete <span class="italic">calcitonin</span> in response to high blood calcium levels.</p>
 <p class="bold">Follicular cells are what specific type of epithelium?</p>
 <input type="text" class="check-input" data-ansindex="0"><i class="icon ion-ios-checkmark"></i>
 <figure>

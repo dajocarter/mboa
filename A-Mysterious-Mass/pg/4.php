@@ -35,7 +35,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <p class="margin-top">Thymic epithelial cells surround differentiating thymocytes (T-lymphoblasts) in the cortex. <br>
 
-<span class="bold">Lymphocytes are considered a component of:</span></p>
+<span class="bold">Lymphoblasts are considered a component of:</span></p>
 
 <div class="grid-container margin-top clearfix">
 	<div class="list-item third first">
