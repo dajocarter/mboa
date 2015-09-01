@@ -32,7 +32,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	</div>
 </div>
 
-<p class="bold margin-top">The thymus is considered a ________________ lymphoid organ.</p>
+<p class="bold margin-top-lg">The thymus is considered a ________________ lymphoid organ.</p>
 <div class="grid-container margin-top clearfix">
 	<div class="list-item third first">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/primary.php" class="btn btn-default">Primary</a>
