@@ -166,12 +166,12 @@ $(document).ready(function() {
             "A diverticulum off the first part of the large intestine", // 10
             "In the submucosa of the ileum, the terminal part of the small intestine",
             "One of two locations that aid the body in developing central tolerance by producing mature, immunocompentent T-lymphocytes.",
-            "Name for small signaling proteins", //13
+            "Name for small signaling proteins", // 13
             "Thymocytes have abundant RER and Golgi for synthesizing TCR and CD4 and CD8 glycoproteins and therefore appear as densely packed basophilic clusters of cells.",
-            "Blood-thymus barrier – squamous TECs joined by desmosomes and tight junctions line microvasculature, isolating the cortex (TECs + endothelial cells of BV + pericytes = BTB) – prevents unregulated exposure of thymocytes to antigens. Also, squamous TECs linked by tight junctions forming a functional sheet between these regions k/a: corticomedullary barrier",
-            "Stellate TECs are also APCs expressing MHC I and II presenting antigens to thymocytes", // 16
-            "Stellate TECs joined by desmosomes form a cytoreticulum (supportive structure) to which macrophages and developing lymphocytes attach instead of reticulin fibers",
-            "Thymic (Hassall’s) corpuscles secrete cytokines (diverse group of peptides and glycoproteins with paracrine action) for T-cell development",
+            "Form boundaries", // 15
+            "APCs", // 16
+            "Cytoreticulum", // 17
+            "Cytokine secretion", // 18
             "Skin, mucous membranes (GI, respiratory, and UG tracts), and cells including: neutrophils, NK (natural killer) cells, leukocytes (excluding lymphocytes) and their secretions:<ul><li>HCl and organic acids (lowers local pH killing microorganisms directly or inhibiting their growth)</li><li>defensins (cationic polypeptides that disrupt bacteria cell walls)</li><li>lysozyme (hydrolyzes bacterial cell walls)</li><li>complement (proteins in blood plasma, mucus, and macrophages that react with bacterial surface components)</li><li>interferons (paracrine factors from leukocytes and virus-infected cells signaling NK cells to kill them).</li></ul>",
             "This system is slow to respond when initially presented with a foreign antigen by APCs, however, a population of memory lymphocytes produced from the initial exposure rapidly combats subsequent infections.",
             "Cells are presented with self- and foreign antigens by epithelioreticular cells. If lymphocytes recognize self-MHC displaying the self- and foreign antigens, they survive.",

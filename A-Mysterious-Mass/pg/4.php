@@ -16,19 +16,19 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <p class="bold">Thymic epithelial cells (TECs) in the cortex have 4 important functions:</p>
 <div class="grid-container clearfix">
 	<div class="list-item first fourth tablet-first-half">
-		<label>1.) <input type="text" class="check-input" data-ansindex="17"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<label>1.) <input type="text" class="check-input" data-hintindex="15"><i class="icon ion-alert-circled input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item fourth tablet-first-half">
-		<label>2.) <input type="text" class="check-input" data-ansindex="18"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<label>2.) <input type="text" class="check-input" data-hintindex="16"><i class="icon ion-alert-circled input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item fourth tablet-first-half">
-		<label>3.) <input type="text" class="check-input" data-ansindex="19"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<label>3.) <input type="text" class="check-input" data-hintindex="17"><i class="icon ion-alert-circled input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item last fourth tablet-first-half">
-		<label>4.) <input type="text" class="check-input" data-ansindex="20"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<label>4.) <input type="text" class="check-input" data-hintindex="18"><i class="icon ion-alert-circled input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 </div>
