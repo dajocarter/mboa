@@ -34,10 +34,10 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	</figure>
 </div>
 
-<p>Your eventual diagnosis is infiltrating ductal carcinoma with micrometastasis. Based on the case presented, select your patient’s stage of breast cancer.</p>
+<p class="margin-top-lg">Your eventual diagnosis is infiltrating ductal carcinoma with micrometastasis. Based on the case presented, select your patient’s stage of breast cancer.</p>
 
 
-<table>
+<table class="margin-top">
 	<thead>
 		<tr>
 			<th colspan="3">Staging of Breast Cancer</th>
