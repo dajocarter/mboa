@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         files: [{
             expand: true,
             cwd: 'src/img',
-            src: ['*.png', '*.jpg', '*.jpeg'],
+            src: ['*.png', '*.jpg', '*.jpeg', '*.gif'],
             dest: 'assets/img'
           }]
       }
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
     },
     watch: {
         images: {
-          files: ['src/img/*.png', 'src/img/*.jpg', 'src/img/*.jpeg'],
+          files: ['src/img/*.png', 'src/img/*.jpg', 'src/img/*.jpeg', 'src/img/*.gif'],
           options: {
             atBegin: true,
             livereload: true
