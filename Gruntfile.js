@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         ]
       },
       no_dest: {
-        src: 'src/css/*:css'
+        src: 'src/css/*.css'
       }
     },
     cssmin: {
