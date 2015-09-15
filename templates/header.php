@@ -21,11 +21,7 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/main.min.css" type="text/css">
   </head>
     
-    <body>
-      <!--[if lt IE 7]>
-          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
-      
+    <body>    
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -55,5 +51,3 @@
           </div>
         </div>
       </nav>
-
-      <div class="container">

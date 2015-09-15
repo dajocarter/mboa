@@ -5,6 +5,8 @@ $problems = json_decode($str, true);
 $pageTitle = "Histo Cases | Pre-Test";
 include(ROOT_PATH . "templates/header.php"); ?>
 
+<div class="container">
+
 <h1>This is a Pre-Test for the Histology cases.</h1>
 <div class="list-group">
 	<?php foreach ($problems as $qstnIndex => $problem) { ?>

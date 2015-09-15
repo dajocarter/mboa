@@ -93,6 +93,25 @@ a.back-link {
   }
 }
 
+.hero-unit {
+  background-image: url("../img/Hyaline-Cartilage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  position: relative;
+  top: -20px;
+
+  h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
 /********** ICONS ***********/
 .icon.input {
   margin-left: 5px;

@@ -64,6 +64,9 @@ include(ROOT_PATH . "templates/header.php"); ?>
       </ul>
     </li>
   </ul>
+<div class="hero-unit">
+  <h1>A560 Histology Cases</h1>
+</div>
 
 <?php include(ROOT_PATH . "templates/footer.php"); ?>
 

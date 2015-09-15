@@ -6,6 +6,8 @@ $pageTitle = "Learning Objectives";
 
 include(ROOT_PATH . "templates/header.php"); ?>
 
+<div class="container">
+
 <h1>Immune System and Lymphoid Organs Objectives</h1>
 
 <div class="container cases">
