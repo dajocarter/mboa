@@ -26,7 +26,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphoma.php" class="btn btn-default">Lymphoma</a>
 	</div>
 	<div class="list-item third last">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphadenopathy.php" class="btn btn-default">Lymphadenopathy</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphocytic-vasculitis.php" class="btn btn-default">Lymphocytic vasculitis</a>
 	</div>
 </div>
 

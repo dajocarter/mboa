@@ -63,5 +63,7 @@ include(ROOT_PATH . "templates/header.php"); ?>
 		<p>Secondary lymphoid follicle <br>
 			<a target="_blank" href="//www.nhlcyberfamily.org/types/follicular.htm">http://www.nhlcyberfamily.org/types/follicular.htm</a>
 		</p>
+		<p>Lymphocytic vasculitis</p>
+		<a href="//www.healthguideinfo.com/other-types-arthritis/p92374/#imgn_0">http://www.healthguideinfo.com/other-types-arthritis/p92374/#imgn_0</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>
