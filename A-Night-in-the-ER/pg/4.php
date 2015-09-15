@@ -18,10 +18,10 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 <p class="bold margin-top-lg">Which of the following is the correct order of blood flow in <span class="italic underline">open circulation</span> through the spleen?</p>
 
 <ol>
-	<li>Splenic artery &rarr; trabecular artery &rarr; central arteriole &rarr; penicillar arteriole &rarr; ensheathed capillary &rarr; splenic sinus &rarr; red pulp vein &rarr; trabecular vein &rarr; splenic vein</li>
-	<li>Splenic artery &rarr; trabecular artery &rarr; central arteriole &rarr; penicillar arteriole &rarr; ensheathed capillary &rarr; splenic sinus &rarr; splenic cord &rarr; red pulp vein &rarr; trabecular vein &rarr; splenic vein</li>
-	<li>Splenic artery &rarr; trabecular artery &rarr; central arteriole &rarr; penicillar arteriole &rarr; ensheathed capillary &rarr; splenic cord &rarr; splenic sinus &rarr; red pulp vein &rarr; trabecular vein &rarr; splenic vein</li>
-	<li>Splenic artery &rarr; penicillar arteriole &rarr; central arteriole &rarr; ensheathed capillary &rarr; splenic sinusoids &rarr; splenic cord &rarr; red pulp vein &rarr; trabecular veins &rarr; splenic vein</li>
+	<li class="margin-top">Splenic artery &rarr; trabecular artery &rarr; central arteriole &rarr; penicillar arteriole &rarr; ensheathed capillary &rarr; splenic sinus &rarr; red pulp vein &rarr; trabecular vein &rarr; splenic vein</li>
+	<li class="margin-top">Splenic artery &rarr; penicillar arteriole &rarr; central arteriole &rarr; ensheathed capillary &rarr; splenic sinus &rarr; splenic cord &rarr; red pulp vein &rarr; trabecular veins &rarr; splenic vein</li>
+	<li class="margin-top">Splenic artery &rarr; trabecular artery &rarr; central arteriole &rarr; penicillar arteriole &rarr; ensheathed capillary &rarr; splenic cord &rarr; splenic sinus &rarr; red pulp vein &rarr; trabecular vein &rarr; splenic vein</li>
+	<li class="margin-top">Splenic artery &rarr; trabecular artery &rarr; central arteriole &rarr; penicillar arteriole &rarr; ensheathed capillary &rarr; splenic sinus &rarr; splenic cord &rarr; red pulp vein &rarr; trabecular vein &rarr; splenic vein</li>
 </ol>
 
 <div class="row clearfix margin-top">
