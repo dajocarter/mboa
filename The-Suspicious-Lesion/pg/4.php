@@ -6,7 +6,9 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 ?>
 
-<p>Nice! Type III collagen (reticulin) fibers form the delicate web of loose reticular connective tissue found in the stroma of bone marrow, lymph nodes, and the spleen. These branching reticulin fibers form a network creating a spacious mesh for many cells to reside.</p>
+<p>Nice! Type III collagen (reticulin) fibers form the delicate web of loose reticular connective tissue 
+found in the stroma of bone marrow, lymph nodes, and the spleen. These branching reticulin fibers form a 
+network creating a spacious mesh for many cells to reside.</p>
 
 <p class="bold margin-top-lg">The stain that visualizes reticular fibers is known as  ____________________.</p>
 <div>

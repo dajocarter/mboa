@@ -13,7 +13,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 </figure>
 
 
-<p class="bold margin-top">What is the name of the unique blood vessels found in the paracortex?</p>
+<p class="bold margin-top">What is the name of the unique blood vessels found in the paracortex of lymph nodes?</p>
 <input type="text" class="check-input" data-ansindex="21">
 <i class="input icon ion-ios-checkmark"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
@@ -29,7 +29,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
 <p class="bold margin-top">Histology Scavenger Hunt!</p>
-<p>Take a screenshot of a high endothelial venule in the paracortex, from <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_42.html">Slide 42: Lymph Node, H&amp;E</a>. Then go <a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/7.php">learn the flow of lymph through a node</a>.</p>
+<p>Take a screenshot of a high endothelial venule in the paracortex, from <a target="_blank" href="//medsci.indiana.edu/junqueira/virtual/msci_42_5.html">Slide 42: Lymph Node, H&amp;E</a>. Then go <a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/7.php">learn the flow of lymph through a node</a>.</p>
 
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

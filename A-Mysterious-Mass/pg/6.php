@@ -27,7 +27,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 
 <p class="margin-top-lg">Normally the thymus involutes with age.</p>
-<p class="bold">What is the difference between <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_123.html">Slide 123 Thymus, H&amp;E</a> and <a target="_blank" href="http://medsci.indiana.edu/histo/virtual/msci_126.html">Slide 126 Thymus, H&amp;E</a>?</p>
+<p class="bold">Compare <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_123.html">Slide 123 Thymus, H&amp;E</a> and <a target="_blank" href="http://medsci.indiana.edu/histo/virtual/msci_126.html">Slide 126 Thymus, H&amp;E</a>, then describe what occurs during involution of an organ.</p>
 <div class="margin">
 	<textarea class="check-input" data-hintindex="23"></textarea>
 	<i class="input icon ion-alert-circled"></i>

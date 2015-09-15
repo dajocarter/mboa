@@ -9,9 +9,9 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 ?>
 
 <p>Yes! Cells immediately surrounding the central artery, known as PALS, are largely CD4+ T-cells, although smaller numbers of CD8+ T-cells may also be present.</p>
-		<p>While waiting for the patient to return from the OR, another case awaits you in the emergency room. A 7-year-old girl presents with a 3-day history of fever and sore throat. Her medical chart indicates she has allergies and repeated tonsillitis. Looking into the girl’s mouth revealed extremely swollen palatine tonsils covered with white exudate.</p>
 <div class="img-split row medium clearfix">
 	<div class="list-item col-sm-6">
+		<p>While waiting for your patient to return from the OR, another case awaits you in the emergency room. A 7-year-old girl presents with a 3-day history of fever and sore throat. Her medical chart indicates she has allergies and repeated tonsillitis. Looking into the girl’s mouth revealed extremely swollen palatine tonsils covered with white exudate.</p>
 	</div>
 	<div class="list-item col-sm-6">
 		<figure>

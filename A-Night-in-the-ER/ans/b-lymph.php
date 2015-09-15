@@ -8,7 +8,7 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 ?>
 
-<p>B-cells form primary and secondary lymphoid nodules (follicles) adjacent to the central artery. Larger lymphoid nodules may contain a germinal center, displacing the central arteriole to the nodule’s periphery (see Junqueira, Fig. 14-23b).</p>
+<p>B-cells form primary and secondary lymphoid nodules (follicles) adjacent to the central artery, but not PALS. Larger lymphoid nodules may contain a germinal center, displacing the central arteriole to the nodule’s periphery (see Junqueira, 13th Ed., Fig. 14-23b).</p>
 <p class="bold">Can you label the following slide of a secondary lymphoid follicle in the spleen?</p>
 <figure>
 	<img src="<?php echo BASE_URL; ?>assets/img/NER-PAL-B-Cells.png" class="img-responsive">

@@ -13,8 +13,8 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <i class="input icon ion-alert-circled"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
-<p class="margin-top">Type I collagen is not heavily glycosylated and thus stains <span class="pink">pink</span> with </p>
-<input type="text" class="check-input" data-ansindex="35" placeholder="(dye)">
+<p class="margin-top">Type I collagen is basic and not heavily glycosylated, thus stains <span class="pink">pink</span> with an acidic dye known as:</p>
+<input type="text" class="check-input" data-ansindex="35" placeholder="name of dye">
 <i class="input icon ion-ios-checkmark"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
