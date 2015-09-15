@@ -33,10 +33,10 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	<div class="list-item col-sm-3">
 		<label>B.) <input type="text" class="check-input" data-ansindex="2"><i class="icon ion-ios-checkmark input"></i></label>
 	</div>
-	<div class="list-item fourth tablet-first-half">
+	<div class="list-item col-sm-3">
 		<label>C.) <input type="text" class="check-input" data-ansindex="30"><i class="icon ion-ios-checkmark input"></i></label>
 	</div>
-	<div class="list-item last fourth tablet-second-half">
+	<div class="list-item col-sm-3">
 		<label>D.) <input type="text" class="check-input" data-ansindex="31"><i class="icon ion-ios-checkmark input"></i></label>
 	</div>
 </div>

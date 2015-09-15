@@ -19,16 +19,15 @@ biopsy</a><sup>*</sup>.</p>
 
 <p class="margin-top-lg">Your patient is concerned because she heard that breast cancer patients develop swelling and pain in their arms.</p>
 
-
-<div class="grid-container margin-top clearfix">
-	<div class="list-item third first">
 <p class="bold margin-top">You explain that removal of lymph nodes may result in decreased lymphatic drainage, a condition known as:</p>
+<div class="row margin-top clearfix">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphedema.php" class="btn btn-default">Lymphedema</a>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphoma.php" class="btn btn-default">Lymphoma</a>
 	</div>
-	<div class="list-item third last">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphocytic-vasculitis.php" class="btn btn-default">Lymphocytic vasculitis</a>
 	</div>
 </div>

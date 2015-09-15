@@ -12,8 +12,8 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <i class="input icon ion-alert-circled"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
-<div class="grid-container margin clearfix">
-	<div class="list-item half first">
+<div class="row margin clearfix">
+	<div class="list-item col-sm-6">
 		<p class="margin-top">You alleviate your patient’s unease by explaining that the margins of her positive lymph nodes were free of disease after the SNL biopsy and a CAD is not necessary. As an additional measure, you advise for a bone and liver scan. Luckily no additional metastasis was seen.</p>
 
 		<p class="bold">From the original histology slide, what vessels were infiltrated with tumor cells?</p>
@@ -28,7 +28,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 			<div class="hint"><i class="icon ion-ios-close"></i></div>
 		</div>
 	</div>
-	<figure class="list-item last half">
+	<figure class="list-item col-sm-6">
 		<img src="<?php echo BASE_URL; ?>assets/img/SL-LN-tumor-cells.png" class="img-responsive" alt="">
 		<figcaption></figcaption>
 	</figure>
