@@ -31,14 +31,14 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <p class="bold margin">The spleen is considered a ____________ lymphoid organ.</p>
 
-<div class="grid-container clearfix">
-	<div class="list-item third first">
+<div class="row clearfix">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/primary.php" class="btn btn-default">Primary</a>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/secondary.php" class="btn btn-default">Secondary</a>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/tertiary.php" class="btn btn-default">Tertiary</a>
 	</div>
 </div>

@@ -8,11 +8,11 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 ?>
 
-<div class="img-split grid-container clearfix">
-	<div class="list-item first half">
 		<p>Correct! The spleen is located in the upper left abdominal quadrant (left hypochondriac region) in the peritoneal cavity. Notice the <span class="purple">white pulp</span> of lymphoid nodules with pale staining germinal centers surrounded by a darker staining marginal zone. The white pulp is surrounded by <span class="red">red pulp</span>, the blood-filled stroma of fine reticulin fibers and cells. A thin capsule and the blood-filled stroma contribute to this organ being easily ruptured by abdominal injuries.</p>
+<div class="img-split row clearfix">
+	<div class="list-item col-sm-6">
 	</div>
-	<div class="list-item last half">
+	<div class="list-item col-sm-6">
 		<figure>
 			<img src="<?php echo BASE_URL; ?>assets/img/UR.png" class="img-responsive" alt="">
 			<figcaption></figcaption>
@@ -27,18 +27,18 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <p class="bold">Kindly explain to them 3 functions of this majestic organ.</p>
 
-<div class="grid-container clearfix">
-	<div class="list-item first third">
+<div class="row clearfix">
+	<div class="list-item col-sm-4">
 		<label>1.) <textarea class="check-input" data-hintindex="26"></textarea>
 		<i class="input icon ion-alert-circled"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<label>2.) <textarea class="check-input" data-hintindex="27"></textarea>
 		<i class="input icon ion-alert-circled"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item last third">
+	<div class="list-item col-sm-4">
 		<label>3.) <textarea class="check-input" data-hintindex="28"></textarea>
 		<i class="input icon ion-alert-circled"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>

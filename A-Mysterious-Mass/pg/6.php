@@ -6,15 +6,15 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 ?>
 
-<div class="img-split grid-container clearfix">
-	<div class="list-item first half">
+<div class="img-split row clearfix">
+	<div class="list-item col-sm-6">
 		<p>Awesome! Those lymphocytes that recognize MHC pass the positive selection test in the cortex and move onto the negative selection (clonal deletion) test in the medulla.</p>
 		<p class="bold">What is negative selection?</p> 
 		<textarea class="check-input" data-hintindex="22"></textarea>
 		<i class="input icon ion-alert-circled"></i>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item last half">
+	<div class="list-item col-sm-6">
 		<figure>
 			<img class="img-responsive" src="<?php echo BASE_URL; ?>assets/img/mm-negative-selection.png">
 			<figcaption>Source: <a target="_blank" href="//accessiblebiosci.blogspot.com/2013/08/negative-selectivi-t-dzhagalov-et-al.html">http://accessiblebiosci.blogspot.com/2013/08/negative-selectivi-t-dzhagalov-et-al.html</a></figcaption>
@@ -33,11 +33,11 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<i class="input icon ion-alert-circled"></i>
 	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
-<div class="grid-container margin clearfix">
-	<div class="list-item first half">
+<div class="row margin clearfix">
+	<div class="list-item col-sm-6">
 		<img src="<?php echo BASE_URL; ?>assets/img/MM-Pg6-Slide123.png">
 	</div>
-	<div class="list-item last half">
+	<div class="list-item col-sm-6">
 		<img src="<?php echo BASE_URL; ?>assets/img/MM-Pg6-Slide126.png">
 	</div>
 </div>

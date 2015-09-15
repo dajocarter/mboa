@@ -23,14 +23,14 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 </div>
 
 <p class="bold margin-top">Lymph from breast tissue drains into the:</p>
-<div class="grid-container margin-top clearfix">
-	<div class="list-item third first">
+<div class="row margin-top clearfix">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/sup_cervical.php" class="btn btn-default">Superficial Cervical Lymph Nodes</a>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/axillary.php" class="btn btn-default">Axillary Lymph Nodes</a>
 	</div>
-	<div class="list-item third last">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/inguinal.php" class="btn btn-default">Inguinal Lymph Nodes</a>
 	</div>
 </div>

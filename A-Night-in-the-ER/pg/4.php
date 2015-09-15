@@ -24,17 +24,17 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	<li>Splenic artery &rarr; penicillar arteriole &rarr; central arteriole &rarr; ensheathed capillary &rarr; splenic sinusoids &rarr; splenic cord &rarr; red pulp vein &rarr; trabecular veins &rarr; splenic vein</li>
 </ol>
 
-<div class="grid-container clearfix">
-	<div class="list-item fourth first tablet-first-half">
+<div class="row clearfix margin-top">
+	<div class="list-itemcol-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/flow1.php" class="btn btn-default">Number 1</a>
 	</div>
-	<div class="list-item fourth tablet-second-half">
+	<div class="list-itemcol-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/flow2.php" class="btn btn-default">Number 2</a>
 	</div>
-	<div class="list-item fourth tablet-first-half">
+	<div class="list-itemcol-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/flow3.php" class="btn btn-default">Number 3</a>
 	</div>
-	<div class="list-item fourth last tablet-second-half">
+	<div class="list-itemcol-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/flow4.php" class="btn btn-default">Number 4</a>
 	</div>
 </div>

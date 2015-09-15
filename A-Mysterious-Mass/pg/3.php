@@ -20,14 +20,14 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <p>Although considered a primary lymphoid organ, the thymus does not contain a stroma of reticulin fibers like many lymphoid organs. Instead, the supporting stroma arises from:</p>
 
-<div class="grid-container margin-top clearfix">
-	<div class="list-item third first">
+<div class="row margin-top clearfix">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/hassall.php" class="btn btn-default">Hassall’s corpuscles</a>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/epi_cells.php" class="btn btn-default">Epithelioreticular cells</a>
 	</div>
-	<div class="list-item third last">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/thymocytes.php" class="btn btn-default">Thymocytes</a>
 	</div>
 </div>

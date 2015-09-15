@@ -14,16 +14,16 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	<img src="<?php echo BASE_URL; ?>assets/img/NER-PAL-B-Cells.png" class="img-responsive">
 	<figcaption></figcaption>
 </figure>
-<div class="grid-container clearfix">
-	<div class="list-item first third">
+<div class="row clearfix">
+	<div class="list-item col-sm-4">
 		<label>A.) <input type="text" class="check-input" data-ansindex="25"><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<label>B.) <input type="text" class="check-input" data-ansindex="26"><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item last third">
+	<div class="list-item col-sm-4">
 		<label>C.) <input type="text" class="check-input" data-ansindex="27"><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
