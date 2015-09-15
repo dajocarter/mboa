@@ -18,13 +18,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 		<p class="bold">From the original histology slide, what vessels were infiltrated with tumor cells?</p>
 		<div>
-			<input type="text" class="check-input" data-ansindex="1">
-			<i class="input icon ion-ios-checkmark"></i>
+			<input type="text" class="check-input" data-ansindex="40" data-hintindex="52">
+			<i class="input icon ion-ios-help"></i><i class="input icon ion-ios-checkmark"></i>
 			<div class="hint"><i class="icon ion-ios-close"></i></div>
 		</div>
 		<div class="margin-top">
-			<input type="text" class="check-input" data-ansindex="40">
-			<i class="input icon ion-ios-checkmark"></i>
+			<input type="text" class="check-input" data-ansindex="1" data-hintindex="53">
+			<i class="input icon ion-ios-help"></i><i class="input icon ion-ios-checkmark"></i>
 			<div class="hint"><i class="icon ion-ios-close"></i></div>
 		</div>
 	</div>

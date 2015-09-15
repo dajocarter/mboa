@@ -13,21 +13,21 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	<img src="<?php echo BASE_URL; ?>assets/img/SL-Spleen.png" class="img-responsive" alt="spleen">
 	<figcaption></figcaption>
 </figure>
-		<label>A.) <input type="text" class="check-input" data-ansindex="8"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 <div class="row clearfix">
 	<div class="list-item col-sm-3">
+		<label>A.) <input type="text" class="check-input" data-ansindex="8" data-hintindex="48"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-		<label>B.) <input type="text" class="check-input" data-ansindex="32"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 	<div class="list-item col-sm-3">
+		<label>B.) <input type="text" class="check-input" data-ansindex="32" data-hintindex="49"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-		<label>C.) <input type="text" class="check-input" data-ansindex="33"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 	<div class="list-item col-sm-3">
+		<label>C.) <input type="text" class="check-input" data-ansindex="33" data-hintindex="50"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-		<label>D.) <input type="text" class="check-input" data-ansindex="34"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 	<div class="list-item col-sm-3">
+		<label>D.) <input type="text" class="check-input" data-ansindex="34" data-hintindex="51"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 </div>

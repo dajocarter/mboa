@@ -15,7 +15,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 
 /*! Respond.js v1.1.0: min/max-width media query polyfill. (c) Scott Jehl. MIT/GPLv2 Lic. j.mp/respondjs  */
 (function(e){e.respond={};respond.update=function(){};respond.mediaQueriesSupported=e.matchMedia&&e.matchMedia("only all").matches;if(respond.mediaQueriesSupported){return}var w=e.document,s=w.documentElement,i=[],k=[],q=[],o={},h=30,f=w.getElementsByTagName("head")[0]||s,g=w.getElementsByTagName("base")[0],b=f.getElementsByTagName("link"),d=[],a=function(){var D=b,y=D.length,B=0,A,z,C,x;for(;B<y;B++){A=D[B],z=A.href,C=A.media,x=A.rel&&A.rel.toLowerCase()==="stylesheet";if(!!z&&x&&!o[z]){if(A.styleSheet&&A.styleSheet.rawCssText){m(A.styleSheet.rawCssText,z,C);o[z]=true}else{if((!/^([a-zA-Z:]*\/\/)/.test(z)&&!g)||z.replace(RegExp.$1,"").split("/")[0]===e.location.host){d.push({href:z,media:C})}}}}u()},u=function(){if(d.length){var x=d.shift();n(x.href,function(y){m(y,x.href,x.media);o[x.href]=true;u()})}},m=function(I,x,z){var G=I.match(/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi),J=G&&G.length||0,x=x.substring(0,x.lastIndexOf("/")),y=function(K){return K.replace(/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,"$1"+x+"$2$3")},A=!J&&z,D=0,C,E,F,B,H;if(x.length){x+="/"}if(A){J=1}for(;D<J;D++){C=0;if(A){E=z;k.push(y(I))}else{E=G[D].match(/@media *([^\{]+)\{([\S\s]+?)$/)&&RegExp.$1;k.push(RegExp.$2&&y(RegExp.$2))}B=E.split(",");H=B.length;for(;C<H;C++){F=B[C];i.push({media:F.split("(")[0].match(/(only\s+)?([a-zA-Z]+)\s?/)&&RegExp.$2||"all",rules:k.length-1,hasquery:F.indexOf("(")>-1,minw:F.match(/\(min\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:F.match(/\(max\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}}j()},l,r,v=function(){var z,A=w.createElement("div"),x=w.body,y=false;A.style.cssText="position:absolute;font-size:1em;width:1em";if(!x){x=y=w.createElement("body");x.style.background="none"}x.appendChild(A);s.insertBefore(x,s.firstChild);z=A.offsetWidth;if(y){s.removeChild(x)}else{x.removeChild(A)}z=p=parseFloat(z);return z},p,j=function(I){var x="clientWidth",B=s[x],H=w.compatMode==="CSS1Compat"&&B||w.body[x]||B,D={},G=b[b.length-1],z=(new Date()).getTime();if(I&&l&&z-l<h){clearTimeout(r);r=setTimeout(j,h);return}else{l=z}for(var E in i){var K=i[E],C=K.minw,J=K.maxw,A=C===null,L=J===null,y="em";if(!!C){C=parseFloat(C)*(C.indexOf(y)>-1?(p||v()):1)}if(!!J){J=parseFloat(J)*(J.indexOf(y)>-1?(p||v()):1)}if(!K.hasquery||(!A||!L)&&(A||H>=C)&&(L||H<=J)){if(!D[K.media]){D[K.media]=[]}D[K.media].push(k[K.rules])}}for(var E in q){if(q[E]&&q[E].parentNode===f){f.removeChild(q[E])}}for(var E in D){var M=w.createElement("style"),F=D[E].join("\n");M.type="text/css";M.media=E;f.insertBefore(M,G.nextSibling);if(M.styleSheet){M.styleSheet.cssText=F}else{M.appendChild(w.createTextNode(F))}q.push(M)}},n=function(x,z){var y=c();if(!y){return}y.open("GET",x,true);y.onreadystatechange=function(){if(y.readyState!=4||y.status!=200&&y.status!=304){return}z(y.responseText)};if(y.readyState==4){return}y.send(null)},c=(function(){var x=false;try{x=new XMLHttpRequest()}catch(y){x=new ActiveXObject("Microsoft.XMLHTTP")}return function(){return x}})();a();respond.update=a;function t(){j(true)}if(e.addEventListener){e.addEventListener("resize",t,false)}else{if(e.attachEvent){e.attachEvent("onresize",t)}}})(this);;$(document).ready(function() {
-    //##### send add record Ajax request to results.php #########
+    /*/##### send add record Ajax request to results.php #########
     $('#quizSubmit').click(function(e) {
         e.preventDefault();
     	// Grade quiz
@@ -34,7 +34,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
         // Hide the buttons div since we're done with them now
         $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
         
-        /*
+        
         $("input:checked").each(function (index) {
         	var choice = "q" + (index + 1) + "=" + $(this).val();
 
@@ -61,7 +61,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
         })
         .fail(function (xhr, ajaxOptions, thrownError) {
             alert(thrownError);
-        }); */
+        }); 
     });
 
 	//##### Send get Ajax request to results.php #########
@@ -125,28 +125,28 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 
     $('.check-input').each(function() {
         var answers = [
-            ["Simple cuboidal epithelium", "Simple cuboidal", "simple cuboidal epithelium", "simple cuboidal", "Simple Cuboidal Epithelium", "Simple Cuboidal"], // 0
-            ["Subcapsular sinus", "subcapsular sinus", "Subcapsular Sinus"], 
-            ["lymph follicle", "lymph nodule", "lymphoid follicle", "lymphoid nodule", "Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule", "Lymph Follicle", "Lymph Nodule", "Lymphoid Follicle", "Lymphoid Nodule"], 
-            ["Cortex", "cortex"], 
-            ["Paracortex", "paracortex"], 
-            ["Medulla", "medulla"], // 5
+            ["Simple cuboidal epithelium", "Simple cuboidal"], // 0
+            "Subcapsular sinus",
+            ["Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule"], 
+            "Cortex",
+            "Paracortex",
+            "Medulla", // 5
             ["RANKL", "RANK Ligand", "RANK ligand", "Rank ligand"], 
-            ["Medulla", "medulla"],
-            ["Capsule", "capsule"],
-            ["Cortex", "cortex"],
-            ["Septa", "septa"], // 10
-            ["Tonsil", "tonsil", "Tonsils", "tonsils"], 
-            ["Appendix", "appendix", "Vermiform appendix", "Vermiform Appendix", "vermiform appendix"], 
-            ["Peyer's patches", "Peyers patches", "peyers patches", "peyer's patches", "Peyer's Patches"],
-            ["Bone marrow", "bone marrow", "Bone Marrow"], 
-            ["Cytokines", "cytokines"], // 15
-            ["Basophilic", "basophilic"],
+            "Medulla",
+            "Capsule",
+            "Cortex",
+            "Septa", // 10
+            ["Tonsil", "Tonsils"], 
+            ["Appendix", "Vermiform appendix"], 
+            ["Peyer's patches", "Peyers patches"],
+            "Bone marrow",
+            "Cytokines", // 15
+            "Basophilic",
             "Form boundaries",
             "APCs",
             "Cytoreticulum",
             "Cytokine secretion", // 20
-            ["High endothelial venules", "High endothelial venule", "high endothelial venules", "high endothelial venule", "High Endothelial Venules", "High Endothelial Venule", "HEVs", "HEV"],
+            ["High endothelial venules", "High endothelial venule", "HEVs", "HEV"],
             "Stratified squamous epithelium",
             "Stave cells",
             "Thymus",
@@ -154,7 +154,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             "Marginal zone", 
             "Central arteriole",
             "Germinal center",
-            ["lymphoid nodule", "follicle"], // Repeat of #2
+            ["Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule"], // Repeat of #2
             "Stratified squamous epithelium", // 30
             "Crypt",
             "White pulp",
@@ -165,24 +165,24 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             "sinuses",
             "cords",
             ["High endothelial venules", "HEVs"], // Repeat of #21
-            "Afferent lymphatic vessels" // 40
+            ["afferent lymphatic", "afferent lymphatics", "afferent lymphatic vessels", "afferent lymphatic vessel", "afferent vessels", "afferent vessel"] // 40
         ];
-
+        
         var hints = [
             "The space deep to the capsule", 
             "An aggregation of proliferating B cells", // 1
             "The superficial region of lymph nodes containing nodules of B cells", 
             "A region of lymph nodes containing T cells, dendritic cells, and HEVs", 
             "The deepest region of lymph nodes consisting of sinuses and cord packed with lymphocytes, plasma cells, and macrophages",
-            "Region where thymocytes undergo negative (clonal) deletion",
+            "A region with fewer and larger, more developmentally mature thymocytes that undergo negative selection (aka clonal deletion)",
             "Thin connective tissue covering",  // 6
-            "Region where thymocytes undergo positive (clonal) selection",
+            "Region where thymocytes undergo positive selection (aka clonal selection)",
             "Extensions of the capsule separating the parenchyma into lobes",
             "Lymphatic tissue in nasopharynx and oropharynx",
             "A diverticulum off the first part of the large intestine", // 10
             "In the submucosa of the ileum, the terminal part of the small intestine",
             "One of two locations that aid the body in developing central tolerance by producing mature, immunocompentent T-lymphocytes.",
-            "Name for small signaling proteins", // 13
+            "Small peptides and glycoproteins used in cell signaling", // 13
             "Thymocytes have abundant RER and Golgi for synthesizing TCR and CD4 and CD8 glycoproteins and therefore appear as densely packed basophilic clusters of cells.",
             "Form boundaries", // 15
             "APCs", // 16
@@ -212,20 +212,26 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             "Lymph nodes filter lymph and provide sites for antigen presentation, B cell proliferation and differentiation, and production of antibodies by resulting plasma cells.",
             "Secondary lymphoid follicle. B-lymphocytes undergoing rapid clonal expansion after antigenic simulation.",
             "Endothelial-lined lymphatic spaces", // 42
-            "Reticular fibers filled with reticular cells and lymphocytes [mostly B-lymphocytes], macrophages, dendritic cells, and plasma cells",
+            "Reticular fibers filled with reticular cells and lymphocytes (mostly B-lymphocytes), macrophages, dendritic cells, and plasma cells",
             "The endothelial cells lining these specialized postcapillary venules are more cuboidal than simple squamous in appearance and have ovoid nuclei.",
             "Facilitate extravasation of leukocytes from the blood stream into the lymph node stroma.", // 45
             "The medulla of the lymph node is composed of medullary cords packed with cells (T-lymphocytes, B-lymphocytes, plasma cells, macrophages, dendritic cells, and reticular cells) and endothelial lined medullary sinuses that contain efferent lymph and fewer cells draining toward the efferent lymphatic vessel at the lymph node hilum.",
-            "Removal of lymph nodes and formation of scar tissue forms a blockage to the flow of lymph. Arm mobility and sensory loss may also be factors associated with lymphedema."
+            "Removal of lymph nodes and formation of scar tissue forms a blockage to the flow of lymph. Arm mobility and sensory loss may also be factors associated with lymphedema.",
+            "Dense connective tissue covering", // 48
+            "Component of splenic pulp composed of lymphoid nodules and periarteriolar lymphoid sheaths (PALS)",
+            "Component of splenic pulp composed of blood-filled sinuses and splenic cords", // 50
+            "Extensions of the capsule extending into the parenchyma (splenic pulp)", // 51 
+            "Numerous structures entering the convex surface of a lymph node", // 52
+            "A space immediately deep to the subcapsular sinus" // 53
         ];
         /********************** GRADE INPUTS *************************/
         $(this).bind('input keyup click', function() {
             var index = $(this).data('ansindex');
             var ans = answers[index];
-            var choice = $(this).val();
+            var choice = $(this).val().toUpperCase();
             
             if ($.type(ans) === 'string') {
-                if (choice === ans) {
+                if (choice === ans.toUpperCase()) {
                     $(this).addClass('correct');
                     $(this).siblings('.ion-ios-help').hide();
                     $(this).siblings('.ion-ios-checkmark').show();
@@ -240,9 +246,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             else if ($.type(ans) === 'array') {
                 var index = -1;
                 ans.some(function(elt, idx) {
-                    console.log('choice is', choice);
-                    console.log('option is', elt);
-                    if (choice === elt) {
+                    if (choice === elt.toUpperCase()) {
                         index = idx;
                         return true;
                     }
@@ -265,6 +269,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             var hint = hints[index];
             $(this).fadeOut('slow');
             var a = $(this).parents('.list-item').find('.hint'), b = $(this).siblings('.hint');
+            console.log("a and b are", a, b);
             if (a.length > 0 && a.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(a);
                 a.fadeIn('slow');
@@ -280,7 +285,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
                 b.fadeIn('slow');
             }
         });
-
+        /*
         $(this).siblings('.ion-alert-circled').bind('click', function() {
             var index = $(this).siblings('.check-input').data('hintindex');
             var hint = hints[index];
@@ -300,7 +305,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             else if (b.length > 0 && b.children().length > 0) {
                 b.fadeIn('slow');
             }
-        });
+        }); */
     });
     /********************* HIDE/SHOW HINT ICONS **********************/
     $('.hint').each(function() {
@@ -312,14 +317,13 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             }
             else if (hint.siblings('.ion-ios-checkmark').is(":hidden")) {
                 hint.siblings('.ion-ios-help').fadeIn('slow');
-            }
+            }/*
             else if (hint.parents('.list-item').find('.ion-alert-circled').is(":hidden")) {
                 hint.parents('.list-item').find('ion-alert-circled').fadeIn('slow');
             }
             else if (hint.siblings('.ion-alert-circled').is(":hidden")) {
                 hint.siblings('.ion-alert-circled').fadeIn('slow');
-            }
-
+            }*/
         });
     });
     /************ POPUP YOUTUBE VIDEOS **************/

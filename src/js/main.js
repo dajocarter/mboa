@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    //##### send add record Ajax request to results.php #########
+    /*/##### send add record Ajax request to results.php #########
     $('#quizSubmit').click(function(e) {
         e.preventDefault();
     	// Grade quiz
@@ -18,7 +18,7 @@ $(document).ready(function() {
         // Hide the buttons div since we're done with them now
         $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
         
-        /*
+        
         $("input:checked").each(function (index) {
         	var choice = "q" + (index + 1) + "=" + $(this).val();
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
         })
         .fail(function (xhr, ajaxOptions, thrownError) {
             alert(thrownError);
-        }); */
+        }); 
     });
 
 	//##### Send get Ajax request to results.php #########
@@ -109,28 +109,28 @@ $(document).ready(function() {
 
     $('.check-input').each(function() {
         var answers = [
-            ["Simple cuboidal epithelium", "Simple cuboidal", "simple cuboidal epithelium", "simple cuboidal", "Simple Cuboidal Epithelium", "Simple Cuboidal"], // 0
-            ["Subcapsular sinus", "subcapsular sinus", "Subcapsular Sinus"], 
-            ["lymph follicle", "lymph nodule", "lymphoid follicle", "lymphoid nodule", "Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule", "Lymph Follicle", "Lymph Nodule", "Lymphoid Follicle", "Lymphoid Nodule"], 
-            ["Cortex", "cortex"], 
-            ["Paracortex", "paracortex"], 
-            ["Medulla", "medulla"], // 5
+            ["Simple cuboidal epithelium", "Simple cuboidal"], // 0
+            "Subcapsular sinus",
+            ["Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule"], 
+            "Cortex",
+            "Paracortex",
+            "Medulla", // 5
             ["RANKL", "RANK Ligand", "RANK ligand", "Rank ligand"], 
-            ["Medulla", "medulla"],
-            ["Capsule", "capsule"],
-            ["Cortex", "cortex"],
-            ["Septa", "septa"], // 10
-            ["Tonsil", "tonsil", "Tonsils", "tonsils"], 
-            ["Appendix", "appendix", "Vermiform appendix", "Vermiform Appendix", "vermiform appendix"], 
-            ["Peyer's patches", "Peyers patches", "peyers patches", "peyer's patches", "Peyer's Patches"],
-            ["Bone marrow", "bone marrow", "Bone Marrow"], 
-            ["Cytokines", "cytokines"], // 15
-            ["Basophilic", "basophilic"],
+            "Medulla",
+            "Capsule",
+            "Cortex",
+            "Septa", // 10
+            ["Tonsil", "Tonsils"], 
+            ["Appendix", "Vermiform appendix"], 
+            ["Peyer's patches", "Peyers patches"],
+            "Bone marrow",
+            "Cytokines", // 15
+            "Basophilic",
             "Form boundaries",
             "APCs",
             "Cytoreticulum",
             "Cytokine secretion", // 20
-            ["High endothelial venules", "High endothelial venule", "high endothelial venules", "high endothelial venule", "High Endothelial Venules", "High Endothelial Venule", "HEVs", "HEV"],
+            ["High endothelial venules", "High endothelial venule", "HEVs", "HEV"],
             "Stratified squamous epithelium",
             "Stave cells",
             "Thymus",
@@ -138,7 +138,7 @@ $(document).ready(function() {
             "Marginal zone", 
             "Central arteriole",
             "Germinal center",
-            ["lymphoid nodule", "follicle"], // Repeat of #2
+            ["Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule"], // Repeat of #2
             "Stratified squamous epithelium", // 30
             "Crypt",
             "White pulp",
@@ -149,24 +149,24 @@ $(document).ready(function() {
             "sinuses",
             "cords",
             ["High endothelial venules", "HEVs"], // Repeat of #21
-            "Afferent lymphatic vessels" // 40
+            ["afferent lymphatic", "afferent lymphatics", "afferent lymphatic vessels", "afferent lymphatic vessel", "afferent vessels", "afferent vessel"] // 40
         ];
-
+        
         var hints = [
             "The space deep to the capsule", 
             "An aggregation of proliferating B cells", // 1
             "The superficial region of lymph nodes containing nodules of B cells", 
             "A region of lymph nodes containing T cells, dendritic cells, and HEVs", 
             "The deepest region of lymph nodes consisting of sinuses and cord packed with lymphocytes, plasma cells, and macrophages",
-            "Region where thymocytes undergo negative (clonal) deletion",
+            "A region with fewer and larger, more developmentally mature thymocytes that undergo negative selection (aka clonal deletion)",
             "Thin connective tissue covering",  // 6
-            "Region where thymocytes undergo positive (clonal) selection",
+            "Region where thymocytes undergo positive selection (aka clonal selection)",
             "Extensions of the capsule separating the parenchyma into lobes",
             "Lymphatic tissue in nasopharynx and oropharynx",
             "A diverticulum off the first part of the large intestine", // 10
             "In the submucosa of the ileum, the terminal part of the small intestine",
             "One of two locations that aid the body in developing central tolerance by producing mature, immunocompentent T-lymphocytes.",
-            "Name for small signaling proteins", // 13
+            "Small peptides and glycoproteins used in cell signaling", // 13
             "Thymocytes have abundant RER and Golgi for synthesizing TCR and CD4 and CD8 glycoproteins and therefore appear as densely packed basophilic clusters of cells.",
             "Form boundaries", // 15
             "APCs", // 16
@@ -196,11 +196,17 @@ $(document).ready(function() {
             "Lymph nodes filter lymph and provide sites for antigen presentation, B cell proliferation and differentiation, and production of antibodies by resulting plasma cells.",
             "Secondary lymphoid follicle. B-lymphocytes undergoing rapid clonal expansion after antigenic simulation.",
             "Endothelial-lined lymphatic spaces", // 42
-            "Reticular fibers filled with reticular cells and lymphocytes [mostly B-lymphocytes], macrophages, dendritic cells, and plasma cells",
+            "Reticular fibers filled with reticular cells and lymphocytes (mostly B-lymphocytes), macrophages, dendritic cells, and plasma cells",
             "The endothelial cells lining these specialized postcapillary venules are more cuboidal than simple squamous in appearance and have ovoid nuclei.",
             "Facilitate extravasation of leukocytes from the blood stream into the lymph node stroma.", // 45
             "The medulla of the lymph node is composed of medullary cords packed with cells (T-lymphocytes, B-lymphocytes, plasma cells, macrophages, dendritic cells, and reticular cells) and endothelial lined medullary sinuses that contain efferent lymph and fewer cells draining toward the efferent lymphatic vessel at the lymph node hilum.",
-            "Removal of lymph nodes and formation of scar tissue forms a blockage to the flow of lymph. Arm mobility and sensory loss may also be factors associated with lymphedema."
+            "Removal of lymph nodes and formation of scar tissue forms a blockage to the flow of lymph. Arm mobility and sensory loss may also be factors associated with lymphedema.",
+            "Dense connective tissue covering", // 48
+            "Component of splenic pulp composed of lymphoid nodules and periarteriolar lymphoid sheaths (PALS)",
+            "Component of splenic pulp composed of blood-filled sinuses and splenic cords", // 50
+            "Extensions of the capsule extending into the parenchyma (splenic pulp)", // 51 
+            "Numerous structures entering the convex surface of a lymph node", // 52
+            "A space immediately deep to the subcapsular sinus" // 53
         ];
         /********************** GRADE INPUTS *************************/
         $(this).bind('input keyup click', function() {
