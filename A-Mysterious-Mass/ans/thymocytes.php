@@ -18,8 +18,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <div class="margin-top">
 	<p class="bold">Explain your choice.</p>
 	<textarea class="check-input" data-hintindex="14"></textarea>
-	<!--i class="icon ion-alert-circled input"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div-->
+	<i class="icon ion-alert-circled input"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
 
 <figure>

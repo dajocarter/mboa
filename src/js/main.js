@@ -264,7 +264,7 @@ $(document).ready(function() {
                 b.fadeIn('slow');
             }
         });
-
+        /*
         $(this).siblings('.ion-alert-circled').bind('click', function() {
             var index = $(this).siblings('.check-input').data('hintindex');
             var hint = hints[index];
@@ -284,7 +284,7 @@ $(document).ready(function() {
             else if (b.length > 0 && b.children().length > 0) {
                 b.fadeIn('slow');
             }
-        });
+        }); */
     });
     /********************* HIDE/SHOW HINT ICONS **********************/
     $('.hint').each(function() {
@@ -296,14 +296,13 @@ $(document).ready(function() {
             }
             else if (hint.siblings('.ion-ios-checkmark').is(":hidden")) {
                 hint.siblings('.ion-ios-help').fadeIn('slow');
-            }
+            }/*
             else if (hint.parents('.list-item').find('.ion-alert-circled').is(":hidden")) {
                 hint.parents('.list-item').find('ion-alert-circled').fadeIn('slow');
             }
             else if (hint.siblings('.ion-alert-circled').is(":hidden")) {
                 hint.siblings('.ion-alert-circled').fadeIn('slow');
-            }
-
+            }*/
         });
     });
     /************ POPUP YOUTUBE VIDEOS **************/

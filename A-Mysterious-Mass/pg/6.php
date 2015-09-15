@@ -11,8 +11,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 		<p>Awesome! Those lymphocytes that recognize MHC pass the positive selection test in the cortex and move onto the negative selection (clonal deletion) test in the medulla.</p>
 		<p class="bold">What is negative selection?</p> 
 		<textarea class="check-input" data-hintindex="22"></textarea>
-		<!--i class="input icon ion-alert-circled"></i>
-		<div class="hint"><i class="icon ion-ios-close"></i></div-->
+		<i class="input icon ion-alert-circled"></i>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item last half">
 		<figure>

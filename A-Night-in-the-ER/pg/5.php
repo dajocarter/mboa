@@ -11,8 +11,8 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 <p>Nice open circulation flow! <span class="bold">For comparison, write out the steps for <span class="underline italic">closed circulation</span></span> below.</p>
 <div>
 	<textarea class="check-input" data-hintindex="31"></textarea>
-	<!--i class="input icon ion-alert-circled"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div-->
+	<i class="input icon ion-alert-circled"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
 
 <figure>

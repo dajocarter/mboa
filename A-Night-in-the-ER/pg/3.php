@@ -12,8 +12,8 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <p class="bold margin-top">What is white pulp and how does it participate in immunity?</p>
 <textarea class="check-input" data-hintindex="29"></textarea>
-<!--i class="input icon ion-alert-circled"></i>
-<div class="hint"><i class="icon ion-ios-close"></i></div-->
+<i class="input icon ion-alert-circled"></i>
+<div class="hint"><i class="icon ion-ios-close"></i></div>
 
 <p class="margin-top">The patient has lost a massive amount of blood and his vital signs are as follows:</p>
 <table>

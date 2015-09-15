@@ -20,13 +20,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 <p class="bold margin-top">Why were these vessels named in this way?</p>
 <textarea class="check-input" data-hintindex="44"></textarea>
-<!--i class="input icon ion-alert-circled"></i>
-<div class="hint"><i class="icon ion-ios-close"></i></div-->
+<i class="input icon ion-alert-circled"></i>
+<div class="hint"><i class="icon ion-ios-close"></i></div>
 
 <p class="bold margin-top">What is the <span class="underline">function</span> of these vessels?</p>
 <textarea class="check-input" data-hintindex="45"></textarea>
-<!--i class="input icon ion-alert-circled"></i>
-<div class="hint"><i class="icon ion-ios-close"></i></div-->
+<i class="input icon ion-alert-circled"></i>
+<div class="hint"><i class="icon ion-ios-close"></i></div>
 
 <p class="bold margin-top">Histology Scavenger Hunt!</p>
 <p>Take a screenshot of a high endothelial venule in the paracortex, from <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_42.html">Slide 42: Lymph Node, H&amp;E</a>. Then go <a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/7.php">learn the flow of lymph through a node</a>.</p>
