@@ -4,6 +4,13 @@ $tablet-max: 767px;
 $tablet-min: 556px;
 $mobile-max: 555px;
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body, div, span, p, a, input, textarea, label, td, tr, th, table, thead, tbody {
+  font-family: 'Merriweather', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 .navbar-inverse .navbar-brand {
   font-family: 'Architects Daughter', cursive;
   font-size: 2em;
