@@ -30,8 +30,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <p class="bold">What is the difference between <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_123.html">Slide 123 Thymus, H&amp;E</a> and <a target="_blank" href="http://medsci.indiana.edu/histo/virtual/msci_126.html">Slide 126 Thymus, H&amp;E</a>?</p>
 <div class="margin">
 	<textarea class="check-input" data-hintindex="23"></textarea>
-	<!--i class="input icon ion-alert-circled"></i>
-	<div class="hint"><i class="icon ion-ios-close"></i></div-->
+	<i class="input icon ion-alert-circled"></i>
+	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
 <div class="grid-container margin clearfix">
 	<div class="list-item first half">
