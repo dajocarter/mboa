@@ -23,9 +23,9 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 <h3>Histology Scavenger Hunt!</h3>
 <p>Take a screenshot of <a target="_blank" href="http://medsci.indiana.edu/histo/virtual/73_bl_5.html">Slide 73, Spleen, Kornhauser’s Quad</a>. Try to find the following on your slide: <span class="bold">capsule</span>, <span class="bold">central arteriole</span>, <span class="bold">germinal center</span>, <span class="bold">marginal zone</span>, and <span class="bold">red pulp</span>.</p>
 
-<p>A few medical residents you are shadowing came from Harvard and they are extremely confused as to the function of the spleen (<span class="italic">watch <a class="popup-video" href="https://www.youtube.com/watch?v=aEi_4Cyx4Uw">"What Does the Spleen Do? ft. Harvard Medical School"</a> for homework if you haven’t seen it already!</span>).</p>
+<p class="margin-top-lg">A few medical residents you are shadowing came from Harvard and they are extremely confused as to the function of the spleen (<span class="italic">watch <a class="popup-video" href="https://www.youtube.com/watch?v=aEi_4Cyx4Uw">"What Does the Spleen Do? ft. Harvard Medical School"</a> for homework if you haven’t seen it already!</span>).</p>
 
-<p class="bold">Kindly explain to them 3 functions of this majestic organ.</p>
+<p class="bold margin-top-lg">Kindly explain to them 3 functions of this majestic organ.</p>
 
 <div class="row clearfix">
 	<div class="list-item col-sm-4">

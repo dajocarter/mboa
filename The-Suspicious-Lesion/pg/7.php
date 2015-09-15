@@ -6,7 +6,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 ?>
 
-<p class="bold">Which of the following is the correct order of lymph flow through the lymph node?</p>
+<p class="bold margin-top">Which of the following is the correct order of lymph flow through the lymph node?</p>
 
 <ol class="list">
 	<li>Afferent lymphatic vessel &rarr; subcapsular sinus &rarr; medullary sinus &rarr; trabecular sinus &rarr; efferent lymphatic vessel</li>
