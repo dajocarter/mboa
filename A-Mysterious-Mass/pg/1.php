@@ -12,17 +12,17 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<figcaption></figcaption>
 </figure>
 <p>You conclude the mass originated from:</p>
-<div class="grid-container clearfix">
-	<div class="list-item first fourth tablet-first-half">
+<div class="row clearfix">
+	<div class="list-item col-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/thyroid.php" class="btn btn-default">Thyroid</a>
 	</div>
-	<div class="list-item fourth tablet-second-half">
+	<div class="list-item col-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/lymph_node.php" class="btn btn-default">Lymph node</a>
 	</div>
-	<div class="list-item fourth tablet-first-half">
+	<div class="list-item col-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/thymus.php" class="btn btn-default">Thymus</a>
 	</div>
-	<div class="list-item last fourth tablet-second-half">
+	<div class="list-item col-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/parathyroid.php" class="btn btn-default">Parathyroid</a>
 	</div>
 </div>

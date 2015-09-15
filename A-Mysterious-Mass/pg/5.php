@@ -22,15 +22,15 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<i class="icon ion-ios-checkmark input"></i>
 </div>
 
-<div class="img-split margin grid-container clearfix">
-	<div class="list-item first half">
+<div class="img-split margin row clearfix">
+	<div class="list-item col-sm-6">
 		<ul class="left">
 			<li>Thymocytes that arrive to the thymus are considered to be in the double-negative stage and do not posses a T-cell receptor (TCR), CD4, or CD8 glycoproteins until they proliferate and begin differentiation in the cortex.</li>
 			<li>Eventually both CD4 and CD8 are expressed (double-positive stage).</li>
 			<li>These naïve thymocytes are schooled before they are released into circulation, undergoing a two-stage selection process that begins in the cortex with positive (clonal) selection.</li>
 		</ul>
 	</div>
-	<div class="list-item last half">
+	<div class="list-item col-sm-6">
 		<figure>
 			<img class="img-responsive" src="<?php echo BASE_URL; ?>assets/img/mm-positive-selection.png">
 			<figcaption>Source: <a target="_blank" href="//accessiblebiosci.blogspot.com/2013/08/negative-selectivi-t-dzhagalov-et-al.html">http://accessiblebiosci.blogspot.com/2013/08/negative-selectivi-t-dzhagalov-et-al.html</a></figcaption>
@@ -48,14 +48,14 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <p class="bold margin-top">If lymphocytes pass the positive selection test in the thymic cortex, they move onto their next test in the:</p>
 
-<div class="grid-container margin-top clearfix">
-	<div class="list-item third first">
+<div class="row margin-top clearfix">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/sub_sinus.php" class="btn btn-default">Subcapsular Sinus</a>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/paracortex.php" class="btn btn-default">Paracortex</a>
 	</div>
-	<div class="list-item third last">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/medulla.php" class="btn btn-default">Medulla</a>
 	</div>
 </div>

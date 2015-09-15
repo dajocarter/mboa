@@ -14,20 +14,20 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 </figure>
 
 <p class="bold">Thymic epithelial cells (TECs) in the cortex have 4 important functions:</p>
-<div class="grid-container clearfix">
-	<div class="list-item first fourth tablet-first-half">
+<div class="row clearfix">
+	<div class="list-item col-sm-3">
 		<label>1.) <input type="text" class="check-input" data-hintindex="15"><i class="icon ion-alert-circled input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item fourth tablet-first-half">
+	<div class="list-item col-sm-3">
 		<label>2.) <input type="text" class="check-input" data-hintindex="16"><i class="icon ion-alert-circled input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item fourth tablet-first-half">
+	<div class="list-item col-sm-3">
 		<label>3.) <input type="text" class="check-input" data-hintindex="17"><i class="icon ion-alert-circled input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item last fourth tablet-first-half">
+	<div class="list-item col-sm-3">
 		<label>4.) <input type="text" class="check-input" data-hintindex="18"><i class="icon ion-alert-circled input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
@@ -37,14 +37,14 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <span class="bold">Lymphoblasts are considered a component of:</span></p>
 
-<div class="grid-container margin-top clearfix">
-	<div class="list-item third first">
+<div class="row margin-top clearfix">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/innate.php" class="btn btn-default">Innate Immunity</a>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/adaptive.php" class="btn btn-default">Adaptive Immunity</a>
 	</div>
-	<div class="list-item third last">
+	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/inherent.php" class="btn btn-default">Inherent Immunity</a>
 	</div>
 </div>

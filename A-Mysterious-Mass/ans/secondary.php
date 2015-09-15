@@ -8,16 +8,16 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <p>Note that secondary lymphoid organs include the spleen, lymph nodes, and MALT. Dense aggregations of MALT can be found in:</p>
 
-<div class="grid-container clearfix">
-	<div class="list-item first third">
+<div class="row clearfix">
+	<div class="list-item col-sm-4">
 		<label>1.) <input type="text" class="check-input" data-ansindex="11" data-hintindex="9"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item third">
+	<div class="list-item col-sm-4">
 		<label>2.) <input type="text" class="check-input" data-ansindex="12" data-hintindex="10"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item last third">
+	<div class="list-item col-sm-4">
 		<label>3.) <input type="text" class="check-input" data-ansindex="13" data-hintindex="11"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>

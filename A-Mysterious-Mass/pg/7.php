@@ -6,13 +6,13 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 ?>
 
-<div class="img-split medium grid-container clearfix">
-	<div class="list-item first half">
+<div class="img-split medium row clearfix">
+	<div class="list-item col-sm-6">
 		<p>The results of a blood test detected acetylcholine receptor (AchR) antibodies. Based on the symptoms your patient is experiencing in conjunction with the histological analysis leads you to diagnose myasthenia gravis from thymoma.</p>
 
 		<p>Thymomas are neoplasms derived from thymic epithelial cells that can display skeletal muscle protein epitopes (including acetylcholine receptors, ryanodine receptors, and titin).</p>
 	</div>
-	<div class="list-item last half">
+	<div class="list-item col-sm-6">
 		<figure>
 			<img class="img-responsive" src="<?php echo BASE_URL; ?>assets/img/MM-Pg7.png" alt="myasthenia-gravis">
 			<figcaption>Source: <a target="_blank" href="//www.beverlydoc.com/our-services/myasthenia-gravis/">http://www.beverlydoc.com/our-services/myasthenia-gravis/</a></figcaption>

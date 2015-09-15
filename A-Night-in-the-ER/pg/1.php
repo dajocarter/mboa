@@ -12,23 +12,25 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <p class="bold">Click on the histology slide below that depicts the organ injured.</p>
 
-<div class="grid-container clearfix">
-	<div class="list-item half first">
+<div class="row clearfix">
+	<div class="list-item col-sm-6">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ul.php">
 			<img src="<?php echo BASE_URL; ?>assets/img/UL.png" class="img-responsive" alt="">
 		</a>
 	</div>
-	<div class="list-item half last">
+	<div class="list-item col-sm-6">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ur.php">
 			<img src="<?php echo BASE_URL; ?>assets/img/UR.png" class="img-responsive" alt="">
 		</a>
 	</div>
-	<div class="list-item second-row half first">
+</div>
+<div class="row clearfix">
+	<div class="list-item col-sm-6">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ll.php">
 			<img src="<?php echo BASE_URL; ?>assets/img/LL.png" class="img-responsive" alt="">
 		</a>
 	</div>
-	<div class="list-item second-row half last">
+	<div class="list-item col-sm-6">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/lr.php">
 			<img src="<?php echo BASE_URL; ?>assets/img/LR.png" class="img-responsive" alt="">
 		</a>

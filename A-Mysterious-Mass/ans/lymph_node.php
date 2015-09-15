@@ -13,24 +13,24 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<img src="<?php echo BASE_URL; ?>assets/img/MM-LymphNode-Image_ER-Palatine-Tonsil.png" class="img-responsive" alt="lymph_node">
 	<figcaption></figcaption>
 </figure>
-<div class="grid-container clearfix">
-	<div class="list-item first third tablet-first-half">
+<div class="row">
+	<div class="list-item col-sm-4 col-lg-2 col-lg-offset-1">
 		<label>A.) <input type="text" class="check-input" data-ansindex="1" data-hintindex="0"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item third tablet-second-half">
+	<div class="list-item col-sm-4 col-lg-2">
 		<label>B.) <input type="text" class="check-input" data-ansindex="2" data-hintindex="1"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item third tablet-first-half">
+	<div class="list-item col-sm-4 col-lg-2">
 		<label>C.) <input type="text" class="check-input" data-ansindex="3" data-hintindex="2"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item second-row half tablet-second-half">
+	<div class="list-item col-sm-4 col-sm-offset-2 col-lg-offset-0 col-lg-2">
 		<label>D.) <input type="text" class="check-input" data-ansindex="4" data-hintindex="3"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
-	<div class="list-item second-row half tablet-first-half">
+	<div class="list-item col-sm-4 col-lg-2">
 		<label>E.) <input type="text" class="check-input" data-ansindex="5" data-hintindex="4"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
