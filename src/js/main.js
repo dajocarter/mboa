@@ -212,10 +212,10 @@ $(document).ready(function() {
         $(this).bind('input keyup click', function() {
             var index = $(this).data('ansindex');
             var ans = answers[index];
-            var choice = $(this).val();
+            var choice = $(this).val().toUpperCase();
             
             if ($.type(ans) === 'string') {
-                if (choice === ans) {
+                if (choice === ans.toUpperCase()) {
                     $(this).addClass('correct');
                     $(this).siblings('.ion-ios-help').hide();
                     $(this).siblings('.ion-ios-checkmark').show();
@@ -230,9 +230,7 @@ $(document).ready(function() {
             else if ($.type(ans) === 'array') {
                 var index = -1;
                 ans.some(function(elt, idx) {
-                    console.log('choice is', choice);
-                    console.log('option is', elt);
-                    if (choice === elt) {
+                    if (choice === elt.toUpperCase()) {
                         index = idx;
                         return true;
                     }
