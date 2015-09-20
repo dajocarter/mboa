@@ -173,9 +173,9 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             "An aggregation of proliferating B cells", // 1
             "The superficial region of lymph nodes containing nodules of B cells", 
             "A region of lymph nodes containing T cells, dendritic cells, and HEVs", 
-            "The deepest region of lymph nodes consisting of sinuses and cord packed with lymphocytes, plasma cells, and macrophages",
+            "The deepest region of lymph nodes consisting of sinuses and cords packed with lymphocytes, plasma cells, and macrophages",
             "A region with fewer and larger, more developmentally mature thymocytes that undergo negative selection (aka clonal deletion)",
-            "Thin connective tissue covering",  // 6
+            "A thin connective tissue covering",  // 6
             "Region where thymocytes undergo positive selection (aka clonal selection)",
             "Extensions of the capsule separating the parenchyma into lobes",
             "Lymphatic tissue in nasopharynx and oropharynx",
@@ -222,7 +222,8 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             "Component of splenic pulp composed of blood-filled sinuses and splenic cords", // 50
             "Extensions of the capsule extending into the parenchyma (splenic pulp)", // 51 
             "Numerous structures entering the convex surface of a lymph node", // 52
-            "A space immediately deep to the subcapsular sinus" // 53
+            "A space immediately deep to the subcapsular sinus", // 53
+            "A dense connective tissue covering" //54
         ];
         /********************** GRADE INPUTS *************************/
         $(this).bind('input keyup click', function() {
@@ -269,7 +270,6 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             var hint = hints[index];
             $(this).fadeOut('slow');
             var a = $(this).parents('.list-item').find('.hint'), b = $(this).siblings('.hint');
-            console.log("a and b are", a, b);
             if (a.length > 0 && a.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(a);
                 a.fadeIn('slow');
