@@ -35,13 +35,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <p class="bold margin-top-lg">What <span class="underline">region</span> of the lymph node is structure B located in?</p>
 <div class="row margin-top clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/cortex.php" class="btn btn-default">Cortex</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/cortex" class="btn btn-default">Cortex</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/paracortex.php" class="btn btn-default">Paracortex</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/paracortex" class="btn btn-default">Paracortex</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/medulla.php" class="btn btn-default">Medulla</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/medulla" class="btn btn-default">Medulla</a>
 	</div>
 </div>
 

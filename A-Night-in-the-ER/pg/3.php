@@ -84,10 +84,10 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <div class="row clearfix">
 	<div class="list-item col-sm-6">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/operate.php" class="sixcol first">Perform a blood transfusion and CT scan the abdomen and pelvis</a>
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/operate" class="sixcol first">Perform a blood transfusion and CT scan the abdomen and pelvis</a>
 	</div>
 	<div class="list-item col-sm-6">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/CTscan.php" class="sixcol last">Rush the patient to the operating room for exploratory surgery and possible splenectomy</a>
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/CTscan" class="sixcol last">Rush the patient to the operating room for exploratory surgery and possible splenectomy</a>
 	</div>
 </div>
 

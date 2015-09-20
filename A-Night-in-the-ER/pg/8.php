@@ -31,7 +31,7 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
 
-<p><a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/9.php">Go check-in with your first patient</a></p>
+<p><a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/9">Go check-in with your first patient</a></p>
 
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

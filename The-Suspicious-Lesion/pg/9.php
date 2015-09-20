@@ -50,22 +50,22 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/stage0.php">Stage 0</a></td>
+			<td><a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/stage0">Stage 0</a></td>
 			<td>Duct cell or lobular in situ</td>
 			<td>92%</td>
 		</tr>
 		<tr>
-			<td><a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/stage1.php">Stage I</a></td>
+			<td><a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/stage1">Stage I</a></td>
 			<td>Invasive carcinoma, &lt;2 cm <br> No metastasis</td>
 			<td>87%</td>
 		</tr>
 		<tr>
-			<td><a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/stage2.php">Stage II</a></td>
+			<td><a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/stage2">Stage II</a></td>
 			<td>Invasive carcinoma, &lt;5 cm <br> Involved axillary nodes <br> No distant metastasis</td>
 			<td>75%</td>
 		</tr>
 		<tr>
-			<td><a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/stage3.php">Stage III</a></td>
+			<td><a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/stage3">Stage III</a></td>
 			<td>Invasive cancer >5cm, with nodal involvement <br> Any cancer with ipsilateral internal mammary node involvement <br> Any cancer with chest wall fixation, skin or pectoral involvement, inflammatory carcinoma <br> No distant metastasis</td>
 			<td>46%</td>
 		</tr>

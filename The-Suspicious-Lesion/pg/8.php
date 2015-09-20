@@ -22,13 +22,13 @@ biopsy</a><sup>*</sup>.</p>
 <p class="bold margin-top">You explain that removal of lymph nodes may result in decreased lymphatic drainage, a condition known as:</p>
 <div class="row margin-top clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphedema.php" class="btn btn-default">Lymphedema</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphedema" class="btn btn-default">Lymphedema</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphoma.php" class="btn btn-default">Lymphoma</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphoma" class="btn btn-default">Lymphoma</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphocytic-vasculitis.php" class="btn btn-default">Lymphocytic vasculitis</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymphocytic-vasculitis" class="btn btn-default">Lymphocytic vasculitis</a>
 	</div>
 </div>
 

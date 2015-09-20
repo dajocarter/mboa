@@ -26,13 +26,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 <div class="row margin-top clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/thymus.php" class="btn btn-default">Thymus</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/thymus" class="btn btn-default">Thymus</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymph_node.php" class="btn btn-default">Lymph Node</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/lymph_node" class="btn btn-default">Lymph Node</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/spleen.php" class="btn btn-default">Spleen</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/spleen" class="btn btn-default">Spleen</a>
 	</div>
 </div>
 

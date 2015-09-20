@@ -14,6 +14,6 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<img src="<?php echo BASE_URL; ?>assets/img/MM-Parathyroid2.jpg" class="img-responsive" alt="parathyroid">
 	<figcaption>Source: <a target="_blank" href="//www.nature.com/nrrheum/journal/v7/n11/fig_tab/nrrheum.2011.130_F2.html">http://www.nature.com/nrrheum/journal/v7/n11/fig_tab/nrrheum.2011.130_F2.html</a></figcaption>
 </figure>
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/1.php">Return to investigate the slide from the mysterious mediastinal mass</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/1">Return to investigate the slide from the mysterious mediastinal mass</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

@@ -2,6 +2,6 @@
 
 require_once("../../templates/config.php");
 
-header("Location: " . BASE_URL . "A-Mysterious-Mass/pg/2.php");
+header("Location: " . BASE_URL . "A-Mysterious-Mass/pg/2");
 
 ?>

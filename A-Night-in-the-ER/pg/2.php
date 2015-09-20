@@ -45,7 +45,7 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	</div>
 </div>
 
-<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/3.php">Continue on to contemplate white pulp.</a>
+<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/3">Continue on to contemplate white pulp.</a>
 
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

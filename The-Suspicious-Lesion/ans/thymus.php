@@ -32,6 +32,6 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	</div>
 </div>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/1.php">Go back and reassess the patient’s slide</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/1">Go back and reassess the patient’s slide</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

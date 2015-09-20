@@ -15,6 +15,6 @@ system, ultimately draining into the thoracic duct.</p>
   <figcaption><a href="http://www.slideshare.net/TheSlaps/ch-23lecturepresentation-39270745">http://www.slideshare.net/TheSlaps/ch-23lecturepresentation-39270745</a></figcaption>
 </figure>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/4.php">Go back and reconsider where lymph from the breast drains</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/4">Go back and reconsider where lymph from the breast drains</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

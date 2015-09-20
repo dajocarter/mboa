@@ -25,13 +25,13 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <div class="row margin-top clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/hassall.php" class="btn btn-default">Hassall’s corpuscles</a>
+		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/hassall" class="btn btn-default">Hassall’s corpuscles</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/epi_cells.php" class="btn btn-default">Epithelioreticular cells</a>
+		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/epi_cells" class="btn btn-default">Epithelioreticular cells</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/thymocytes.php" class="btn btn-default">Thymocytes</a>
+		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/thymocytes" class="btn btn-default">Thymocytes</a>
 	</div>
 </div>
 

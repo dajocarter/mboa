@@ -31,13 +31,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <p class="bold margin-top">The dark black lines represent:</p>
 <div class="row margin-top clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type1.php" class="btn btn-default">Type I Collagen</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type1" class="btn btn-default">Type I Collagen</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type2.php" class="btn btn-default">Type II Collagen</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type2" class="btn btn-default">Type II Collagen</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type3.php" class="btn btn-default">Type III Collagen</a>
+		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/type3" class="btn btn-default">Type III Collagen</a>
 	</div>
 </div>
 

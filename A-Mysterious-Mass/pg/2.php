@@ -35,13 +35,13 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <p class="bold margin-top-lg">The thymus is considered a ________________ lymphoid organ.</p>
 <div class="row clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/primary.php" class="btn btn-default">Primary</a>
+		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/primary" class="btn btn-default">Primary</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/secondary.php" class="btn btn-default">Secondary</a>
+		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/secondary" class="btn btn-default">Secondary</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/tertiary.php" class="btn btn-default">Tertiary</a>
+		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/tertiary" class="btn btn-default">Tertiary</a>
 	</div>
 </div>
 

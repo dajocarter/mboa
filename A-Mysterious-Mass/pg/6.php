@@ -42,6 +42,6 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	</div>
 </div>
 
-<p class="back-link">The results from a blood test that you ordered are in. <a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/7.php">Go check-in with your patient.</a></p>
+<p class="back-link">The results from a blood test that you ordered are in. <a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/7">Go check-in with your patient.</a></p>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

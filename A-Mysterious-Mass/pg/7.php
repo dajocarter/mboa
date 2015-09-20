@@ -26,8 +26,8 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
 
-<p class="back-link">You advise for a <a class="popup-video" href="http://www.youtube.com/watch?v=VylU8SFE6R4">thymectomy</a> (complete surgical resection of the thymus). The thoracoscopic operation was successful. Surgical margins were negative and there was no evidence of macroscopic or microscopic capsular invasion. Intravenous infusion of immunoglobulin G (IgG) helped to remove circulating pathogenic antibodies and the patient improved.</p>
+<p class="back-link">You advise for a <a class="popup-video" href="//www.youtube.com/watch?v=VylU8SFE6R4">thymectomy</a> (complete surgical resection of the thymus). The thoracoscopic operation was successful. Surgical margins were negative and there was no evidence of macroscopic or microscopic capsular invasion. Intravenous infusion of immunoglobulin G (IgG) helped to remove circulating pathogenic antibodies and the patient improved.</p>
 
-<p class="back-link margin-top-lg">Nice work! <a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/1.php">Return to the beginning of the case and play again!</a> Try selecting other options to verify you understand <span class="italic">why</span> an answer was incorrect before moving on.</p>
+<p class="back-link margin-top-lg">Nice work! <a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/1">Return to the beginning of the case and play again!</a> Try selecting other options to verify you understand <span class="italic">why</span> an answer was incorrect before moving on.</p>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

@@ -14,22 +14,22 @@ include(ROOT_PATH . "templates/header.php"); ?>
 <div class="row cases margin-top-lg">
   <h2>Cases</h2>
   <div class="col-md-4 margin-top-lg">
-    <a class="round-img" href="/A-Mysterious-Mass/pg/1.php"><img src="assets/img/mm-pg1.png"></a>
-    <h3><a href="/A-Mysterious-Mass/pg/1.php">A Mysterious Mass</a></h3>
+    <a class="round-img" href="/A-Mysterious-Mass/pg/1"><img src="assets/img/mm-pg1.png"></a>
+    <h3><a href="/A-Mysterious-Mass/pg/1">A Mysterious Mass</a></h3>
     <p class="italic">A 33-year-old male presents with an anterior mediastinal mass…</p>
-    <a href="/A-Mysterious-Mass/references.php">References</a>
+    <a href="/A-Mysterious-Mass/references">References</a>
   </div>
   <div class="col-md-4 margin-top-lg">
-    <a class="round-img" href="/The-Suspicious-Lesion/pg/1.php"><img src="assets/img/tsl-pg1.png"></a>
-    <h3><a href="/The-Suspicious-Lesion/pg/1.php">The Suspicious Lesion</a></h3>
+    <a class="round-img" href="/The-Suspicious-Lesion/pg/1"><img src="assets/img/tsl-pg1.png"></a>
+    <h3><a href="/The-Suspicious-Lesion/pg/1">The Suspicious Lesion</a></h3>
     <p class="italic">A 57-year-old female is evaluated for a mammogram with a suspicious lesion…</p>
-    <a href="/The-Suspicious-Lesion/references.php">References</a>
+    <a href="/The-Suspicious-Lesion/references">References</a>
   </div>
   <div class="col-md-4 margin-top-lg">
-    <a class="round-img" href="/A-Night-in-the-ER/pg/1.php"><img src="assets/img/UL.png"></a>
-    <h3><a href="/A-Night-in-the-ER/pg/1.php">A Night in the E.R.</a></h3>
     <p class="italic">While working in the emergency room one evening, an unconscious 58-year-old male is rushed into the scene…</p>
-    <a href="/A-Night-in-the-ER/references.php">References</a>
+    <a class="round-img" href="/A-Night-in-the-ER/pg/1"><img src="assets/img/UL.png"></a>
+    <h3><a href="/A-Night-in-the-ER/pg/1">A Night in the E.R.</a></h3>
+    <a href="/A-Night-in-the-ER/references">References</a>
   </div>
 </div>
 

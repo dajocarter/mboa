@@ -12,9 +12,9 @@ These superficial lymph nodes eventually drain into the deep cervical lymph node
 
 <figure>
   <img src="<?php echo BASE_URL; ?>assets/img/lymphatic-drainage.jpg" class="img-responsive" alt="lymphatic drainage of the head and neck">
-  <figcaption><a href="http://d-mis-web.ana.bris.ac.uk/calnet/Sup%20H&N/page5.htm"> http://d-mis-web.ana.bris.ac.uk/calnet/Sup%20H&N/page5.htm</a></figcaption>
+  <figcaption><a href="//d-mis-web.ana.bris.ac.uk/calnet/Sup%20H&N/page5.htm"> http://d-mis-web.ana.bris.ac.uk/calnet/Sup%20H&N/page5.htm</a></figcaption>
 </figure>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/4.php">Go back and reconsider where lymph from the breast drains</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/4">Go back and reconsider where lymph from the breast drains</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

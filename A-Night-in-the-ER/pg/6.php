@@ -33,13 +33,13 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 <p class="bold">PALS are formed <span class="underline">mainly</span> from:</p>
 <div class="row clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/b-lymph.php" class="btn btn-default">B-Lymphocytes</a>
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/b-lymph" class="btn btn-default">B-Lymphocytes</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/t-lymph.php" class="btn btn-default">T-Lymphocytes</a>
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/t-lymph" class="btn btn-default">T-Lymphocytes</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/macrophages.php" class="btn btn-default">Macrophages</a>
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/macrophages" class="btn btn-default">Macrophages</a>
 	</div>
 </div>
 

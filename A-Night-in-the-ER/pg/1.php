@@ -14,24 +14,24 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <div class="row clearfix">
 	<div class="list-item col-sm-6">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ul.php">
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ul">
 			<img src="<?php echo BASE_URL; ?>assets/img/UL.png" class="img-responsive" alt="">
 		</a>
 	</div>
 	<div class="list-item col-sm-6">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ur.php">
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ur">
 			<img src="<?php echo BASE_URL; ?>assets/img/UR.png" class="img-responsive" alt="">
 		</a>
 	</div>
 </div>
 <div class="row clearfix">
 	<div class="list-item col-sm-6">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ll.php">
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/ll">
 			<img src="<?php echo BASE_URL; ?>assets/img/LL.png" class="img-responsive" alt="">
 		</a>
 	</div>
 	<div class="list-item col-sm-6">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/lr.php">
+		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/lr">
 			<img src="<?php echo BASE_URL; ?>assets/img/LR.png" class="img-responsive" alt="">
 		</a>
 	</div>

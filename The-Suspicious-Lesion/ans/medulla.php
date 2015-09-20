@@ -20,6 +20,6 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/5.php">Return to meditate on the lymph node regions</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/5">Return to meditate on the lymph node regions</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

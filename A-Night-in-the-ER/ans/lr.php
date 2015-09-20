@@ -37,6 +37,6 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	</div>
 </div>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/1.php">Return to slides</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/1">Return to slides</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

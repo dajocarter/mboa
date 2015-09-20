@@ -14,6 +14,6 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<figcaption></figcaption>
 </figure>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/1.php">Return to investigate the slide from the mysterious mediastinal mass</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/1">Return to investigate the slide from the mysterious mediastinal mass</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

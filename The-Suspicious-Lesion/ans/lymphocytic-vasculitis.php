@@ -14,6 +14,6 @@ This condition can lead to painful skin welts and may be caused from immune syst
   <figcaption><a href="//www.ajnr.org/content/26/3/642.figures-only">http://www.ajnr.org/content/26/3/642.figures-only</a></figcaption>
 </figure>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/8.php">Return to contemplate the term that describes the result of inhibiting lymphatic drainage</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/8">Return to contemplate the term that describes the result of inhibiting lymphatic drainage</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

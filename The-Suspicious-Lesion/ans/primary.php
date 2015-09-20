@@ -11,6 +11,6 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <i class="input icon ion-ios-checkmark"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/2.php">Reevaluate lymph node classification as a lymphoid organ</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/2">Reevaluate lymph node classification as a lymphoid organ</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>
