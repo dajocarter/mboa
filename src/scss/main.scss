@@ -150,8 +150,20 @@ a.back-link {
   font-size: 1.5em;
 }
 
-.ion-ios-help {
-  color: orange;
+.ion-ios-help-empty {
+  background-color: orange;
+  color: white;
+  position: relative;
+  top: 5px;
+  padding: 10px;
+  display: inline-block;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .ion-alert-circled {
@@ -368,7 +380,7 @@ label {
 }
 
 .check-input {
-  width: calc(100% - 50px);
+  width: calc(100% - 51px);
 
   &.correct {
     -webkit-transition: all 0.30s ease-in-out;

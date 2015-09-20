@@ -238,7 +238,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
             if ($.type(ans) === 'string') {
                 if (choice === ans.toUpperCase()) {
                     thisInput.addClass('correct');
-                    thisInput.siblings('.ion-ios-help').hide();
+                    thisInput.siblings('.ion-ios-help-empty').hide();
                     thisInput.siblings('.ion-ios-checkmark').show();
                     $('#rankl').siblings('.hint').fadeIn('slow');
                 }
@@ -248,7 +248,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
                     var hint1 = thisInput.parents('.list-item').find('.hint .ion-ios-close');
                     var hint2 = thisInput.siblings('.hint').find('.ion-ios-close');
                     if (!hint1.is(':hidden') || !hint2.is(':hidden')) {
-                        thisInput.siblings('.ion-ios-help').hide();
+                        thisInput.siblings('.ion-ios-help-empty').hide();
                     }
                 }
             }
@@ -262,18 +262,18 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
                 });
                 if (index > -1) {
                     thisInput.addClass('correct');
-                    thisInput.siblings('.ion-ios-help').hide();
+                    thisInput.siblings('.ion-ios-help-empty').hide();
                     thisInput.siblings('.ion-ios-checkmark').show();
                 }
                 else {
                     thisInput.removeClass('correct');
-                    thisInput.siblings('.ion-ios-help').show();
+                    thisInput.siblings('.ion-ios-help-empty').show();
                     thisInput.siblings('.ion-ios-checkmark').hide();
                 }
             }
         });
         /************************** SHOW HINT **************************/
-        inputs.siblings('.ion-ios-help').bind('click', function() {
+        inputs.siblings('.ion-ios-help-empty').bind('click', function() {
             var thisInput = $(this);
             var index = thisInput.siblings('.check-input').data('hintindex');
             var hint = hints[index];
@@ -322,10 +322,10 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
         hint.find('.ion-ios-close').bind('click', function() {
             hint.fadeOut('slow');
             if (hint.parents('.list-item').find('.ion-ios-checkmark').is(":hidden")) {
-                hint.parents('.list-item').find('.ion-ios-help').fadeIn('slow');
+                hint.parents('.list-item').find('.ion-ios-help-empty').fadeIn('slow');
             }
             else if (hint.siblings('.ion-ios-checkmark').is(":hidden")) {
-                hint.siblings('.ion-ios-help').fadeIn('slow');
+                hint.siblings('.ion-ios-help-empty').fadeIn('slow');
             }/*
             else if (hint.parents('.list-item').find('.ion-alert-circled').is(":hidden")) {
                 hint.parents('.list-item').find('ion-alert-circled').fadeIn('slow');

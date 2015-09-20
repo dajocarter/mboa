@@ -12,7 +12,7 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <p class="bold">What is this specific tissue?</p>
 <input type="text" class="check-input" data-ansindex="22" data-hintindex="25">
-<i class="input icon ion-ios-help"></i><i class="input icon ion-ios-checkmark"></i>
+<i class="input icon ion-ios-help-empty"></i><i class="input icon ion-ios-checkmark"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
 <figure>

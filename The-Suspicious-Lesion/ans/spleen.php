@@ -15,19 +15,19 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 </figure>
 <div class="row clearfix">
 	<div class="list-item col-sm-3">
-		<label>A.) <input type="text" class="check-input" data-ansindex="8" data-hintindex="48"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<label>A.) <input type="text" class="check-input" data-ansindex="8" data-hintindex="48"><i class="icon ion-ios-help-empty input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item col-sm-3">
-		<label>B.) <input type="text" class="check-input" data-ansindex="32" data-hintindex="49"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<label>B.) <input type="text" class="check-input" data-ansindex="32" data-hintindex="49"><i class="icon ion-ios-help-empty input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item col-sm-3">
-		<label>C.) <input type="text" class="check-input" data-ansindex="33" data-hintindex="50"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<label>C.) <input type="text" class="check-input" data-ansindex="33" data-hintindex="50"><i class="icon ion-ios-help-empty input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item col-sm-3">
-		<label>D.) <input type="text" class="check-input" data-ansindex="34" data-hintindex="51"><i class="icon ion-ios-help input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<label>D.) <input type="text" class="check-input" data-ansindex="34" data-hintindex="51"><i class="icon ion-ios-help-empty input"></i><i class="icon ion-ios-checkmark input"></i></label>
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 </div>
