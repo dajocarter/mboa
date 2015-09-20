@@ -10,4 +10,4 @@ include(ROOT_PATH . "templates/header.php"); ?>
 
 	<h1 class="title">A Night in the E.R.</h1>
 
-	<div class="container cases">
+	<div class="cases">
