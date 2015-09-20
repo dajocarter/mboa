@@ -26,9 +26,9 @@ include(ROOT_PATH . "templates/header.php"); ?>
     <a href="/The-Suspicious-Lesion/references">References</a>
   </div>
   <div class="col-md-4 margin-top-lg">
-    <p class="italic">While working in the emergency room one evening, an unconscious 58-year-old male is rushed into the scene…</p>
     <a class="round-img" href="/A-Night-in-the-ER/pg/1"><img src="assets/img/UL.png"></a>
     <h3><a href="/A-Night-in-the-ER/pg/1">A Night in the E.R.</a></h3>
+    <p class="italic">While working in the emergency room one evening, an unconscious 41-year-old male is rushed into the scene…</p>
     <a href="/A-Night-in-the-ER/references">References</a>
   </div>
 </div>
@@ -36,12 +36,12 @@ include(ROOT_PATH . "templates/header.php"); ?>
 <div class="row extras margin-top-lg">
   <h2>Learn More about the Cases</h2>
   <div class="col-md-4 margin-top-lg">
-    <a class="round-img" href="/Learning-Objectives"><img src="assets/img/mm-pg1.png"><i class="icon ion-ios-checkmark-empty"></i></a>
+    <a class="round-img" href="/Learning-Objectives"><img src="assets/img/adrenal1I4-1d.jpg"><i class="icon ion-ios-checkmark-empty"></i></a>
     <h3><a href="/Learning-Objectives">Learning Objectives</a></h3>
-    <p>View the learning objectives for these cases and see which cases the objectives can be found.</p>
+    <p>View the <a href="/Learning-Objectives">learning objectives</a> for these cases and see which cases the objectives can be found.</p>
   </div>
   <div class="col-md-4 margin-top-lg">
-    <a class="round-img" href="javascript:void(0)"><img src="assets/img/tsl-pg1.png"><i class="icon ion-ios-help-empty"></i></a>
+    <a class="round-img" href="javascript:void(0)"><img src="assets/img/myocard1H2-1L.jpg"><i class="icon ion-ios-help-empty"></i></a>
     <h3>What is a flipped class?</h3>
     <p>Watch this <a class="video-link" href="//www.youtube.com/watch?v=iQWvc6qhTds">video</a> explaining what a flipped 
     class is, and then check out this 
@@ -49,7 +49,7 @@ include(ROOT_PATH . "templates/header.php"); ?>
      to learn more about flipped classes.</p>
   </div>
   <div class="col-md-4 margin-top-lg">
-    <a class="round-img" href="javascript:void(0)"><img src="assets/img/UL.png"><i class="icon ion-ios-cloud-download-outline"></i></a>
+    <a class="round-img" href="javascript:void(0)"><img src="assets/img/Hyaline2D5-1d.jpg"><i class="icon ion-ios-cloud-download-outline"></i></a>
     <h3>Download Links</h3>
     <p>Download the HAPS 2015 Workshop Presentation as a <a href="files/pptx.php">.pptx file</a>, 
     a <a href="files/ppt.php">.ppt file</a>, or a <a href="files/pdf.php">.pdf file</a>.</p>
