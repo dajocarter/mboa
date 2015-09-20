@@ -13,22 +13,22 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
 <div class="row margin clearfix">
-	<div class="list-item col-sm-6">
+	<div class="col-sm-6">
 		<p class="margin-top">You alleviate your patient’s unease by explaining that the margins of her positive lymph nodes were free of disease after the SNL biopsy and a CAD is not necessary. As an additional measure, you advise for a bone and liver scan. Luckily no additional metastasis was seen.</p>
 
 		<p class="bold">From the original histology slide, what vessels were infiltrated with tumor cells?</p>
-		<div>
+		<div class="list-item">
 			<input type="text" class="check-input" data-ansindex="40" data-hintindex="52">
 			<i class="input icon ion-ios-help-empty"></i><i class="input icon ion-ios-checkmark"></i>
 			<div class="hint"><i class="icon ion-ios-close"></i></div>
 		</div>
-		<div class="margin-top">
+		<div class="list-item margin-top">
 			<input type="text" class="check-input" data-ansindex="1" data-hintindex="53">
 			<i class="input icon ion-ios-help-empty"></i><i class="input icon ion-ios-checkmark"></i>
 			<div class="hint"><i class="icon ion-ios-close"></i></div>
 		</div>
 	</div>
-	<figure class="list-item col-sm-6">
+	<figure class="col-sm-6">
 		<img src="<?php echo BASE_URL; ?>assets/img/SL-LN-tumor-cells.png" class="img-responsive" alt="">
 		<figcaption></figcaption>
 	</figure>
