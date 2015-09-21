@@ -1,3 +1,5 @@
+@import "vendors";
+
 /********** GLOBALS ***********/
 $desktop-min: 768px;
 $tablet-max: 767px;
@@ -262,10 +264,17 @@ a.back-link {
   text-align: center;
 }
 
-.cases p {
-  font-size: 1.3em;
+.cases,
+.extras {
+  > div * {
+    text-align: center;
+  }
 
-  &.note {
+  .reference {
+    display: block;
+  }
+
+  .note {
     font-size: .75em;
   }
 }
