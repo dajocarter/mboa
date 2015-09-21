@@ -147,13 +147,16 @@ a.back-link {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    padding: 0;
+    background-color: transparent;
+    display: block;
   }
 }
 
 /********** ICONS ***********/
 .icon.input {
   margin-left: 4px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .ion-ios-help-empty {
@@ -179,6 +182,8 @@ a.back-link {
 .ion-ios-checkmark {
   display: none;
   color: #44cf6c;
+  position: relative;
+  top: 5px;
 }
 
 /********** PRETEST ***********/
@@ -393,7 +398,7 @@ label {
 }
 
 .check-input {
-  width: calc(100% - 51px);
+  width: calc(100% - 55px);
 
   &.correct {
     -webkit-transition: all 0.30s ease-in-out;
