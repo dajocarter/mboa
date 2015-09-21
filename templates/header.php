@@ -25,6 +25,18 @@
     <!-- END favicons -->
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-67280088-2', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+
+    </script>
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Lato:400,700|Shadows+Into+Light|Architects+Daughter|Indie+Flower|Permanent+Marker' rel='stylesheet' type='text/css'>
     <!-- IMPORT CSS -->
