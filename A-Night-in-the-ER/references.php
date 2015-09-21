@@ -57,4 +57,9 @@ include(ROOT_PATH . "templates/header.php"); ?>
 			<a target="_blank" href="//histology-world.com/photoalbum/displayimage.php?album=60&pid=1607#top_display_media">http://histology-world.com/photoalbum/displayimage.php?album=60&pid=1607#top_display_media</a>
 		</p>
 
+		<p>Centriole arteriole and PALS <br>
+			<a target="_blank" href="//bcrc.bio.umass.edu/histology/?q=node/1418">https://bcrc.bio.umass.edu/histology/?q=node/1418</a>
+		</p>
+
+
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

@@ -10,6 +10,11 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 found in the stroma of bone marrow, lymph nodes, and the spleen. These branching reticulin fibers form a 
 network creating a spacious mesh for many cells to reside.</p>
 
+<figure>
+	<img src="<?php echo BASE_URL; ?>assets/img/collagen.png" class="img-responsive" alt="collagen">
+	<figcaption></figcaption>
+</figure>
+
 <p class="bold margin-top-lg">The stain that visualizes reticular fibers is known as  ____________________.</p>
 <div>
 	<input type="text" class="check-input" data-ansindex="36">

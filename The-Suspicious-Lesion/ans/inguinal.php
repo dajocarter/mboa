@@ -6,7 +6,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 ?>
 
-<p>Lymph from the lower extremity travels through Inguinal lymph nodes. Superficial inguinal lymph nodes receive lymph from superficial lymphatic vessels that travel with 
+<p>Lymph from the lower extremity travels through inguinal lymph nodes. Superficial inguinal lymph nodes receive lymph from superficial lymphatic vessels that travel with 
 superficial veins of the leg and thigh. Superficial inguinal lymph nodes drain into the deep lymphatic 
 system, ultimately draining into the thoracic duct.</p>
 

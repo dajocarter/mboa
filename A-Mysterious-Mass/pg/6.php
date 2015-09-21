@@ -23,7 +23,7 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 </div>
 
 <h3>Histo Scavenger Hunt!</h3>
-<p>Take a snapshot of a thymic (Hassall’s) corpuscle in the medulla, from <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_76.html">Slide 76: Thymus, H&amp;E.</a></p>
+<p>Take a snapshot of a thymic (Hassall’s) corpuscle in the medulla, from <a target="_blank" href="//medsci.indiana.edu/junqueira/virtual/msci_76_5.html">Slide 76: Thymus, H&amp;E.</a></p>
 
 
 <p class="margin-top-lg">Normally the thymus involutes with age.</p>

@@ -140,7 +140,7 @@ $(document).ready(function() {
         "Germinal center",
         ["Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule"], // Repeat of #2
         "Stratified squamous epithelium", // 30
-        "Crypt",
+        ["Crypt", "tonsillar crypt"],
         "White pulp",
         "Red pulp",
         "Trabecula",
@@ -202,12 +202,17 @@ $(document).ready(function() {
         "The medulla of the lymph node is composed of medullary cords packed with cells (T-lymphocytes, B-lymphocytes, plasma cells, macrophages, dendritic cells, and reticular cells) and endothelial lined medullary sinuses that contain efferent lymph and fewer cells draining toward the efferent lymphatic vessel at the lymph node hilum.",
         "Removal of lymph nodes and formation of scar tissue forms a blockage to the flow of lymph. Arm mobility and sensory loss may also be factors associated with lymphedema.",
         "Dense connective tissue covering", // 48
-        "Component of splenic pulp composed of lymphoid nodules and periarteriolar lymphoid sheaths (PALS)",
-        "Component of splenic pulp composed of blood-filled sinuses and splenic cords", // 50
-        "Extensions of the capsule extending into the parenchyma (splenic pulp)", // 51 
+        "Component of splenic parenchyma composed of lymphoid nodules and periarteriolar lymphoid sheaths (PALS)",
+        "Component of splenic parenchyma composed of blood-filled sinuses and splenic cords", // 50
+        "Extension of the capsule into the splenic parenchyma", // 51 
         "Numerous structures entering the convex surface of a lymph node", // 52
         "A space immediately deep to the subcapsular sinus", // 53
-        "A dense connective tissue covering" //54
+        "A dense connective tissue covering", // 54
+        "One layer of cells; cell shapes are as tall as they are wide; nuclei are in-line and round",
+        "An area of rapid B cell proliferation", // 56
+        "Large clusters of lymphocytes", // 57
+        "Specific tissue", // 58
+        "Deep, epithelial invagination" // 59
     ];
 
     $('.check-input').each(function() {

@@ -24,13 +24,17 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	</div>
 </div>
 
-<p><span class="bold">Periarteriolar lymphoid sheath (PALS)</span> surrounds the central arteriole playing an important role in immunological surveillance.</p>
+<p class="margin-top-lg"><span class="bold">Periarteriolar lymphoid sheath (PALS)</span> surrounds the central arteriole playing an important role in immunological surveillance.</p>
 <figure>
-	<img src="<?php echo BASE_URL; ?>assets/img/collagen.png" class="img-responsive" alt="collagen">
-	<figcaption></figcaption>
+	<img src="<?php echo BASE_URL; ?>assets/img/NERpg6.jpg" class="img-responsive" alt="collagen">
+	<figcaption>
+		<p><a target="_blank" href="//bcrc.bio.umass.edu/histology/?q=node/1418">https://bcrc.bio.umass.edu/histology/?q=node/1418</a></p>
+		<p>CA = central arteriole; PALS = Periarterial lymphatic sheath</p>
+		<p>*This is immunohistochemistry, staining actin with FITC (green) and Type II collagen with Rhodamine (Red) and DAPI (Blue) for cell nuclei</p>
+	</figcaption>
 </figure>
 
-<p class="bold">PALS are formed <span class="underline">mainly</span> from:</p>
+<p class="bold margin-top-lg">PALS are formed <span class="underline">mainly</span> from:</p>
 <div class="row clearfix">
 	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/b-lymph" class="btn btn-default">B-Lymphocytes</a>

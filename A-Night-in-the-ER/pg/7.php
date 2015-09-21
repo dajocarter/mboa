@@ -11,12 +11,12 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 <p>Yes! Cells immediately surrounding the central artery, known as PALS, are largely CD4+ T-cells, although smaller numbers of CD8+ T-cells may also be present.</p>
 <div class="img-split row medium clearfix">
 	<div class="list-item col-sm-6">
-		<p>While waiting for your patient to return from the OR, another case awaits you in the emergency room. A 7-year-old girl presents with a 3-day history of fever and sore throat. Her medical chart indicates she has allergies and repeated tonsillitis. Looking into the girl’s mouth revealed extremely swollen palatine tonsils covered with white exudate.</p>
+		<p>While waiting for your patient to return from the OR, another case awaits you in the emergency room. A 7-year-old girl presents with a 3-day history of fever and sore throat. Her medical chart indicates she has allergies and repeated tonsillitis. Looking into the girl’s mouth reveals extremely swollen palatine tonsils covered with white exudate.</p>
 	</div>
 	<div class="list-item col-sm-6">
 		<figure>
 			<img src="<?php echo BASE_URL; ?>assets/img/teeth.jpg" class="img-responsive">
-			<figcaption>Source: <a target="_blank" href="//i.ytimg.com/vi/MPz1RAg9tVU/maxresdefault.jpg">https://i.ytimg.com/vi/MPz1RAg9tVU/maxresdefault.jpg</a></figcaption>
+			<figcaption><a target="_blank" href="//i.ytimg.com/vi/MPz1RAg9tVU/maxresdefault.jpg">https://i.ytimg.com/vi/MPz1RAg9tVU/maxresdefault.jpg</a></figcaption>
 		</figure>
 	</div>
 </div>
@@ -28,16 +28,24 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 </figure>
 <div class="row clearfix">
 	<div class="list-item col-sm-3">
-		<label>A.) <input type="text" class="check-input" data-ansindex="28"><i class="icon ion-ios-checkmark input"></i></label>
+		<label>A.) <input type="text" class="check-input" data-ansindex="28" data-hintindex="56">
+		<i class="icon ion-ios-help-empty input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item col-sm-3">
-		<label>B.) <input type="text" class="check-input" data-ansindex="2"><i class="icon ion-ios-checkmark input"></i></label>
+		<label>B.) <input type="text" class="check-input" data-ansindex="2" data-hintindex="57">
+		<i class="icon ion-ios-help-empty input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item col-sm-3">
-		<label>C.) <input type="text" class="check-input" data-ansindex="30"><i class="icon ion-ios-checkmark input"></i></label>
+		<label>C.) <input type="text" class="check-input" data-ansindex="30" data-hintindex="58">
+		<i class="icon ion-ios-help-empty input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 	<div class="list-item col-sm-3">
-		<label>D.) <input type="text" class="check-input" data-ansindex="31"><i class="icon ion-ios-checkmark input"></i></label>
+		<label>D.) <input type="text" class="check-input" data-ansindex="31" data-hintindex="59">
+		<i class="icon ion-ios-help-empty input"></i><i class="icon ion-ios-checkmark input"></i></label>
+		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 </div>
 
