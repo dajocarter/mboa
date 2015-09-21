@@ -25,12 +25,6 @@
     <!-- END favicons -->
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            padding-top: 50px;
-            padding-bottom: 20px;
-        }
-    </style>
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Lato:400,700|Shadows+Into+Light|Architects+Daughter|Indie+Flower|Permanent+Marker' rel='stylesheet' type='text/css'>
     <!-- IMPORT CSS -->
