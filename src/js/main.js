@@ -231,8 +231,10 @@ $(document).ready(function() {
                     thisInput.siblings('.ion-ios-checkmark').hide();
                     var hint1 = thisInput.parents('.list-item').find('.hint .ion-ios-close');
                     var hint2 = thisInput.siblings('.hint').find('.ion-ios-close');
-                    if (!hint1.is(':hidden') || !hint2.is(':hidden')) {
+                    if ((hint1.length && !hint1.is(':hidden')) || (hint2.length && !hint2.is(':hidden'))) {
                         thisInput.siblings('.ion-ios-help-empty').hide();
+                    } else {
+                        thisInput.siblings('.ion-ios-help-empty').show();
                     }
                 }
             }
@@ -251,18 +253,24 @@ $(document).ready(function() {
                 }
                 else {
                     thisInput.removeClass('correct');
-                    thisInput.siblings('.ion-ios-help-empty').show();
                     thisInput.siblings('.ion-ios-checkmark').hide();
+                    var hint1 = thisInput.parents('.list-item').find('.hint .ion-ios-close');
+                    var hint2 = thisInput.siblings('.hint').find('.ion-ios-close');
+                    if ((hint1.length && !hint1.is(':hidden')) || (hint2.length && !hint2.is(':hidden'))) {
+                        thisInput.siblings('.ion-ios-help-empty').hide();
+                    } else {
+                        thisInput.siblings('.ion-ios-help-empty').show();
+                    }
                 }
             }
         });
         /************************** SHOW HINT **************************/
         inputs.siblings('.ion-ios-help-empty').bind('click', function() {
-            var thisInput = $(this);
-            var index = thisInput.siblings('.check-input').data('hintindex');
+            var helpSquare = $(this);
+            var index = helpSquare.siblings('.check-input').data('hintindex');
             var hint = hints[index];
-            thisInput.fadeOut('slow');
-            var a = thisInput.parents('.list-item').find('.hint'), b = thisInput.siblings('.hint');
+            helpSquare.fadeOut('slow');
+            var a = helpSquare.parents('.list-item').find('.hint'), b = helpSquare.siblings('.hint');
             if (a.length > 0 && a.children().length < 2) {
                 $('<p>' + hint + '</p>').prependTo(a);
                 a.fadeIn('slow');

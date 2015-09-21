@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         options: {
           separator: ';'
         },
-        src: ['src/js/vendor/*.min.js', 'src/js/imports.js', 'src/js/main.js'],
+        src: ['src/js/vendor/jquery.min.js', 'src/js/vendor/bootstrap.min.js', 'src/js/vendor/jquery.magnific-popup.min.js', 'src/js/main.js'],
         /* add any js file directories here, but keep main.js last */
         dest: 'src/js/concat/main.js'
       }
