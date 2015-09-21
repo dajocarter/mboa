@@ -33,10 +33,7 @@
     </style>
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Lato:400,700|Shadows+Into+Light|Architects+Daughter|Indie+Flower|Permanent+Marker' rel='stylesheet' type='text/css'>
-    <!-- IMPORT VENDOR CSS -->
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>bower_components/magnific-popup/dist/magnific-popup.css"> 
     <!-- IMPORT CSS -->
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/imports.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/main.min.css" type="text/css">
   </head>
     
