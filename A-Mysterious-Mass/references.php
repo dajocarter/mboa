@@ -6,9 +6,11 @@ $pageTitle = "A Mysterious Mass | References";
 
 include(ROOT_PATH . "templates/header.php"); ?>
 
+<div class="container">
+
 	<h1>A Mysterious Mass</h1>
 
-	<div class="container cases">
+	<div>
 		
 		<h2>References</h2>
 		<p>Mescher, A. <span class="underline">Junqueira’s Basic Histology: Text and Atlas</span>. 13th ed. New York: McGraw-Hill Medical, 2010.</p>

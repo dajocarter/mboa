@@ -6,9 +6,11 @@ $pageTitle = "The Suspicious Lesion | References";
 
 include(ROOT_PATH . "templates/header.php"); ?>
 
+<div class="container">
+
 	<h1>The Suspicious Lesion</h1>
 
-	<div class="container cases">
+	<div>
 
 		<h2>References</h2>
 

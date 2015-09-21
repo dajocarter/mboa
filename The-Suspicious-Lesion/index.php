@@ -10,4 +10,4 @@ include(ROOT_PATH . "templates/header.php"); ?>
 
 	<h1 class="title">The Suspicious Lesion</h1>
 
-	<div class="cases">
+	<div>
