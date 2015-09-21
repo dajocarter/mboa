@@ -25,16 +25,16 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 </ol>
 
 <div class="row clearfix margin-top">
-	<div class="list-itemcol-sm-3">
+	<div class="list-item col-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/flow1" class="btn btn-default">Number 1</a>
 	</div>
-	<div class="list-itemcol-sm-3">
+	<div class="list-item col-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/flow2" class="btn btn-default">Number 2</a>
 	</div>
-	<div class="list-itemcol-sm-3">
+	<div class="list-item col-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/flow3" class="btn btn-default">Number 3</a>
 	</div>
-	<div class="list-itemcol-sm-3">
+	<div class="list-item col-sm-3">
 		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/flow4" class="btn btn-default">Number 4</a>
 	</div>
 </div>
