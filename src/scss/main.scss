@@ -25,7 +25,6 @@ body {
 .navbar-inverse .navbar-brand {
   font-family: 'Architects Daughter', cursive;
   font-size: 1.5em;
-
   @media (min-width: 768px) {
     font-size: 2em;
   }
@@ -85,7 +84,6 @@ body {
 
 .list {
   padding-left: 15px;
-
   li {
     margin: 20px 0;
   }
@@ -116,7 +114,6 @@ a.back-link {
   height: 40vh;
   position: relative;
   top: -20px;
-
   h1 {
     color: white;
     text-align: center;
@@ -131,7 +128,6 @@ a.back-link {
 .round-img {
   display: block;
   position: relative;
-
   img {
     width: 200px;
     height: 200px;
@@ -139,7 +135,6 @@ a.back-link {
     margin: 0 auto;
     border-radius: 50%;
   }
-
   .icon {
     font-size: 14em;
     position: absolute;
@@ -166,7 +161,6 @@ a.back-link {
   top: 5px;
   padding: 10px;
   display: inline-block;
-
   &:before {
     position: absolute;
     top: 50%;
@@ -193,7 +187,6 @@ a.back-link {
     display: block;
     max-width: 100%;
   }
-
   .btn {
     margin: 20px;
   }
@@ -204,7 +197,6 @@ a.back-link {
     display: block;
     max-width: 100%;
   }
-
   a {
     width: 100%;
     white-space: normal;
@@ -214,7 +206,6 @@ a.back-link {
 .list-group-item-text {
   margin-left: 20px;
   padding: 5px 0;
-
   &.correct {
     color: #44cf6c;
   }
@@ -278,11 +269,9 @@ a.back-link {
   > div * {
     text-align: center;
   }
-
   .reference {
     display: block;
   }
-
   .note {
     font-size: .75em;
   }
@@ -314,12 +303,10 @@ figcaption {
   margin: 5px 0;
   padding: 10px;
   position: relative;
-
   p {
     font-weight: normal;
     margin: 0;
   }
-
   .icon {
     display: block;
     position: absolute;
@@ -328,11 +315,23 @@ figcaption {
     margin: 1px 2px 0 0;
     color: red;
   }
-
   img {
     display: block;
     max-width: 100%;
     margin: 0 auto;
+  }
+}
+
+#multChoice {
+  .list-item {
+    text-align: center;
+  }
+  label {
+    width: auto;
+    padding-left: 10px;
+    input[type="radio"] {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -341,14 +340,17 @@ table {
   min-width: 466px;
   table-layout: fixed;
   border: 1px solid black;
-
   * {
     border: 1px solid black;
     text-align: center;
   }
-
   a {
     border: 0;
+  }
+  &#stages {
+    thead * {
+      border: 0;
+    }
   }
 }
 
@@ -382,7 +384,6 @@ td {
   &.wrong {
     background-color: lighten(red, 10%);
   }
-
   &.correct {
     background-color: #44cf6c;
   }
@@ -399,7 +400,6 @@ label {
 
 .check-input {
   width: calc(100% - 60px);
-
   &.correct {
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
@@ -410,7 +410,6 @@ label {
     margin: 5px 1px 3px 0px;
     border: 1px solid #44cf6c;
     color: #44cf6c;
-
     &:focus {
       box-shadow: 0 0 5px #44cf6c;
       padding: 3px 0px 3px 3px;
@@ -425,7 +424,6 @@ label {
   .img-split {
     margin: 20px 0;
   }
-
   #big {
     max-width: 100%;
   }
@@ -448,7 +446,6 @@ label {
   #big {
     max-width: 100%;
   }
-
   .img-split {
     margin: 20px 0;
   }

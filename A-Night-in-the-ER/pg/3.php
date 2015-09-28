@@ -4,7 +4,7 @@ require_once("../../templates/config.php");
 
 $pageTitle = "A Night in the E.R.";
 
-include(ROOT_PATH . "/A-Night-in-the-ER/index.php"); 
+include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 ?>
 
@@ -16,7 +16,7 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
 <p class="margin-top">The patient has lost a massive amount of blood and his vital signs are as follows:</p>
-<table>
+<table id="vitals">
 	<thead>
 		<tr class='scaffolding'>
 			<th></th>
