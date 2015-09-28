@@ -43,16 +43,16 @@ include(ROOT_PATH . "templates/header.php"); ?>
   <div class="col-md-4 margin-top-lg">
     <a class="round-img" href="javascript:void(0)"><img src="assets/img/myocard1H2-1L.jpg"><i class="icon ion-ios-help-empty"></i></a>
     <h3>What is a flipped class?</h3>
-    <p>Watch this <a class="video-link" href="//www.youtube.com/watch?v=iQWvc6qhTds">video</a> explaining what a flipped 
-    class is, and then check out this 
+    <p>Watch this <a class="video-link" href="//www.youtube.com/watch?v=iQWvc6qhTds">video</a> explaining what a flipped
+    class is, and then check out this
     <a target="_blank" href="//elearninginfographics.com/what-is-a-flipped-classroom-infographic-plus-the-educator-guide-to-flipped-classroom/">infographic</a>
      to learn more about flipped classes.</p>
   </div>
   <div class="col-md-4 margin-top-lg">
     <a class="round-img" href="javascript:void(0)"><img src="assets/img/Hyaline2D5-1d.jpg"><i class="icon ion-ios-cloud-download-outline"></i></a>
     <h3>Download Links</h3>
-    <p>Download the HAPS 2015 Workshop Presentation as a <a href="files/pptx.php">.pptx file</a>, 
-    a <a href="files/ppt.php">.ppt file</a>, or a <a href="files/pdf.php">.pdf file</a>.</p>
+    <p>Download the HAPS 2015 Workshop Presentation as a <a href="files/pptx.php">.pptx file</a>,
+    a <a href="files/ppt.php">.ppt file</a>, or a <a href="files/pdf.php">.pdf file</a>. Also available for download is my <a href="files/poster.php">AAA 2015 poster</a>.</p>
   </div>
 
 <?php include(ROOT_PATH . "templates/footer.php"); ?>
