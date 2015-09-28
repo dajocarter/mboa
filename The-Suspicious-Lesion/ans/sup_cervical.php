@@ -2,11 +2,11 @@
 
 require_once("../../templates/config.php");
 
-include(ROOT_PATH . "/The-Suspicious-Lesion/index.php"); 
+include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 ?>
 
-<p>The head and neck is drained by superficial cervical lymph nodes located along the external jugular vein. These superficial lymph nodes eventually drain into the deep cervical lymph nodes (including jugulodigastric and jugulo-omohyoid) that lie along the internal jugular vein. Deep cervical lymph nodes drain into lymphatic vessels, known as the right and left jugular trunks, that drain into either the right lymphatic duct or the thoracic duct.</p>
+<p>The head and neck are drained by superficial cervical lymph nodes located along the external jugular vein. These superficial lymph nodes eventually drain into the deep cervical lymph nodes (including jugulodigastric and jugulo-omohyoid) that lie along the internal jugular vein. Deep cervical lymph nodes drain into lymphatic vessels, known as the right and left jugular trunks, that drain into either the right lymphatic duct or the thoracic duct.</p>
 
 <figure>
   <img src="<?php echo BASE_URL; ?>assets/img/lymphatic-drainage.jpg" class="img-responsive" alt="lymphatic drainage of the head and neck">
