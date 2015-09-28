@@ -133,7 +133,7 @@ $(document).ready(function() {
     "Stave cells",
     "Thymus",
     "Germinal center", // 25
-    "Marginal zone",
+    "Mantle zone",
     "Central arteriole",
     "Germinal center", ["Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule"], // Repeat of #2
     "Stratified squamous epithelium", // 30
