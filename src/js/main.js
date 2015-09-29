@@ -196,7 +196,7 @@ $(document).ready(function() {
         "Lymph nodes filter lymph and provide sites for antigen presentation, B cell proliferation and differentiation, and production of antibodies by resulting plasma cells.",
         "Secondary lymphoid follicle. B-lymphocytes undergoing rapid clonal expansion after antigenic simulation.",
         "Endothelial-lined lymphatic spaces", // 42
-        "Reticular fibers filled with reticular cells and lymphocytes (mostly B-lymphocytes), macrophages, dendritic cells, and plasma cells",
+        "Reticular fibers filled with reticular cells, lymphocytes, macrophages, dendritic cells, plasma cells, and other leukocytes", // 43
         "The endothelial cells lining these specialized postcapillary venules are more cuboidal than simple squamous in appearance and have ovoid nuclei.",
         "Facilitate extravasation of leukocytes from the blood stream into the lymph node stroma.", // 45
         "The medulla of the lymph node is composed of medullary cords packed with cells (T-lymphocytes, B-lymphocytes, plasma cells, macrophages, dendritic cells, and reticular cells) and endothelial lined medullary sinuses that contain efferent lymph and fewer cells draining toward the efferent lymphatic vessel at the lymph node hilum.",

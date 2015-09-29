@@ -32,7 +32,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 	<figcaption>Source: <a target="_blank" href="//www.nhlcyberfamily.org/types/follicular.htm">http://www.nhlcyberfamily.org/types/follicular.htm</a></figcaption>
 </figure>
 
-<p class="bold margin-top-lg">What <span class="underline">region</span> of the lymph node is structure B located in?</p>
+<p class="bold margin-top-lg">What <span class="underline">region</span> of the lymph node is letter B located in?</p>
 <div class="row margin-top clearfix">
 	<div class="list-item col-sm-4">
 		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/cortex" class="btn btn-default">Cortex</a>

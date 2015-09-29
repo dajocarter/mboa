@@ -6,7 +6,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 
 ?>
 
-<p>Note that primary lymphoid organs include the bone marrow and ____________?</p>
+<p>Note that primary lymphoid organs include the bone marrow and the ____________?</p>
 <input type="text" class="check-input" data-ansindex="24">
 <i class="input icon ion-ios-checkmark"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
