@@ -1,4 +1,4 @@
 archive
-node_modules
+node_modules/
 .sass-cache
 templates/config.php

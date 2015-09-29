@@ -336,6 +336,17 @@ figcaption {
   }
 }
 
+#multChoice {
+  label {
+    width: auto;
+    padding: 0 10px;
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+  }
+}
+
 table {
   width: 100%;
   min-width: 466px;
@@ -349,6 +360,12 @@ table {
 
   a {
     border: 0;
+  }
+
+  &#stages {
+    thead * {
+      border: 0;
+    }
   }
 }
 
@@ -378,7 +395,7 @@ thead tr:last-child th {
   width: 13%;
 }
 
-td {
+td, label {
   &.wrong {
     background-color: lighten(red, 10%);
   }

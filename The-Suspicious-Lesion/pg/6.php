@@ -9,7 +9,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <p>Correct! Although the lymph node is not physically compartmentalized, it does show three functional regions. The paracortex is the region situated between the cortex and the medulla. Although its boundaries are not clearly delineated, this region can be distinguished by its lack of lymphoid nodules and by the presence of unique blood vessels.</p>
 <figure>
 	<img src="<?php echo BASE_URL; ?>assets/img/3pics.png" class="img-responsive" alt="">
-	<figcaption></figcaption>
+	<figcaption>Junqueira, 13th ed., fig. 14-19</figcaption>
 </figure>
 
 
@@ -29,7 +29,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
 <p class="bold margin-top">Histology Scavenger Hunt!</p>
-<p>Take a screenshot of a high endothelial venule in the paracortex, from <a target="_blank" href="//medsci.indiana.edu/junqueira/virtual/msci_42_5.html">Slide 42: Lymph Node, H&amp;E</a>.</p> 
+<p>Take a screenshot of a high endothelial venule in the paracortex, from <a target="_blank" href="//medsci.indiana.edu/junqueira/virtual/msci_42_5.html">Slide 42: Lymph Node, H&amp;E</a>.</p>
 
 <p>Then go <a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/7">learn the flow of lymph through a node</a>.</p>
 

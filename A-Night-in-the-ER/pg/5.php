@@ -20,7 +20,7 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	<figcaption></figcaption>
 </figure>
 
-<p><span class="italic">Elongated epithelial cells</span> line the walls of splenic sinusoids in the slide above (<a target="_blank" href="//medsci.indiana.edu/histo/virtual/73_bl_5.html">Slide 73, Spleen,Kornhauser’s Quad</a>). These cells are oriented in the direction of blood flow, have few contact points, and a discontinuous basal lamina producing spaces between the cells. These spaces allow functional blood cells to reenter the vasculature while surrounding macrophages engulf old or damaged cells.</p>
+<p><span class="italic">Elongated epithelial cells</span> line the walls of splenic sinusoids in the slide above (<a target="_blank" href="//medsci.indiana.edu/histo/virtual/73_bl_5.html">Slide 73, Spleen, Kornhauser’s Quad</a>). These cells are oriented in the direction of blood flow, have few contact points, and a discontinuous basal lamina producing spaces between the cells. These spaces allow functional blood cells to reenter the vasculature while surrounding macrophages engulf old or damaged cells.</p>
 
 <p class="bold margin-top-lg">These elongated, fusiform-shaped endothelial cells of the splenic sinusoids are known as:</p>
 <div>
