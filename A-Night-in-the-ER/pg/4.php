@@ -8,6 +8,21 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 ?>
 
+<ul class="clearfix margin-top-lg patient-stats">
+	<li class="clearfix">
+		<span>Heart Rate</span> <span>104 bpm (tachycardia = increased heart rate; normal = 60-100 bpm)</span>
+	</li>
+	<li class="clearfix">
+		<span>Blood Pressure</span> <span>84/52 mm Hg (=hypotensive; normal is 120/80)</span>
+	</li>
+	<li class="clearfix">
+		<span>Respiratory Rate</span> <span>18 breaths per minute (normal is 12-24)</span>
+	</li>
+	<li class="clearfix">
+		<span>Body Temperature</span> <span>98.3 degrees Fahrenheit (normal is 98.6)</span>
+	</li>
+</ul>
+
 <p>The patient appears hemodynamically unstable (low blood pressure and/or a high heart rate). While the patient is rushed to the OR for exploratory abdominal surgery, you begin to recall the specifics of splenic function, realizing that the massive blood loss was due to the spleen’s unique form of blood circulation.</p>
 
 <p class="bold margin-top-lg">What is red pulp and what is its function?</p>

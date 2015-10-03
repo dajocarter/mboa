@@ -8,7 +8,7 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 ?>
 
-<ol start="2">
+<ol start="4">
   <li>Splenic artery &rarr; trabecular artery &rarr; central arteriole &rarr; penicillar arteriole &rarr; ensheathed capillary &rarr; <span class="bold">splenic sinus</span> &rarr; <span class="bold">splenic cord</span> &rarr; red pulp vein &rarr; trabecular vein &rarr; splenic vein</li>
 </ol>
 <p>Notice that this option reverses the order of flow through the cord and sinus that is seen in open circulation.</p>

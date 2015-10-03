@@ -347,6 +347,25 @@ figcaption {
   }
 }
 
+.patient-stats {
+  padding-left: 0;
+  list-style: none;
+  width: 75%;
+  margin: 40px auto;
+
+  li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  span {
+    float: left;
+
+    & + span {
+      margin-left: 20px;
+    }
+  }
+}
+
 table {
   width: 100%;
   min-width: 466px;
