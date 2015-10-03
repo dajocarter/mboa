@@ -1,4 +1,42 @@
 $(document).ready(function() {
+    var ref = new Firebase('https://brilliant-heat-5271.firebaseio.com/');
+
+    $('#quizSubmit').click(function(e) {
+        e.preventDefault();
+        var userChoices = [];
+        var answers = ["B", "C", "C", "B", "A"];
+
+        // Scroll to top
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+
+        // Hide the buttons div since we're done with them now
+        $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
+
+
+        $("input:checked").each(function (index) {
+            var question = index + 1;
+            var choice = $(this).val();
+
+            ref.child(question).child(choice).transaction(function(count) {
+                return count + 1;
+            });
+        });
+    });
+
+    ref.on('value', function (questions) {
+        questions.forEach(function(question) {
+            console.log('question key', question.key());
+            console.log('question val', question.val());
+            for (var option in question.val()) {
+                if (question.val().hasOwnProperty(option)) {
+                    $('.question-' + question.key() + ' .choice-' + option).css({
+                        height: (question.val()[option] * 10) + 'px'
+                    });
+                }
+            }
+        });
+    });
+
   /*/##### send add record Ajax request to results.php #########
     $('#quizSubmit').click(function(e) {
         e.preventDefault();

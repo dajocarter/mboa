@@ -437,7 +437,95 @@ label {
   }
 }
 
+#resultsGraph {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+
+  .row {
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    & + .row {
+      margin-top: 0;
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  .responses {
+    border-bottom: 1px solid black;
+    height: 90%;
+
+    [class*="question"] {
+      border-right: 1px solid black;
+      height: 100%;
+      position: relative;
+
+      .row {
+        height: 100%;
+      }
+
+      [class*="choice"] {
+        position: absolute;
+        bottom: 0;
+        height: 0px;
+        transition: height 1s ease;
+
+        &:first-child {
+          left: 0;
+          background-color: red;
+        }
+
+        &:nth-child(2) {
+          left: 20%;
+          background-color: blue;
+        }
+
+        &:nth-child(3) {
+          left: 40%;
+          background-color: magenta;
+        }
+
+        &:nth-child(4) {
+          left: 60%;
+          background-color: turquoise;
+        }
+
+        &:last-child {
+          right: 0;
+          background-color: yellow;
+        }
+      }
+    }
+  }
+
+  .labels {
+    height: 10%;
+
+    .option {
+      height: 100%;
+      text-align: center;
+      border-right: 1px solid black;
+    }
+  }
+}
+
 /********** MEDIA QUERIES ***********/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  width: 20%;
+  float: left;
+}
+
 @media (max-width: $mobile-max) {
   .img-split {
     margin: 20px 0;

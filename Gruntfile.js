@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         options: {
           separator: ';'
         },
-        src: ['src/js/vendor/jquery.min.js', 'src/js/vendor/bootstrap.min.js', 'src/js/vendor/jquery.magnific-popup.min.js', 'src/js/main.js'],
+        src: ['src/js/vendor/firebase.js', 'src/js/vendor/jquery.min.js', 'src/js/vendor/bootstrap.min.js', 'src/js/vendor/jquery.magnific-popup.min.js', 'src/js/main.js'],
         /* add any js file directories here, but keep main.js last */
         dest: 'src/js/concat/main.js'
       }
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
-          require('autoprefixer-core')({browsers: ['last 4 versions', 'Firefox ESR', 'Opera 12.1']})
+          require('autoprefixer')({browsers: ['last 4 versions', 'Firefox ESR', 'Opera 12.1']})
         ]
       },
       no_dest: {

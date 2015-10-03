@@ -27,4 +27,8 @@ include(ROOT_PATH . "templates/header.php"); ?>
 			<?php } ?>
 		</div>
 	<?php } ?>
+	<div class="list-group-item buttons">
+		<button class="btn btn-success" id="quizSubmit">Submit</button>
+	</div>
+
 <?php include(ROOT_PATH . "templates/footer.php"); ?>
