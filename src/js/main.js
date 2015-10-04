@@ -21,21 +21,68 @@ $(document).ready(function() {
                 return count + 1;
             });
         });
-    });
 
-    ref.on('value', function (questions) {
-        questions.forEach(function(question) {
-            console.log('question key', question.key());
-            console.log('question val', question.val());
-            for (var option in question.val()) {
-                if (question.val().hasOwnProperty(option)) {
-                    $('.question-' + question.key() + ' .choice-' + option).css({
-                        height: (question.val()[option] * 10) + 'px'
-                    });
+        // Mark correct answers
+        var correct = ["b", "c", "c", "b", "a"];
+        for (var i = 0; i < correct.length; i++) {
+            var selector = "#graph-q" + (i + 1) + "-" + correct[i];
+            $(selector).children('.graph-bar-color').css({
+                "background-color": "#44cf6c"
+            });
+        };
+
+        // Show outline box
+        $('.graph-bar-outline').show();
+
+        ref.on('value', function (questions) {
+            questions.forEach(function(question) {
+                var sum = 0;
+                // loop through to calculate sum
+                for (var option in question.val()) {
+                    if (question.val().hasOwnProperty(option)) {
+                        // question.key() == 1, 2, 3, etc.
+                        // question.val() == {a: 1, b: 2, c: 3, etc.}
+                        sum = parseInt(question.val()[option]) ?  sum + parseInt(question.val()[option]) : sum;
+                    }
                 }
-            }
+                // loop through to show bars and percents
+                for (var option in question.val()) {
+                    if (question.val().hasOwnProperty(option)) {
+                        var percent;
+                        if (sum === 0) {
+                            percent = 0;
+                        } else if (parseInt(question.val()[option])) {
+                            percent = Math.round( (question.val()[option] / sum) * 100 );
+                        }
+                        $('#percent-q' + question.key() + '-' + option)
+                        .text(percent + '%')
+                        .show()
+
+                        //var graphBar = $('#graph-q' + question.key() + '-' + option);
+
+                        $('#graph-q' + question.key() + '-' + option)
+                        .velocity({
+                            width: '200px'
+                        }, {
+                            duration: 1000,
+                            display: 'block'
+                        });
+
+
+                        $('#graph-q' + question.key() + '-' + option)
+                        .children('.graph-bar-color')
+                        .velocity({
+                            width: (percent * 2) + 'px'
+                        }, {
+                            duration: 1000,
+                            display: 'block'
+                        });
+                    }
+                }
+            });
         });
     });
+
 
   /*/##### send add record Ajax request to results.php #########
     $('#quizSubmit').click(function(e) {

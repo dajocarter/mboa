@@ -9,7 +9,7 @@ include(ROOT_PATH . "templates/header.php"); ?>
 
 <h1>Histo Flip Pre-Test</h1>
 <p>Select the best response for the following questions.</p>
-<div class="list-group">
+<div id="pre-test" class="list-group">
 	<?php foreach ($problems as $qstnIndex => $problem) { ?>
 		<div class="list-group-item clearfix">
 			<h4 class="list-group-item-heading"><?php echo ($qstnIndex + 1) . ". " . $problem["text"]; ?></h4>
