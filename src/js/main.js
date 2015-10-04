@@ -3,16 +3,15 @@ $(document).ready(function() {
 
     $('#quizSubmit').click(function(e) {
         e.preventDefault();
-        var userChoices = [];
-        var answers = ["B", "C", "C", "B", "A"];
+        var answers = ["b", "c", "c", "b", "a"];
 
         // Scroll to top
         $("html, body").animate({ scrollTop: 0 }, "slow");
 
-        // Hide the buttons div since we're done with them now
+        // Replace submit button with link to homepage
         $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
 
-
+        // Submit user's choices to Firebase
         $("input:checked").each(function (index) {
             var question = index + 1;
             var choice = $(this).val();
@@ -23,9 +22,8 @@ $(document).ready(function() {
         });
 
         // Mark correct answers
-        var correct = ["b", "c", "c", "b", "a"];
-        for (var i = 0; i < correct.length; i++) {
-            var selector = "#graph-q" + (i + 1) + "-" + correct[i];
+        for (var i = 0; i < answers.length; i++) {
+            var selector = "#graph-q" + (i + 1) + "-" + answers[i];
             $(selector).children('.graph-bar-color').css({
                 "background-color": "#44cf6c"
             });
@@ -34,33 +32,38 @@ $(document).ready(function() {
         // Show outline box
         $('.graph-bar-outline').show();
 
+        // Calculate percentages and color bars
         ref.on('value', function (questions) {
             questions.forEach(function(question) {
                 var sum = 0;
                 // loop through to calculate sum
                 for (var option in question.val()) {
                     if (question.val().hasOwnProperty(option)) {
-                        // question.key() == 1, 2, 3, etc.
-                        // question.val() == {a: 1, b: 2, c: 3, etc.}
-                        sum = parseInt(question.val()[option]) ?  sum + parseInt(question.val()[option]) : sum;
+                        sum = parseInt(question.val()[option]) ?  (sum + parseInt(question.val()[option])) : sum;
                     }
                 }
+
+                // question.key() == 1, 2, 3, etc.
+                // question.val() == {a: 4, b: 5, c: 6, etc.}
+                // option == a, b, c, etc.
+                // question.val()[option] == 4, 5, 6, etc.
+
                 // loop through to show bars and percents
                 for (var option in question.val()) {
                     if (question.val().hasOwnProperty(option)) {
+                        // Calculate percent
                         var percent;
                         if (sum === 0) {
                             percent = 0;
                         } else if (parseInt(question.val()[option])) {
                             percent = Math.round( (question.val()[option] / sum) * 100 );
                         }
-                        $('#percent-q' + question.key() + '-' + option)
-                        .text(percent + '%')
-                        .show()
 
-                        //var graphBar = $('#graph-q' + question.key() + '-' + option);
+                        // Cache selector since we're using it twice
+                        var graphBar = $('#graph-q' + question.key() + '-' + option)
 
-                        $('#graph-q' + question.key() + '-' + option)
+                        // Show bar outline
+                        graphBar
                         .velocity({
                             width: '200px'
                         }, {
@@ -68,8 +71,8 @@ $(document).ready(function() {
                             display: 'block'
                         });
 
-
-                        $('#graph-q' + question.key() + '-' + option)
+                        // Show colored bar
+                        graphBar
                         .children('.graph-bar-color')
                         .velocity({
                             width: (percent * 2) + 'px'
@@ -77,6 +80,11 @@ $(document).ready(function() {
                             duration: 1000,
                             display: 'block'
                         });
+
+                        // Show the percent
+                        $('#percent-q' + question.key() + '-' + option)
+                        .text(percent + '%')
+                        .show()
                     }
                 }
             });
