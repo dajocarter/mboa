@@ -13,7 +13,7 @@ include(ROOT_PATH . "templates/header.php"); ?>
 <div class="container">
 <div class="row cases margin-top-lg">
   <h2>Before you start</h2>
-  <div class="col-md-4 margin-top-lg">
+  <div class="col-xs-12 margin-top-lg">
     <a class="round-img" href="/Pre-Test"><img src="assets/img/mm-pg1.png"></a>
     <h3><a href="/Pre-Test">Pre-Test</a></h3>
   </div>
