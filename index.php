@@ -11,14 +11,15 @@ include(ROOT_PATH . "templates/header.php"); ?>
 </div>
 
 <div class="container margin-top-lg">
-  <div class="row">
-    <div class="col-xs-6">
-      <a class="round-img" href="/A550"><img src="assets/img/mm-pg1.png"><h2>A550</h2></a>
+  <div class="row main">
+    <h2>Pick your class</h2>
+    <div class="col-xs-12 col-sm-6">
+      <a class="round-img" href="/A550"><img src="assets/img/mm-pg1.png"><h3>A550</h3></a>
     </div>
-    <div class="col-xs-6">
-      <a class="round-img" href="/A560"><img src="assets/img/mm-pg1.png"><h2>A560</h2></a>
+    <div class="col-xs-12 col-sm-6">
+      <a class="round-img" href="/A560"><img src="assets/img/mm-pg1.png"><h3>A560</h3></a>
     </div>
-  </div>
+  
  
 
 <?php include(ROOT_PATH . "templates/footer.php"); ?>
