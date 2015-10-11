@@ -1,6 +1,6 @@
 <?php
 if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') { // We are getting the results of the quiz
-  require_once("../templates/config.php");
+  require_once("../../templates/config.php");
   try {
 	  $select = "SELECT q1, q2, q3, q4, q5 FROM Answers";
 	  $get = $db -> query($select);

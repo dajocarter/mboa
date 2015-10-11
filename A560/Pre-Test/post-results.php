@@ -1,7 +1,7 @@
 <?php
 /*** mysql hostname ***/
 if (isset($_POST)) { // We are posting the user's answers to the db
-  require_once("../templates/config.php");
+  require_once("../../templates/config.php");
   
   try {
     // Store answers in variables

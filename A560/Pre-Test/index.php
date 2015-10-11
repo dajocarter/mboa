@@ -1,5 +1,5 @@
 <?php
-require_once("../templates/config.php");
+require_once("../../templates/config.php");
 $str = file_get_contents("problems.json");
 $problems = json_decode($str, true);
 $pageTitle = "Histo Cases | Pre-Test";

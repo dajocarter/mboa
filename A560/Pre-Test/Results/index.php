@@ -1,5 +1,5 @@
 <?php
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 $pageTitle = "MBOA | Pre-Test Results";
 include(ROOT_PATH . "templates/header.php"); ?>
 
