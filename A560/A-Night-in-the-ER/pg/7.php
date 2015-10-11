@@ -1,10 +1,10 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
 $pageTitle = "A Night in the E.R.";
 
-include(ROOT_PATH . "/A-Night-in-the-ER/index.php"); 
+include(ROOT_PATH . "/A560/A560/A-Night-in-the-ER/index.php"); 
 
 ?>
 
@@ -21,7 +21,7 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	</div>
 </div>
 
-<p>Quickly review your tonsil histology by labeling the slide below, and then <a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/8.php">go talk with the patient’s father.</a></p>
+<p>Quickly review your tonsil histology by labeling the slide below, and then <a href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/pg/8.php">go talk with the patient’s father.</a></p>
 <figure>
 	<img src="<?php echo BASE_URL; ?>assets/img/NER-Palatine-Tonsil.png" class="img-responsive">
 	<figcaption>Source: <a target="_blank" href="//histology-world.com/photoalbum/displayimage.php?album=60&pid=1607#top_display_media">http://histology-world.com/photoalbum/displayimage.php?album=60&pid=1607#top_display_media</a></figcaption>

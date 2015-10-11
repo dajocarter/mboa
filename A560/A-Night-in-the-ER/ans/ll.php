@@ -1,10 +1,10 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
 $pageTitle = "A Night in the E.R.";
 
-include(ROOT_PATH . "/A-Night-in-the-ER/index.php"); 
+include(ROOT_PATH . "/A560/A-Night-in-the-ER/index.php"); 
 
 ?>
 
@@ -13,6 +13,6 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	<img src="<?php echo BASE_URL; ?>assets/img/Night-ER-Ans-II.png" class="img-responsive" alt="">
 	<figcaption></figcaption>
 </figure>
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/1">Return to slides</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/pg/1">Return to slides</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

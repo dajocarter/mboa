@@ -1,10 +1,10 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
 $pageTitle = "A Night in the E.R.";
 
-include(ROOT_PATH . "/A-Night-in-the-ER/index.php"); 
+include(ROOT_PATH . "/A560/A-Night-in-the-ER/index.php"); 
 
 ?>
 
@@ -20,6 +20,6 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 	<figcaption></figcaption>
 </figure>
 <p>This indicates that the section was taken from the palatine tonsil in the back of the oral cavity. The tonsils have the same general organization of other mucosa-associated lymphoid tissue (MALT) in which mainly B-lymphocytes aggregate into lymphoid follicles.</p>
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/1">Return to slides</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/pg/1">Return to slides</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

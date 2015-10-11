@@ -1,10 +1,10 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
 $pageTitle = "A Night in the E.R.";
 
-include(ROOT_PATH . "/A-Night-in-the-ER/index.php"); 
+include(ROOT_PATH . "/A560/A-Night-in-the-ER/index.php"); 
 
 ?>
 
@@ -15,7 +15,7 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 <i class="input icon ion-alert-circled"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
-<p>Congratulations! <a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/1">Return to the beginning of the case and play again!</a> Try selecting other options to verify you understand <span class="italic">why</span> an answer was incorrect before moving on.</p>
+<p>Congratulations! <a href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/pg/1">Return to the beginning of the case and play again!</a> Try selecting other options to verify you understand <span class="italic">why</span> an answer was incorrect before moving on.</p>
 
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

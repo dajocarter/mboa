@@ -1,10 +1,10 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
 $pageTitle = "A Night in the E.R.";
 
-include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
+include(ROOT_PATH . "/A560/A-Night-in-the-ER/index.php");
 
 ?>
 
@@ -84,10 +84,10 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <div class="row clearfix">
 	<div class="list-item col-sm-6">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/operate" class="sixcol btn btn-default first">Perform a blood transfusion and CT scan the abdomen and pelvis</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/ans/operate" class="sixcol btn btn-default first">Perform a blood transfusion and CT scan the abdomen and pelvis</a>
 	</div>
 	<div class="list-item col-sm-6">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/CTscan" class="sixcol btn btn-default last">Rush the patient to the operating room for exploratory surgery and possible splenectomy</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/ans/CTscan" class="sixcol btn btn-default last">Rush the patient to the operating room for exploratory surgery and possible splenectomy</a>
 	</div>
 </div>
 

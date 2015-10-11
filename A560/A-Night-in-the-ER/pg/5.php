@@ -1,10 +1,10 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
 $pageTitle = "A Night in the E.R.";
 
-include(ROOT_PATH . "/A-Night-in-the-ER/index.php"); 
+include(ROOT_PATH . "/A560/A-Night-in-the-ER/index.php"); 
 
 ?>
 
@@ -33,13 +33,13 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 
 <div class="row clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/primary" class="btn btn-default">Primary</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/ans/primary" class="btn btn-default">Primary</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/secondary" class="btn btn-default">Secondary</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/ans/secondary" class="btn btn-default">Secondary</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Night-in-the-ER/ans/tertiary" class="btn btn-default">Tertiary</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/ans/tertiary" class="btn btn-default">Tertiary</a>
 	</div>
 </div>
 

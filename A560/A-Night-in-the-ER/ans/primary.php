@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/A-Night-in-the-ER/index.php"); 
+include(ROOT_PATH . "/A560/A-Night-in-the-ER/index.php"); 
 
 ?>
 
@@ -11,6 +11,6 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 <i class="input icon ion-ios-checkmark"></i>
 <div class="hint"><i class="icon ion-ios-close"></i></div>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/5">Reevaluate the spleen's classification as a lymphoid organ.</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/pg/5">Reevaluate the spleen's classification as a lymphoid organ.</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

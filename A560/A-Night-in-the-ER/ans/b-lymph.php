@@ -1,6 +1,6 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
 $pageTitle = "A Night in the E.R.";
 
@@ -28,6 +28,6 @@ include(ROOT_PATH . "/A-Night-in-the-ER/index.php");
 		<div class="hint"><i class="icon ion-ios-close"></i></div>
 	</div>
 </div>
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Night-in-the-ER/pg/6">Go back to reconsider the cells forming PALS.</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A560/A-Night-in-the-ER/pg/6">Go back to reconsider the cells forming PALS.</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>
