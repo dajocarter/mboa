@@ -25,19 +25,19 @@ include(ROOT_PATH . "templates/header.php"); ?>
     <a class="round-img" href="/A560/A-Mysterious-Mass/pg/1"><img src="<?php echo BASE_URL; ?>assets/img/mm-pg1.png"></a>
     <h3><a href="/A560/A-Mysterious-Mass/pg/1">A Mysterious Mass</a></h3>
     <p class="italic">A 33-year-old male presents with an anterior mediastinal mass…</p>
-    <a class="reference" href="/A-Mysterious-Mass/references">References</a>
+    <a class="reference" href="/A560/A-Mysterious-Mass/references">References</a>
   </div>
   <div class="col-md-4 margin-top-lg">
     <a class="round-img" href="/A560/The-Suspicious-Lesion/pg/1"><img src="<?php echo BASE_URL; ?>assets/img/tsl-pg1.png"></a>
     <h3><a href="/A560/The-Suspicious-Lesion/pg/1">The Suspicious Lesion</a></h3>
     <p class="italic">A 57-year-old female is evaluated for a mammogram with a suspicious lesion…</p>
-    <a class="reference" href="/The-Suspicious-Lesion/references">References</a>
+    <a class="reference" href="/A560/The-Suspicious-Lesion/references">References</a>
   </div>
   <div class="col-md-4 margin-top-lg">
     <a class="round-img" href="/A560/A-Night-in-the-ER/pg/1"><img src="<?php echo BASE_URL; ?>assets/img/UL.png"></a>
     <h3><a href="/A560/A-Night-in-the-ER/pg/1">A Night in the E.R.</a></h3>
     <p class="italic">While working in the emergency room one evening, an unconscious 41-year-old male is rushed into the scene…</p>
-    <a class="reference" href="/A-Night-in-the-ER/references">References</a>
+    <a class="reference" href="/A560/A-Night-in-the-ER/references">References</a>
   </div>
 </div>
 
