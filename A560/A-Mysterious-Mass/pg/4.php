@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/A-Mysterious-Mass/index.php"); 
+include(ROOT_PATH . "/A560/A-Mysterious-Mass/index.php"); 
 
 ?>
 
@@ -39,13 +39,13 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <div class="row margin-top clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/innate" class="btn btn-default">Innate Immunity</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/ans/innate" class="btn btn-default">Innate Immunity</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/adaptive" class="btn btn-default">Adaptive Immunity</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/ans/adaptive" class="btn btn-default">Adaptive Immunity</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/inherent" class="btn btn-default">Inherent Immunity</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/ans/inherent" class="btn btn-default">Inherent Immunity</a>
 	</div>
 </div>
 

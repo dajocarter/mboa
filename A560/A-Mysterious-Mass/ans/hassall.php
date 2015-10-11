@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/A-Mysterious-Mass/index.php"); 
+include(ROOT_PATH . "/A560/A-Mysterious-Mass/index.php"); 
 
 ?>
 
@@ -17,6 +17,6 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<figcaption></figcaption>
 </figure>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/3">Go back to reconsider the supportive stroma of the thymus</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/pg/3">Go back to reconsider the supportive stroma of the thymus</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

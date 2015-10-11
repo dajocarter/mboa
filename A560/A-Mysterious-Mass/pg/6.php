@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/A-Mysterious-Mass/index.php"); 
+include(ROOT_PATH . "/A560/A-Mysterious-Mass/index.php"); 
 
 ?>
 
@@ -42,6 +42,6 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	</div>
 </div>
 
-<p class="back-link">The results from a blood test that you ordered are in. <a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/7">Go check-in with your patient.</a></p>
+<p class="back-link">The results from a blood test that you ordered are in. <a href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/pg/7">Go check-in with your patient.</a></p>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

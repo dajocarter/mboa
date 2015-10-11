@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
+include(ROOT_PATH . "/A560/A-Mysterious-Mass/index.php");
 
 ?>
 
@@ -23,6 +23,6 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	</div>
 </div>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/2">Reevaluate the thymus classification as a lymphoid organ</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/pg/2">Reevaluate the thymus classification as a lymphoid organ</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

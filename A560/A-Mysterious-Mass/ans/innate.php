@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/A-Mysterious-Mass/index.php"); 
+include(ROOT_PATH . "/A560/A-Mysterious-Mass/index.php"); 
 
 ?>
 
@@ -14,6 +14,6 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<div class="hint"><i class="icon ion-ios-close"></i></div>
 </div>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/4">Go back and reflect on lymphocytes and immunity</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/pg/4">Go back and reflect on lymphocytes and immunity</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

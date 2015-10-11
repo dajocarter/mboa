@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/A-Mysterious-Mass/index.php"); 
+include(ROOT_PATH . "/A560/A-Mysterious-Mass/index.php"); 
 
 ?>
 
@@ -50,13 +50,13 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 
 <div class="row margin-top clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/sub_sinus" class="btn btn-default">Subcapsular Sinus</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/ans/sub_sinus" class="btn btn-default">Subcapsular Sinus</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/paracortex" class="btn btn-default">Paracortex</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/ans/paracortex" class="btn btn-default">Paracortex</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>A-Mysterious-Mass/ans/medulla" class="btn btn-default">Medulla</a>
+		<a href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/ans/medulla" class="btn btn-default">Medulla</a>
 	</div>
 </div>
 

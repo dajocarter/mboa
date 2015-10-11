@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/A-Mysterious-Mass/index.php"); 
+include(ROOT_PATH . "/A560/A-Mysterious-Mass/index.php"); 
 
 ?>
 
@@ -16,6 +16,6 @@ include(ROOT_PATH . "/A-Mysterious-Mass/index.php");
 	<figcaption></figcaption>
 </figure>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>A-Mysterious-Mass/pg/5">Return to determine where naïve lymphocytes travel to next</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A560/A-Mysterious-Mass/pg/5">Return to determine where naïve lymphocytes travel to next</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>
