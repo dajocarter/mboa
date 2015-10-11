@@ -9,7 +9,7 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
 
         // Replace submit button with link to homepage
-        $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/">Go Back</a></button>');
+        $('.list-group-item.buttons').html('<button class="btn btn-primary"><a href="/A560">Go Back</a></button>');
 
         // Submit user's choices to Firebase
         $("input:checked").each(function (index) {
@@ -189,11 +189,9 @@ $(document).ready(function() {
     var answers = ["high", "low", "normal", "normal"];
     var index = $(this).attr('name');
     if ($('input:radio[name=' + index + ']:checked').val() === answers[index]) {
-      console.log("i am correct");
       $('input:radio[name=' + index + ']').parent().removeClass();
       $(this).parent().addClass('correct');
     } else {
-      console.log("i am wrong");
       $('input:radio[name=' + index + ']').parent().removeClass();
       $(this).parent().addClass('wrong');
     }
