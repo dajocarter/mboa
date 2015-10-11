@@ -140,6 +140,15 @@ a.back-link {
     border-radius: 50%;
   }
 
+  h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin: 0;
+  }
+
   .icon {
     font-size: 14em;
     position: absolute;
