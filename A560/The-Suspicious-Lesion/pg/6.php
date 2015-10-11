@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
+include(ROOT_PATH . "/A560/The-Suspicious-Lesion/index.php");
 
 ?>
 
@@ -31,7 +31,7 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <p class="bold margin-top">Histology Scavenger Hunt!</p>
 <p>Take a screenshot of a high endothelial venule in the paracortex, from <a target="_blank" href="//medsci.indiana.edu/junqueira/virtual/msci_42_5.html">Slide 42: Lymph Node, H&amp;E</a>.</p>
 
-<p>Then go <a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/7">learn the flow of lymph through a node</a>.</p>
+<p>Then go <a href="<?php echo BASE_URL; ?>A560/The-Suspicious-Lesion/pg/7">learn the flow of lymph through a node</a>.</p>
 
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

@@ -1,6 +1,6 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
 $pageTitle = "The Suspicious Lesion";
 

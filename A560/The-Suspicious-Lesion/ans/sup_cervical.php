@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
+include(ROOT_PATH . "/A560/The-Suspicious-Lesion/index.php");
 
 ?>
 
@@ -16,6 +16,6 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
   </figcaption>
 </figure>
 
-<a class="back-link" href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/pg/4">Go back and reconsider where lymph from the breast drains</a>
+<a class="back-link" href="<?php echo BASE_URL; ?>A560/The-Suspicious-Lesion/pg/4">Go back and reconsider where lymph from the breast drains</a>
 
 <?php include(ROOT_PATH . "/templates/footer.php"); ?>

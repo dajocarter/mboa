@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/The-Suspicious-Lesion/index.php"); 
+include(ROOT_PATH . "/A560/The-Suspicious-Lesion/index.php"); 
 
 ?>
 
@@ -33,13 +33,13 @@ network creating a spacious mesh for many cells to reside.</p>
 <p class="bold margin-top-lg">Lymph from breast tissue drains into the:</p>
 <div class="row margin-top clearfix">
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/sup_cervical" class="btn btn-default">Superficial Cervical Lymph Nodes</a>
+		<a href="<?php echo BASE_URL; ?>A560/The-Suspicious-Lesion/ans/sup_cervical" class="btn btn-default">Superficial Cervical Lymph Nodes</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/axillary" class="btn btn-default">Axillary Lymph Nodes</a>
+		<a href="<?php echo BASE_URL; ?>A560/The-Suspicious-Lesion/ans/axillary" class="btn btn-default">Axillary Lymph Nodes</a>
 	</div>
 	<div class="list-item col-sm-4">
-		<a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/inguinal" class="btn btn-default">Inguinal Lymph Nodes</a>
+		<a href="<?php echo BASE_URL; ?>A560/The-Suspicious-Lesion/ans/inguinal" class="btn btn-default">Inguinal Lymph Nodes</a>
 	</div>
 </div>
 

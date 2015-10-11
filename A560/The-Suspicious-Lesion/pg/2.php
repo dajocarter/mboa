@@ -1,8 +1,8 @@
 <?php
 
-require_once("../../templates/config.php");
+require_once("../../../templates/config.php");
 
-include(ROOT_PATH . "/The-Suspicious-Lesion/index.php"); 
+include(ROOT_PATH . "/A560/The-Suspicious-Lesion/index.php"); 
 
 ?>
 
@@ -35,13 +35,13 @@ include(ROOT_PATH . "/The-Suspicious-Lesion/index.php");
 <p class="bold margin-top-lg">Lymph nodes are considered   _______________   lymphoid organs.</p>
 <div class="row margin-top-lg clearfix">
   <div class="list-item col-sm-4">
-    <a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/primary.php" class="btn btn-default">Primary</a>
+    <a href="<?php echo BASE_URL; ?>A560/The-Suspicious-Lesion/ans/primary.php" class="btn btn-default">Primary</a>
   </div>
   <div class="list-item col-sm-4">
-    <a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/secondary.php" class="btn btn-default">Secondary</a>
+    <a href="<?php echo BASE_URL; ?>A560/The-Suspicious-Lesion/ans/secondary.php" class="btn btn-default">Secondary</a>
   </div>
   <div class="list-item col-sm-4">
-    <a href="<?php echo BASE_URL; ?>The-Suspicious-Lesion/ans/tertiary.php" class="btn btn-default">Tertiary</a>
+    <a href="<?php echo BASE_URL; ?>A560/The-Suspicious-Lesion/ans/tertiary.php" class="btn btn-default">Tertiary</a>
   </div>
 </div>
 
