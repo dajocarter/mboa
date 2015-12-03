@@ -7,7 +7,7 @@ $section = "none";
 include(ROOT_PATH . "templates/header.php"); ?>
 
 <div class="hero-unit">
-  <h1>My Brain On Anatomy</h1>
+  <h1>A560 Histology Cases</h1>
 </div>
 
 <div class="container">
@@ -51,7 +51,7 @@ include(ROOT_PATH . "templates/header.php"); ?>
   <div class="col-md-4 margin-top-lg">
     <a class="round-img" href="javascript:void(0)"><img src="assets/img/myocard1H2-1L.jpg"><i class="icon ion-ios-help-empty"></i></a>
     <h3>What is a flipped class?</h3>
-    <p>Watch this <a class="video-link" href="//www.youtube.com/watch?v=iQWvc6qhTds">video</a> explaining what a flipped
+    <p>Watch this <a class="popup-video" href="//www.youtube.com/watch?v=iQWvc6qhTds">video</a> explaining what a flipped
     class is, and then check out this
     <a target="_blank" href="//elearninginfographics.com/what-is-a-flipped-classroom-infographic-plus-the-educator-guide-to-flipped-classroom/">infographic</a>
      to learn more about flipped classes.</p>
