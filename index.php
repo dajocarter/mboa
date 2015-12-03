@@ -7,7 +7,7 @@ $section = "none";
 include(ROOT_PATH . "templates/header.php"); ?>
 
 <div class="hero-unit">
-  <h1>A560 Histology Cases</h1>
+  <h1>My Brain On Anatomy</h1>
 </div>
 
 <div class="container">
