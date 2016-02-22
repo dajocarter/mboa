@@ -1,0 +1,18 @@
+<div class="container">
+
+	<h1>{{caseName | stripSlug}}</h1>
+
+	<div class="row" ng-if="refs.length || creds.length">
+		<h2 ng-if="refs.length">References</h2>
+
+		<p ng-repeat="ref in refs"><span ng-bind-html="ref.title | isTrusted"></span> <br ng-if="ref.link">
+			<a ng-if="ref.link" href="{{ref.link}}" target="_blank" ng-bind-html="ref.linkText | isTrusted"></a>
+		</p>
+
+		<h3 ng-if="creds.length">Photo Credit:</h3>
+
+		<p ng-repeat="cred in creds"><span ng-bind-html="cred.title | isTrusted"></span> <br ng-if="cred.link">
+			<a ng-if="cred.link" href="{{cred.link}}" target="_blank" ng-bind-html="cred.linkText | isTrusted"></a>
+		</p>
+	</div>
+</div>

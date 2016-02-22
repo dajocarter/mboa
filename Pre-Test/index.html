@@ -1,0 +1,20 @@
+<div class="container">
+	<h1>Histo Flip Pre-Test</h1>
+	<p>Select the best response for the following questions.</p>
+	<div id="pre-test" class="list-group">
+		<div class="list-group-item clearfix" ng-repeat="(qstnIndex, problem) in problems">
+			<h4 class="list-group-item-heading">{{qstnIndex + 1}}. {{problem.text}}</h4>
+				<img ng-if="problem.img" ng-src="{{SITE.baseUrl}}/assets/img/{{problem.img}}">
+				<label ng-repeat="(answIndex, answer) in problem.options" class="list-group-item-text" for="q{{qstnIndex + 1}}-{{answIndex}}">
+					<input type="radio" id="q{{qstnIndex + 1}}-{{answIndex}}" name="q{{qstnIndex + 1}}" value="{{answIndex}}">
+					{{answIndex}}. {{answer.text}}
+				</label>
+				<div class="graph-bar clearfix">
+					<div id="graph-q{{qstnIndex + 1}}-{{answIndex}}" class="graph-bar-outline"><div class="graph-bar-color"></div></div><span id="percent-q{{qstnIndex + 1}}-{{answIndex}}" class="graph-bar-percent"></span>
+				</div>
+			</div>
+		<div class="list-group-item buttons">
+			<button class="btn btn-success" id="quizSubmit">Submit</button>
+		</div>
+	</div>
+</div>
