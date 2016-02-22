@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
   $ = require('gulp-load-plugins')(),
+  merge = require('merge-stream'),
   browserSync = require('browser-sync').create();
 
 var AUTOPREFIXER_BROWSERS = [
@@ -25,12 +26,56 @@ gulp.task('images', function() {
 });
 
 gulp.task('javascript', function() {
-  return gulp.src(['./src/js/vendor/jquery.min.js', './src/js/vendor/bootstrap.min.js', './src/js/vendor/jquery.magnific-popup.min.js', './src/js/vendor/velocity.min.js', './src/js/vendor/firebase.js', './src/js/main.js'])
-    .pipe($.concat('main.js'))
+  var vendor = gulp.src([
+    './bower_components/jquery/dist/jquery.js',
+    './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+    './bower_components/magnific-popup/dist/jquery.magnific-popup.js',
+    './bower_components/velocity/velocity.js',
+    './bower_components/firebase/firebase.js'
+  ]);
+  var main = gulp.src([
+    './src/js/main.js',
+    './src/js/factories/references.js',
+    './src/js/factories/problems.js'
+  ]);
+
+  vendor
+    .pipe($.sourcemaps.init())
+    .pipe($.concat('vendor.js'))
     .pipe($.uglify(false))
-    .pipe($.rename('main.min.js'))
-    .pipe(gulp.dest('assets/js'))
+    .on('error', $.notify.onError({
+      title: "Uglify Error:",
+      message: "<%= error.message %>"
+    }))
+    .pipe($.rename({
+      extname: '.min.js'
+    }))
+    .pipe($.sourcemaps.write())
+    .pipe(gulp.dest('./assets/js'))
     .pipe(browserSync.stream());
+  main
+    .pipe($.sourcemaps.init())
+    .pipe($.concat('main.js'))
+    .pipe($.ngAnnotate({
+      add: true
+    }))
+    .on('error', $.notify.onError({
+      title: "ngAnnotate Error",
+      message: "<%= error.message %>"
+    }))
+    .pipe($.uglify(false))
+    .on('error', $.notify.onError({
+      title: "Uglify Error:",
+      message: "<%= error.message %>"
+    }))
+    .pipe($.rename({
+      extname: '.min.js'
+    }))
+    .pipe($.sourcemaps.write())
+    .pipe(gulp.dest('./assets/js'))
+    .pipe(browserSync.stream());
+
+  return merge(vendor, main);
 });
 
 gulp.task('styles', function() {
@@ -48,7 +93,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['./A550/*.php', './A560/**/*.php']).on('change', browserSync.reload);
+  gulp.watch(['./**/*.{php,html}', './templates/*.html', './*.html']).on('change', browserSync.reload);
   gulp.watch(['./src/img/*'], ['images']);
   gulp.watch(['./src/js/*.js'], ['javascript']);
   gulp.watch(['./src/scss/*.scss'], ['styles']);
