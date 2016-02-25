@@ -1,15 +1,3 @@
-var mboa = angular.module('mboa', ['ui.router']);
-
-/********** GLOBAL **********/
-mboa.run(function($rootScope) {
-  $rootScope.SITE = {
-    baseUrl: 'http://mybrainonanatomy.com',
-    name: 'My Brain On Anatomy',
-    currentYear: new Date()
-  };
-});
-
-/********** ROUTING **********/
 mboa.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
   $locationProvider.html5Mode(true);
 
@@ -28,19 +16,28 @@ mboa.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
       url: '/Learning-Objectives/',
       templateUrl: '../../Learning-Objectives/index.html'
     })
-    .state('references', {
-      url: '/:caseName/references',
+    .state('histoCase', {
+      url: '/:caseName',
+      abstract: true,
+      template: '<ui-view/>'
+    })
+    .state('histoCase.references', {
+      url: '/references',
       templateUrl: '../../templates/references.html',
       controller: 'RefsController'
     })
-    .state('page', {
-      url: '/:caseName/:pageType/:pageId',
+    .state('histoCase.pageType', {
+      url: '/:pageType',
+      abstract: true,
+      template: '<ui-view/>'
+    })
+    .state('histoCase.pageType.page', {
+      url: '/:pageId',
+      controller: 'PageController',
       templateUrl: function($stateParams) {
         return '../../' + $stateParams.caseName + '/' + $stateParams.pageType + '/' + $stateParams.pageId + '.html';
-      },
-      controller: 'PageController'
-    })
+      }
+    });
 
   $urlRouterProvider.otherwise('/');
-});
 });
