@@ -35,6 +35,9 @@ gulp.task('javascript', function() {
   ]);
   var main = gulp.src([
     './src/js/main.js',
+    './src/js/router.js',
+    './src/js/filters.js',
+    './src/js/controllers.js',
     './src/js/factories/references.js',
     './src/js/factories/problems.js'
   ]);
