@@ -40,7 +40,6 @@ gulp.task('javascript', function() {
   ]);
 
   vendor
-    .pipe($.sourcemaps.init())
     .pipe($.concat('vendor.js'))
     .pipe($.uglify(false))
     .on('error', $.notify.onError({
@@ -50,11 +49,9 @@ gulp.task('javascript', function() {
     .pipe($.rename({
       extname: '.min.js'
     }))
-    .pipe($.sourcemaps.write())
     .pipe(gulp.dest('./assets/js'))
     .pipe(browserSync.stream());
   main
-    .pipe($.sourcemaps.init())
     .pipe($.concat('main.js'))
     .pipe($.ngAnnotate({
       add: true
@@ -71,7 +68,6 @@ gulp.task('javascript', function() {
     .pipe($.rename({
       extname: '.min.js'
     }))
-    .pipe($.sourcemaps.write())
     .pipe(gulp.dest('./assets/js'))
     .pipe(browserSync.stream());
 
