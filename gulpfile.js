@@ -19,7 +19,7 @@ gulp.task('images', function() {
   return gulp.src(['./src/img/*.{png,PNG,jpg,JPG,jpeg,JPEG,gif,GIF}'], {
       base: '.'
     })
-    .pipe($.newer('./src/img'))
+    .pipe($.newer('./assets/img'))
     .pipe($.imagemin())
     .pipe(gulp.dest('./assets/img'))
     .pipe(browserSync.stream());
