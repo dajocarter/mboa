@@ -37,6 +37,7 @@ gulp.task('javascript', function() {
     './src/js/main.js',
     './src/js/router.js',
     './src/js/filters.js',
+    './src/js/directives.js',
     './src/js/controllers.js',
     './src/js/factories/references.js',
     './src/js/factories/problems.js'
