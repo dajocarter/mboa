@@ -25,7 +25,7 @@ gulp.task('images', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('javascript', function() {
+gulp.task('js', function() {
   var vendor = gulp.src([
     './bower_components/jquery/dist/jquery.js',
     './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
@@ -44,6 +44,7 @@ gulp.task('javascript', function() {
   ]);
 
   vendor
+    .pipe($.newer('./assets/js'))
     .pipe($.concat('vendor.js'))
     .pipe($.uglify(false))
     .on('error', $.notify.onError({
@@ -56,6 +57,7 @@ gulp.task('javascript', function() {
     .pipe(gulp.dest('./assets/js'))
     .pipe(browserSync.stream());
   main
+    .pipe($.newer('./assets/js'))
     .pipe($.concat('main.js'))
     .pipe($.ngAnnotate({
       add: true
@@ -95,7 +97,7 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
   gulp.watch(['./**/*.{php,html}', './templates/*.html', './*.html']).on('change', browserSync.reload);
   gulp.watch(['./src/img/*'], ['images']);
-  gulp.watch(['./src/js/*.js'], ['javascript']);
+  gulp.watch(['./src/js/*.js'], ['js']);
   gulp.watch(['./src/scss/*.scss'], ['styles']);
 });
 
