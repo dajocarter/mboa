@@ -4,7 +4,9 @@
 	<div id="pre-test" class="list-group">
 		<div class="list-group-item clearfix" ng-repeat="(qstnIndex, problem) in problems">
 			<h4 class="list-group-item-heading">{{qstnIndex + 1}}. {{problem.text}}</h4>
-				<img ng-if="problem.img" ng-src="{{SITE.baseUrl}}/assets/img/{{problem.img}}">
+				<a mfp="{type:'image'}" ng-attr-title="{{problem.text}}" ng-href="{{SITE.baseUrl}}/assets/img/{{problem.img}}">
+					<img ng-if="problem.img" ng-src="{{SITE.baseUrl}}/assets/img/{{problem.img}}">
+				</a>
 				<label ng-repeat="(answIndex, answer) in problem.options" class="list-group-item-text" for="q{{qstnIndex + 1}}-{{answIndex}}">
 					<input type="radio" id="q{{qstnIndex + 1}}-{{answIndex}}" name="q{{qstnIndex + 1}}" value="{{answIndex}}">
 					{{answIndex}}. {{answer.text}}
