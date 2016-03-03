@@ -1,4 +1,4 @@
-var mboa = angular.module('mboa', ['ui.router']);
+angular.module('mboa', ['ui.router', 'firebase'])
 
 /********** GLOBAL **********/
 mboa.run(function($rootScope, $state, $stateParams) {
