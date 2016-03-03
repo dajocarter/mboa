@@ -1,12 +1,17 @@
 angular.module('mboa', ['ui.router', 'firebase'])
 
 /********** GLOBAL **********/
-mboa.run(function($rootScope, $state, $stateParams) {
+.run(function($rootScope, $state, $stateParams, $anchorScroll) {
   $rootScope.SITE = {
     baseUrl: 'http://mybrainonanatomy.com',
     name: 'My Brain On Anatomy',
     currentYear: new Date()
   };
+
+  $rootScope.$on('$stateChangeSuccess', function() {
+    $anchorScroll();
+  });
+
   $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
     var redirectPairs = {
       'A-Mysterious-Mass': {
