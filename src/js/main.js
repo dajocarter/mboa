@@ -3,7 +3,7 @@ angular.module('mboa', ['ui.router', 'firebase'])
 /********** GLOBAL **********/
 .run(function($rootScope, $state, $stateParams, $anchorScroll) {
   $rootScope.SITE = {
-    baseUrl: 'http://mybrainonanatomy.com',
+    baseUrl: 'http://my-brain-on-anatomy:7888',
     name: 'My Brain On Anatomy',
     currentYear: new Date()
   };
