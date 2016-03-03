@@ -37,7 +37,12 @@ angular.module('mboa').config(function($locationProvider, $stateProvider, $urlRo
       templateUrl: function($stateParams) {
         return '../../templates/' + $stateParams.caseName + '/' + $stateParams.pageType + '/' + $stateParams.pageId + '.html';
       }
+    })
+    .state('404server', {
+      templateUrl: '../../templates/404.html'
+    })
+    .state('404client', {
+      url: '*path',
+      templateUrl: '/../../templates/404.html'
     });
-
-  $urlRouterProvider.otherwise('/');
 });
