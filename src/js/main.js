@@ -48,6 +48,17 @@ angular.module('mboa', ['ui.router', 'firebase'])
       }
     };
     if (toState.name == "histoCase.pageType.page") {
+      // Check to make sure the url is applicable
+      switch (toParams.caseName) {
+        case 'A-Mysterious-Mass':
+        case 'A-Night-in-the-ER':
+        case 'The-Suspicious-Lesion':
+          break;
+        default:
+          event.preventDefault();
+          $state.go('404server');
+          break;
+      }
       // Check if we're redirecting an 'ans' page to a 'pg' page
       if (toParams.pageType == 'ans') {
         for (var caseName in redirectPairs) {
