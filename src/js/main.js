@@ -8,6 +8,12 @@ angular.module('mboa', ['ui.router', 'firebase'])
     currentYear: new Date()
   };
 
+  $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
+    if (!error.state || error.state == 404) {
+      $state.go('404server');
+    }
+  });
+
   $rootScope.$on('$stateChangeSuccess', function() {
     $anchorScroll();
   });
