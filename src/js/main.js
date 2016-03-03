@@ -13,6 +13,8 @@ angular.module('mboa', ['ui.router', 'firebase'])
   });
 
   $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+    $.magnificPopup.close();
+
     var redirectPairs = {
       'A-Mysterious-Mass': {
         'thymus': '2',
