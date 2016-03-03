@@ -1,4 +1,4 @@
-mboa.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
+angular.module('mboa').config(function($locationProvider, $stateProvider, $urlRouterProvider) {
   $locationProvider.html5Mode(true);
 
   $stateProvider
@@ -9,12 +9,12 @@ mboa.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     })
     .state('preTest', {
       url: '/Pre-Test/',
-      templateUrl: '../../Pre-Test/index.html',
+      templateUrl: '../../templates/pre-test.html',
       controller: 'PreTestController'
     })
     .state('learningObjs', {
       url: '/Learning-Objectives/',
-      templateUrl: '../../Learning-Objectives/index.html'
+      templateUrl: '../../templates/learning-objectives.html'
     })
     .state('histoCase', {
       url: '/:caseName',
@@ -35,7 +35,7 @@ mboa.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
       url: '/:pageId',
       controller: 'PageController',
       templateUrl: function($stateParams) {
-        return '../../' + $stateParams.caseName + '/' + $stateParams.pageType + '/' + $stateParams.pageId + '.html';
+        return '../../templates/' + $stateParams.caseName + '/' + $stateParams.pageType + '/' + $stateParams.pageId + '.html';
       }
     });
 
