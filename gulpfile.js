@@ -35,6 +35,7 @@ gulp.task('js', function() {
   ]);
   var main = gulp.src([
     './src/js/main.js',
+    './src/js/templates.js',
     './src/js/router.js',
     './src/js/filters.js',
     './src/js/directives.js',
@@ -80,7 +81,7 @@ gulp.task('js', function() {
   return merge(vendor, main);
 });
 
-gulp.task('styles', function() {
+gulp.task('sass', function() {
   return gulp.src(['./src/scss/main.scss'])
     .pipe($.sourcemaps.init())
     .pipe($.sass().on('error', $.sass.logError))
@@ -94,16 +95,29 @@ gulp.task('styles', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task('templates', function() {
+  return gulp.src('templates/**/*.html')
+    .pipe($.angularTemplatecache('templates.js', {
+      module: 'mboa'
+    }))
+    .pipe(gulp.dest('./src/js'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('watch', function() {
-  gulp.watch(['./**/*.{php,html}', './templates/*.html', './*.html']).on('change', browserSync.reload);
+  gulp.watch(['./index.html']).on('change', browserSync.reload);
+  gulp.watch(['./templates/**/*.html'], ['templates', 'js']);
   gulp.watch(['./src/img/*'], ['images']);
   gulp.watch(['./src/js/*.js'], ['js']);
-  gulp.watch(['./src/scss/*.scss'], ['styles']);
+  gulp.watch(['./src/scss/*.scss'], ['sass']);
 });
 
 gulp.task('browserSync', function() {
   browserSync.init({
-    watchTask: true
+    watchTask: true,
+    server: {
+      basedir: './'
+    }
   });
 });
 

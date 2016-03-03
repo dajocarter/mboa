@@ -1,4 +1,4 @@
-mboa.factory('References', function() {
+angular.module('mboa').factory('References', function() {
   return {
     'A-Mysterious-Mass': {
       'refs': [{

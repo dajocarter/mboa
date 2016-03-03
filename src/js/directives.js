@@ -1,4 +1,4 @@
-mboa.directive('mfp', function() {
+angular.module('mboa').directive('mfp', function() {
   return {
     restrict: 'A',
     link: function(scope, element, attrs) {
