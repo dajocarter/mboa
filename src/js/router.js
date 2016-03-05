@@ -19,7 +19,11 @@ angular.module('mboa').config(function($locationProvider, $stateProvider, $urlRo
     .state('histoCase', {
       url: '/:caseName',
       abstract: true,
-      template: '<ui-view/>'
+      templateUrl: '../../templates/case-index.html',
+      controller: function($stateParams) {
+        this.caseName = $stateParams.caseName;
+      },
+      controllerAs: 'histoCase'
     })
     .state('histoCase.references', {
       url: '/references',
