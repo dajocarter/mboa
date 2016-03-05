@@ -34,8 +34,3 @@ angular.module('mboa').controller('RefsController', function($scope, $stateParam
   $scope.refs = References[caseName].refs;
   $scope.creds = References[caseName].creds;
 });
-
-angular.module('mboa').controller('PageController', function($scope, $state) {
-  console.log('PageController has been loaded.');
-  console.log('state is', $state);
-});

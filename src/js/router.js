@@ -37,7 +37,6 @@ angular.module('mboa').config(function($locationProvider, $stateProvider, $urlRo
     })
     .state('histoCase.pageType.page', {
       url: '/:pageId',
-      controller: 'PageController',
       templateUrl: function($stateParams) {
         return '../../templates/' + $stateParams.caseName + '/' + $stateParams.pageType + '/' + $stateParams.pageId + '.html';
       }
