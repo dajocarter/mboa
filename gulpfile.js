@@ -97,6 +97,10 @@ gulp.task('sass', function() {
 
 gulp.task('templates', function() {
   return gulp.src('templates/**/*.html')
+    .pipe($.htmlmin({
+      removeComments: true,
+      collapseWhitespace: true
+    }))
     .pipe($.angularTemplatecache('templates.js', {
       module: 'mboa'
     }))
