@@ -1,21 +1,15 @@
 {
   "name": "MyBrainOnAnatomy",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "MyBrainOnAnatomy",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "src/js/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/betabarb/betabarb.github.io.git"
+    "url": "https://github.com/dajocarter/mboa.git"
   },
-  "author": "",
+  "author": "dajocarter",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/betabarb/betabarb.github.io/issues"
-  },
-  "homepage": "https://github.com/betabarb/betabarb.github.io",
+  "homepage": "http://MyBrainOnAnatomy.com",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",

@@ -1,10 +1,8 @@
 {
   "name": "MyBrainOnAnatomy",
-  "version": "1.0",
-  "homepage": "https://github.com/betabarb/betabarb.github.io",
-  "authors": [
-    "David Carter"
-  ],
+  "version": "2.0",
+  "homepage": "http://MyBrainOnAnatomy.com",
+  "authors": "dajocarter",
   "description": "MyBrainOnAnatomy",
   "moduleType": [
     "node"
@@ -15,8 +13,8 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "assets",
+    "files"
   ],
   "dependencies": {
     "bootstrap-sass-official": "3.2.0",
