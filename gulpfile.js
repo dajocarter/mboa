@@ -38,10 +38,9 @@ gulp.task('js', function() {
     './src/js/templates.js',
     './src/js/router.js',
     './src/js/filters.js',
-    './src/js/directives.js',
+    './src/js/directives/*.js',
     './src/js/controllers.js',
-    './src/js/factories/references.js',
-    './src/js/factories/problems.js'
+    './src/js/factories/*.js'
   ]);
 
   vendor
