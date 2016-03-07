@@ -1,7 +1,8 @@
 angular.module('mboa').factory('Answers', function() {
   return [
     ["Simple cuboidal epithelium", "Simple cuboidal"], // 0
-    "Subcapsular sinus", ["Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule"],
+    "Subcapsular sinus", // 1 
+    ["Lymph follicle", "Lymph nodule", "Lymphoid follicle", "Lymphoid nodule"],
     "Cortex",
     "Paracortex",
     "Medulla", // 5
