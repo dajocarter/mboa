@@ -47,7 +47,6 @@ angular.module('mboa').directive('mboaInput', function(Answers, Hints) {
       };
 
       scope.correct = false;
-      scope.userAnswer = "";
 
       scope.gradeAnswer = function(userValue) {
         console.log(userValue);
