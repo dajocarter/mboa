@@ -33,8 +33,6 @@
   },
   "dependencies": {
     "angular": "^1.5.0",
-    "angular-ui-router": "^0.2.18",
-    "angularfire": "^1.1.4",
-    "firebase": "^2.4.1"
+    "angular-ui-router": "^0.2.18"
   }
 }
