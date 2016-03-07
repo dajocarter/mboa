@@ -38,8 +38,10 @@ angular.module('mboa').directive('mboaInput', function(Answers, Hints) {
         if (right) {
           scope.correct = true;
           scope.showHint = false;
+          angular.element(element).find('input').addClass('correct');
         } else {
           scope.correct = false;
+          angular.element(element).find('input').removeClass('correct');
         }
       };
 
