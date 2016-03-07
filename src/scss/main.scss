@@ -221,6 +221,16 @@ a.back-link {
 .icon.input {
   margin-left: 4px;
   font-size: 2em;
+
+  &.ng-hide-remove-active {
+    animation-name: zoomIn;
+    animation-duration: 1.5s;
+  }
+
+  &.ng-hide-add {
+    animation-name: zoomOut;
+    animation-duration: 1.5s;
+  }
 }
 
 .ion-ios-help-empty {
@@ -378,6 +388,16 @@ figcaption {
   padding: 10px;
   position: relative;
 
+  &.ng-hide-remove-active {
+    animation-name: flipInX;
+    animation-duration: 1.5s;
+  }
+
+  &.ng-hide-add {
+    animation-name: fadeOut;
+    animation-duration: 1.5s;
+  }
+
   p {
     font-weight: normal;
     margin: 0;
@@ -496,27 +516,29 @@ textarea {
   height: 10rem;
 }
 
-.check-input {
-  width: calc(100% - 60px);
+input[type="text"] {
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, color ease-in-out .15s;
 
   &.correct {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
     outline: none;
-    padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
-    border: 1px solid #44cf6c;
+    border-color: #44cf6c;
     color: #44cf6c;
-
-    &:focus {
-      box-shadow: 0 0 5px #44cf6c;
-      padding: 3px 0px 3px 3px;
-      margin: 5px 1px 3px 0px;
-      border: 1px solid #44cf6c;
-    }
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   }
+}
+
+.check-input {
+  width: calc(100% - 60px);
 }
 
 #resultsGraph {
