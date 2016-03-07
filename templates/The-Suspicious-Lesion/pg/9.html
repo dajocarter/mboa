@@ -1,8 +1,6 @@
 <p>Correct! Lymphedema is an accumulation of interstitial fluid in the affected region.</p>
 <p class="bold">How would a complete axillary node dissection (CAD) lead to lymphedema?</p>
-<textarea class="check-input" data-hintindex="47"></textarea>
-<i class="input icon ion-alert-circled"></i>
-<div class="hint"><i class="icon ion-ios-close"></i></div>
+<mboa-input type="textarea" ng-model="ignore"></mboa-input>
 
 <div class="row margin clearfix">
 	<div class="col-sm-6">
@@ -10,14 +8,10 @@
 
 		<p class="bold">From the original histology slide, what vessels were infiltrated with tumor cells?</p>
 		<div class="list-item">
-			<input type="text" class="check-input" data-ansindex="40" data-hintindex="52">
-			<i class="input icon ion-ios-help-empty"></i><i class="input icon ion-ios-checkmark"></i>
-			<div class="hint"><i class="icon ion-ios-close"></i></div>
+			<mboa-input type="input" feedback="hint" answer="40" hint="52" ng-model="userAnswer"></mboa-input>
 		</div>
 		<div class="list-item margin-top">
-			<input type="text" class="check-input" data-ansindex="1" data-hintindex="53">
-			<i class="input icon ion-ios-help-empty"></i><i class="input icon ion-ios-checkmark"></i>
-			<div class="hint"><i class="icon ion-ios-close"></i></div>
+			<mboa-input type="input" feedback="hint" answer="1" hint="53" ng-model="userAnswer"></mboa-input>
 		</div>
 	</div>
 	<figure class="col-sm-6">

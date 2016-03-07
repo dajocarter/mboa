@@ -2,16 +2,12 @@
 
 <div class="margin-top">
   <p class="bold">Would you describe the staining of thymocytes as basophilic or eosinophilic?</p>
-  <input type="text" class="check-input" data-ansindex="16">
-  <i class="icon ion-ios-checkmark input"></i>
-  <div class="hint"><i class="icon ion-ios-close"></i></div>
+  <mboa-input type="input" feedback="graded" answer="16" ng-model="userAnswer"></mboa-input>
 </div>
 
 <div class="margin-top">
   <p class="bold">Explain your choice.</p>
-  <textarea class="check-input" data-hintindex="14"></textarea>
-  <i class="icon ion-alert-circled input"></i>
-  <div class="hint"><i class="icon ion-ios-close"></i></div>
+  <mboa-input type="textarea" ng-model="ignore"></mboa-input>
 </div>
 
 <figure>
