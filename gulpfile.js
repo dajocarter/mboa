@@ -31,7 +31,9 @@ gulp.task('js', function() {
     './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
     './bower_components/magnific-popup/dist/jquery.magnific-popup.js',
     './bower_components/velocity/velocity.js',
-    './bower_components/firebase/firebase.js'
+    './bower_components/velocity/velocity.ui.js',
+    './bower_components/firebase/firebase-debug.js',
+    './bower_components/angularfire/dist/angularfire.js'
   ]);
   var main = gulp.src([
     './src/js/main.js',
