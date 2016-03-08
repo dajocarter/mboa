@@ -10,6 +10,7 @@ angular.module('mboa').controller('PreTestController', function($scope, Problems
 
   var ref = new Firebase('https://brilliant-heat-5271.firebaseio.com/');
   $scope.submitForm = function() {
+    $scope.submitted = true;
     for (var i = $scope.problems.length - 1; i >= 0; i--) {
       var problem = Problems[i];
       for (var j = problem.options.length - 1; j >= 0; j--) {
