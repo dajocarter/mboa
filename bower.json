@@ -20,8 +20,7 @@
     "bootstrap-sass-official": "3.2.0",
     "jquery": "2.1.1",
     "Ionicons": "ionicons#^2.0.1",
-    "firebase": "^2.4.1",
-    "angularfire": "^1.1.4"
+    "firebase": "^2.4.1"
   },
   "devDependencies": {
     "animate-sass": "^0.6.6"
