@@ -306,7 +306,6 @@ a.back-link {
 }
 
 .graph-bar-outline {
-  display: none;
   float: left;
   vertical-align: middle;
   margin-left: 36px;
@@ -316,14 +315,18 @@ a.back-link {
 }
 
 .graph-bar-color {
-  display: none;
   height: 10px;
-  width: 0;
-  background-color: #ff3e41;
+
+  &.red {
+    background-color: #ff3e41;
+  }
+
+  &.green {
+    background-color: #44cf6c;
+  }
 }
 
 .graph-bar-percent {
-  display: none;
   float: left;
   margin-left: 10px;
   line-height: 1rem;
