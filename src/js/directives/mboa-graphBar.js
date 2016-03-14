@@ -25,7 +25,8 @@ angular.module('mboa').directive('mboaGraphBar', function() {
             var denom = snap.total;
             var numer = snap[option];
             var percent = numer ? ((numer / denom) * 100) : 0;
-            angular.element(element).find('span').text(percent + "%");
+            var roundedPercent = Number(Math.round(percent + 'e3')+'e-3').toFixed(3);
+            angular.element(element).find('span').text(roundedPercent + "%");
             var colorWidth = (percent * 2) + 'px';
             angular.element(element[0].querySelector('.graph-bar-color')).css({
               width: colorWidth
