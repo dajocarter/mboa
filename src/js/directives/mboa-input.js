@@ -49,7 +49,6 @@ angular.module('mboa').directive('mboaInput', function(Answers, Hints) {
       scope.correct = false;
 
       scope.gradeAnswer = function(userValue) {
-        console.log(userValue);
         if (userValue) {
           if (typeof answer == "string") {
             if (userValue.toUpperCase() == answer.toUpperCase()) {
