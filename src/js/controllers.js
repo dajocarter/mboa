@@ -6,19 +6,23 @@ angular.module('mboa').controller('HomeController', function($scope) {
 angular.module('mboa').controller('PreTestController', function($scope, Problems) {
   console.log('PreTestController has been loaded.');
   $pageTitle = "Pre-Test";
+  var fb = new Firebase('https://brilliant-heat-5271.firebaseio.com/responses');
+
   $scope.problems = Problems;
 
-  var ref = new Firebase('https://brilliant-heat-5271.firebaseio.com/');
   $scope.submitForm = function() {
     $scope.submitted = true;
-    for (var i = $scope.problems.length - 1; i >= 0; i--) {
-      var problem = Problems[i];
-      for (var j = problem.options.length - 1; j >= 0; j--) {
+    var keys = ['one', 'two', 'three', 'four', 'five'];
+
+    for (var i = 0; i < $scope.problems.length; i++) {
+      var problem = $scope.problems[i];
+      for (var j = 0; j < problem.options.length; j++) {
         var choice = problem.options[j];
         if (choice['chosen']) {
-          var question = i + 1;
-          var answer = choice['choice'];
-          ref.child(question).child(answer).transaction(function(count) {
+          fb.child(keys[i]).child('total').transaction(function(count) {
+            return count + 1;
+          });
+          fb.child(keys[i]).child(choice.choice).transaction(function(count) {
             return count + 1;
           });
         }
