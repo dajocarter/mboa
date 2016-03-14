@@ -1,4 +1,4 @@
-angular.module('mboa', ['ui.router', 'firebase', 'ngAnimate'])
+angular.module('mboa', ['ui.router', 'ngAnimate'])
 
 /********** GLOBAL **********/
 .run(function($rootScope, $state, $stateParams, $anchorScroll) {
