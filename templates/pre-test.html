@@ -3,21 +3,21 @@
 	<p>Select the best response for the following questions.</p>
 	<div id="pre-test" class="list-group">
 		<form ng-submit="submitForm()">
-			<div class="list-group-item clearfix" ng-repeat="(qstnIndex, problem) in problems">
-				<h4 class="list-group-item-heading">{{qstnIndex + 1}}. {{problem.text}}</h4>
+			<div class="list-group-item clearfix" ng-repeat="problem in problems">
+				<h4 class="list-group-item-heading">{{$index + 1}}. {{problem.text}}</h4>
 					<a ng-if="problem.img" mfp="{type:'image'}" ng-attr-title="{{problem.text}}" ng-href="{{SITE.baseUrl}}/assets/img/{{problem.img}}">
 						<img ng-src="{{SITE.baseUrl}}/assets/img/{{problem.img}}">
 					</a>
-					<label ng-repeat="answer in problem.options" class="list-group-item-text">
-						<input type="radio" ng-attr-name="q{{qstnIndex + 1}}" ng-model="answer.chosen" value="true">
-						{{answer.choice}}. {{answer.text}}
-					</label>
-					<div class="graph-bar clearfix">
-						<div id="graph-q{{qstnIndex + 1}}-{{answer.choice}}" class="graph-bar-outline"><div class="graph-bar-color"></div></div><span id="percent-q{{qstnIndex + 1}}-{{answer.choice}}" class="graph-bar-percent"></span>
+					<div ng-repeat="answer in problem.options">
+						<label ng-attr-for="p{{$parent.$index + 1}}" class="list-group-item-text">
+							<input type="radio" ng-attr-name="p{{$parent.$index + 1}}" ng-model="answer.chosen" value="true">
+							{{answer.choice}}. {{answer.text}}
+						</label>
+						<mboa-graph-bar ng-show="submitted" correct="{{answer.correct}}" problem="{{$parent.$index}}" option="{{answer}}" submitted="{{submitted}}"></mboa-graph-bar>
 					</div>
 				</div>
 			<div class="list-group-item buttons">
-				<button ng-disabled="submitted" type="submit" class="btn btn-success" id="quizSubmit">Submit</button>
+				<button ng-disabled="submitted" type="submit" class="btn btn-success">Submit</button>
 			</div>
 		</form>
 	</div>
