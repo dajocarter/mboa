@@ -219,31 +219,19 @@ a.back-link {
 
 /********** ICONS ***********/
 .icon.input {
+  position: absolute;
+  right: 0;
   margin-left: 4px;
   font-size: 2em;
-
-  /*&.ng-hide-remove-stagger {
-    animation-delay: 1.55s;
-    animation-duration: 0s;
-  }
-
-  &.ng-hide-remove {
-    opacity: 0;
-  }*/
-
   display: none;
 
-  &.show {
-    display: inline-block !important;
-  }
-
   &.show-remove-active {
-    animation-name: zoomIn;
+    animation-name: zoomOut;
     animation-duration: 1s;
   }
 
   &.show-add {
-    animation-name: zoomOut;
+    animation-name: zoomIn;
     animation-duration: 1s;
   }
 }
