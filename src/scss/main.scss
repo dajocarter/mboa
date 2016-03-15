@@ -222,14 +222,29 @@ a.back-link {
   margin-left: 4px;
   font-size: 2em;
 
-  &.ng-hide-remove-active {
-    animation-name: zoomIn;
-    animation-duration: 1.5s;
+  /*&.ng-hide-remove-stagger {
+    animation-delay: 1.55s;
+    animation-duration: 0s;
   }
 
-  &.ng-hide-add {
+  &.ng-hide-remove {
+    opacity: 0;
+  }*/
+
+  display: none;
+
+  &.show {
+    display: inline-block !important;
+  }
+
+  &.show-remove-active {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+  }
+
+  &.show-add {
     animation-name: zoomOut;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
   }
 }
 
@@ -257,6 +272,10 @@ a.back-link {
   color: #44cf6c;
   position: relative;
   top: 5px;
+
+  &.show-remove-active {
+    animation-delay: 2s;
+  }
 }
 
 /********** PRETEST ***********/
@@ -312,6 +331,16 @@ a.back-link {
   background-color: #f0f0f0;
   width: 200px;
   height: 10px;
+
+  &.ng-hide-remove-active {
+    animation-name: slideInDown;
+    animation-duration: 5s;
+  }
+
+  &.ng-hide-add {
+    animation-name: slideOutUp;
+    animation-duration: 5s;
+  }
 }
 
 .graph-bar-color {
@@ -324,6 +353,12 @@ a.back-link {
   &.green {
     background-color: #44cf6c;
   }
+
+  &.red-add-active,
+  &.green-add-active {
+    animation-name: slideInLeft;
+    animation-duration: 5s;
+  }
 }
 
 .graph-bar-percent {
@@ -333,6 +368,16 @@ a.back-link {
   font-size: 12px;
   font-weight: normal;
   color: #777;
+
+  &.ng-hide-remove-active {
+    animation-name: slideInDown;
+    animation-duration: 5s;
+  }
+
+  &.ng-hide-add {
+    animation-name: slideOutUp;
+    animation-duration: 5s;
+  }
 }
 
 @media (max-width: 390px) {
@@ -348,6 +393,10 @@ a.back-link {
 /********** CASES ***********/
 .title {
   text-align: center;
+}
+
+.row .list-item {
+  margin-bottom: 2rem;
 }
 
 .cases,

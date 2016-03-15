@@ -13,7 +13,7 @@
 							<input type="radio" ng-attr-name="p{{$parent.$index + 1}}" ng-model="answer.chosen" value="true">
 							{{answer.choice}}. {{answer.text}}
 						</label>
-						<mboa-graph-bar ng-show="submitted" correct="{{answer.correct}}" problem="{{$parent.$index}}" option="{{answer}}" submitted="{{submitted}}"></mboa-graph-bar>
+						<mboa-graph-bar correct="{{answer.correct}}" problem="{{$parent.$index}}" option="{{answer}}" submitted="{{submitted}}"></mboa-graph-bar>
 					</div>
 				</div>
 			<div class="list-group-item buttons">
