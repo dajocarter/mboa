@@ -218,32 +218,24 @@ a.back-link {
 }
 
 /********** ICONS ***********/
+mboa-input {
+  position: relative;
+}
+
 .icon.input {
-  margin-left: 4px;
+  position: absolute;
+  right: -3rem;
   font-size: 2em;
-
-  /*&.ng-hide-remove-stagger {
-    animation-delay: 1.55s;
-    animation-duration: 0s;
-  }
-
-  &.ng-hide-remove {
-    opacity: 0;
-  }*/
-
   display: none;
-
-  &.show {
-    display: inline-block !important;
-  }
+  top: -1px;
 
   &.show-remove-active {
-    animation-name: zoomIn;
+    animation-name: zoomOut;
     animation-duration: 1s;
   }
 
   &.show-add {
-    animation-name: zoomOut;
+    animation-name: zoomIn;
     animation-duration: 1s;
   }
 }
@@ -251,10 +243,8 @@ a.back-link {
 .ion-ios-help-empty {
   background-color: orange;
   color: white;
-  position: relative;
   top: 5px;
   padding: 10px;
-  display: inline-block;
 
   &:before {
     position: absolute;
@@ -324,6 +314,17 @@ a.back-link {
   margin: 20px 0;
 }
 
+.graph-bar {
+  &.ng-hide {
+    display: none;
+  }
+
+  &.ng-hide-remove-active {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+}
+
 .graph-bar-outline {
   float: left;
   vertical-align: middle;
@@ -331,20 +332,13 @@ a.back-link {
   background-color: #f0f0f0;
   width: 200px;
   height: 10px;
-
-  &.ng-hide-remove-active {
-    animation-name: slideInDown;
-    animation-duration: 5s;
-  }
-
-  &.ng-hide-add {
-    animation-name: slideOutUp;
-    animation-duration: 5s;
-  }
 }
 
 .graph-bar-color {
   height: 10px;
+  width: 0px;
+  transition: width 1s ease;
+  transition-delay: 1s;
 
   &.red {
     background-color: #ff3e41;
@@ -352,12 +346,6 @@ a.back-link {
 
   &.green {
     background-color: #44cf6c;
-  }
-
-  &.red-add-active,
-  &.green-add-active {
-    animation-name: slideInLeft;
-    animation-duration: 5s;
   }
 }
 
@@ -368,16 +356,6 @@ a.back-link {
   font-size: 12px;
   font-weight: normal;
   color: #777;
-
-  &.ng-hide-remove-active {
-    animation-name: slideInDown;
-    animation-duration: 5s;
-  }
-
-  &.ng-hide-add {
-    animation-name: slideOutUp;
-    animation-duration: 5s;
-  }
 }
 
 @media (max-width: 390px) {

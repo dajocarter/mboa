@@ -1,9 +1,9 @@
-angular.module('mboa').directive('mboaGraphBar', function() {
+angular.module('mboa').directive('mboaGraphBar', function($anchorScroll) {
   var fb = new Firebase('https://brilliant-heat-5271.firebaseio.com/responses');
 
   return {
     restrict: 'E',
-    template: '<div class="graph-bar clearfix"><div ng-show="show" class="graph-bar-outline"><div ng-class="{green: right, red: !right}" class="graph-bar-color"></div></div><span ng-show="show" class="graph-bar-percent"></span></div>',
+    template: '<div ng-show="submitted" class="graph-bar clearfix"><div class="graph-bar-outline"><div ng-class="{green: right, red: !right}" class="graph-bar-color"></div></div><span class="graph-bar-percent"></span></div>',
     scope: {
       correct: '@',
       problem: '@',
@@ -13,11 +13,11 @@ angular.module('mboa').directive('mboaGraphBar', function() {
     link: function(scope, element, attrs) {
       attrs.$observe('submitted', function(value) {
         if (scope.$eval(value)) {
-          scope.show = true;
-
+          $anchorScroll();
           var keys = ['one', 'two', 'three', 'four', 'five'];
           var problem = scope.$eval(attrs.problem);
           var option = scope.$eval(attrs.option)['choice'];
+          scope.right = scope.$eval(attrs.correct) ? true : false;
 
           fb.child(keys[problem]).once('value', function(snap) {
             var snap = snap.val();
@@ -31,9 +31,6 @@ angular.module('mboa').directive('mboaGraphBar', function() {
               width: colorWidth
             });
           });
-
-          scope.right = scope.$eval(attrs.correct) ? true : false;
-          /*angular.element(element[0].querySelector('.graph-bar-color')).addClass(color);*/
         }
       })
     }
