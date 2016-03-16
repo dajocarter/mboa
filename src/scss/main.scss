@@ -218,16 +218,15 @@ a.back-link {
 }
 
 /********** ICONS ***********/
-mboa-input {
+label {
   position: relative;
 }
 
 .icon.input {
   position: absolute;
-  right: -3rem;
+  right: 1rem;
   font-size: 2em;
   display: none;
-  top: -1px;
 
   &.show-remove-active {
     animation-name: zoomOut;
@@ -243,7 +242,7 @@ mboa-input {
 .ion-ios-help-empty {
   background-color: orange;
   color: white;
-  top: 5px;
+  top: 7px;
   padding: 10px;
 
   &:before {
@@ -260,8 +259,7 @@ mboa-input {
 
 .ion-ios-checkmark {
   color: #44cf6c;
-  position: relative;
-  top: 5px;
+  top: 4px;
 
   &.show-remove-active {
     animation-delay: 2s;
