@@ -218,11 +218,16 @@ a.back-link {
 }
 
 /********** ICONS ***********/
+mboa-input {
+  position: relative;
+}
+
 .icon.input {
   position: absolute;
-  right: 0;
+  right: -3rem;
   font-size: 2em;
   display: none;
+  top: -1px;
 
   &.show-remove-active {
     animation-name: zoomOut;
