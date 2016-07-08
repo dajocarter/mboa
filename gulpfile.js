@@ -17,7 +17,7 @@ var AUTOPREFIXER_BROWSERS = [
 
 gulp.task('images', function() {
   return gulp.src(['./src/img/*.{png,PNG,jpg,JPG,jpeg,JPEG,gif,GIF}'], {
-      base: '.'
+      base: './src/img/'
     })
     .pipe($.newer('./assets/img'))
     .pipe($.imagemin())
