@@ -1,10 +1,8 @@
 angular.module('mboa').controller('HomeController', function($scope) {
-  console.log('HomeController has been loaded.');
   $scope.pageTitle = "My Brain on Anatomy";
 });
 
 angular.module('mboa').controller('PreTestController', function($scope, Problems) {
-  console.log('PreTestController has been loaded.');
   $pageTitle = "Pre-Test";
   var fb = new Firebase('https://brilliant-heat-5271.firebaseio.com/responses');
 
@@ -32,7 +30,6 @@ angular.module('mboa').controller('PreTestController', function($scope, Problems
 });
 
 angular.module('mboa').controller('RefsController', function($scope, $stateParams, References) {
-  console.log('RefsController has been loaded.');
   var caseName = $stateParams.caseName;
   $scope.caseName = caseName;
   $scope.pageTitle = caseName + " | References";
