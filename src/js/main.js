@@ -3,7 +3,7 @@ angular.module('mboa', ['ui.router', 'ngAnimate'])
 /********** GLOBAL **********/
 .run(function($rootScope, $state, $stateParams, $anchorScroll) {
   $rootScope.SITE = {
-    baseUrl: 'http://mybrainonanatomy.com',
+    baseUrl: 'https://www.mybrainonanatomy.com',
     name: 'My Brain On Anatomy',
     currentYear: new Date()
   };
