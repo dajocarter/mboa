@@ -27,6 +27,9 @@ gulp.task('images', function() {
 
 gulp.task('js', function() {
   var vendor = gulp.src([
+    './node_modules/angular/angular.js',
+    './node_modules/angular-ui-router/release/angular-ui-router.js',
+    './node_modules/angular-animate/angular-animate.js',
     './bower_components/jquery/dist/jquery.js',
     './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
     './bower_components/magnific-popup/dist/jquery.magnific-popup.js',
