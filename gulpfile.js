@@ -130,7 +130,7 @@ gulp.task('browserSync', function() {
   browserSync.init({
     watchTask: true,
     server: {
-      basedir: './'
+      basedir: 'dist/'
     }
   });
 });
