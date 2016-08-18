@@ -80,7 +80,13 @@ gulp.task('js', function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src(['./src/scss/main.scss'])
+  return gulp.src([
+      './bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss',
+      './bower_components/ionicons/scss/ionicons.scss',
+      './bower_components/magnific-popup/dist/magnific-popup.css',
+      './bower_components/animate-sass/_animate.scss',
+      './src/scss/main.scss'
+    ])
     .pipe($.sourcemaps.init())
     .pipe($.sass().on('error', $.sass.logError))
     .pipe($.autoprefixer({
