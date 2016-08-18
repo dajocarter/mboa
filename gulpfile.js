@@ -84,19 +84,22 @@ gulp.task('js', function() {
 
 gulp.task('sass', function() {
   return gulp.src([
-      './bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss',
-      './bower_components/ionicons/scss/ionicons.scss',
-      './bower_components/magnific-popup/dist/magnific-popup.css',
-      './bower_components/animate-sass/_animate.scss',
-      './src/scss/main.scss'
+      'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss',
+      'bower_components/ionicons/scss/ionicons.scss',
+      'bower_components/magnific-popup/dist/magnific-popup.css',
+      'bower_components/animate-sass/_animate.scss',
+      'src/scss/main.scss'
     ])
     .pipe($.sourcemaps.init())
     .pipe($.sass().on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: AUTOPREFIXER_BROWSERS
     }))
+    .pipe($.concat('main.css'))
     .pipe($.cssnano())
-    .pipe($.rename('main.min.css'))
+    .pipe($.rename({
+      extname: '.min.css'
+    }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('./dist/assets/css'))
     .pipe(browserSync.stream());
