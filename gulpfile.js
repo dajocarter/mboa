@@ -19,9 +19,9 @@ gulp.task('images', function() {
   return gulp.src(['./src/img/*.{png,PNG,jpg,JPG,jpeg,JPEG,gif,GIF}'], {
       base: './src/img/'
     })
-    .pipe($.newer('./assets/img'))
+    .pipe($.newer('./dist/assets/img'))
     .pipe($.imagemin())
-    .pipe(gulp.dest('./assets/img'))
+    .pipe(gulp.dest('./dist/assets/img'))
     .pipe(browserSync.stream());
 });
 
@@ -43,7 +43,7 @@ gulp.task('js', function() {
   ]);
 
   vendor
-    .pipe($.newer('./assets/js'))
+    .pipe($.newer('./dist/assets/js'))
     .pipe($.concat('vendor.js'))
     .pipe($.uglify(false))
     .on('error', $.notify.onError({
@@ -53,10 +53,10 @@ gulp.task('js', function() {
     .pipe($.rename({
       extname: '.min.js'
     }))
-    .pipe(gulp.dest('./assets/js'))
+    .pipe(gulp.dest('./dist/assets/js'))
     .pipe(browserSync.stream());
   main
-    .pipe($.newer('./assets/js'))
+    .pipe($.newer('./dist/assets/js'))
     .pipe($.concat('main.js'))
     .pipe($.ngAnnotate({
       add: true
@@ -73,7 +73,7 @@ gulp.task('js', function() {
     .pipe($.rename({
       extname: '.min.js'
     }))
-    .pipe(gulp.dest('./assets/js'))
+    .pipe(gulp.dest('./dist/assets/js'))
     .pipe(browserSync.stream());
 
   return merge(vendor, main);
@@ -89,12 +89,12 @@ gulp.task('sass', function() {
     .pipe($.cssnano())
     .pipe($.rename('main.min.css'))
     .pipe($.sourcemaps.write())
-    .pipe(gulp.dest('./assets/css'))
+    .pipe(gulp.dest('./dist/assets/css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('templates', function() {
-  return gulp.src('templates/**/*.html')
+  return gulp.src('./dist/templates/**/*.html')
     .pipe($.htmlmin({
       removeComments: true,
       collapseWhitespace: true
@@ -107,8 +107,8 @@ gulp.task('templates', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['./index.html']).on('change', browserSync.reload);
-  gulp.watch(['./templates/**/*.html'], ['templates', 'js']);
+  gulp.watch(['./dist/index.html']).on('change', browserSync.reload);
+  gulp.watch(['./dist/templates/**/*.html'], ['templates', 'js']);
   gulp.watch(['./src/img/*'], ['images']);
   gulp.watch(['./src/js/*.js'], ['js']);
   gulp.watch(['./src/scss/*.scss'], ['sass']);
@@ -122,5 +122,7 @@ gulp.task('browserSync', function() {
     }
   });
 });
+
+gulp.task('build', ['templates', 'js', 'sass', 'images']);
 
 gulp.task('default', ['browserSync', 'watch']);
