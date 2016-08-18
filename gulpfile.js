@@ -129,12 +129,10 @@ gulp.task('watch', function() {
 gulp.task('browserSync', function() {
   browserSync.init({
     watchTask: true,
-    server: {
-      basedir: 'dist/'
-    }
+    server: 'dist'
   });
 });
 
 gulp.task('build', ['templates', 'js', 'sass', 'images']);
 
-gulp.task('default', ['browserSync', 'watch']);
+gulp.task('default', ['build', 'browserSync', 'watch']);
