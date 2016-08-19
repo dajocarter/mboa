@@ -18,31 +18,37 @@ label {
     animation-name: zoomIn;
     animation-duration: 1s;
   }
+
+  &.ion-ios-help-empty {
+    top: 7px;
+    padding: 10px;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &.ion-ios-checkmark {
+    top: 4px;
+
+    &.show-remove-active {
+      animation-delay: 2s;
+    }
+  }
 }
 
 .ion-ios-help-empty {
-  background-color: orange;
+  background-color: $orange;
   color: white;
-  top: 7px;
-  padding: 10px;
-
-  &:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 .ion-alert-circled {
-  color: blue;
+  color: $blue;
 }
 
 .ion-ios-checkmark {
-  color: #44cf6c;
-  top: 4px;
-
-  &.show-remove-active {
-    animation-delay: 2s;
-  }
+  color: $green;
 }
