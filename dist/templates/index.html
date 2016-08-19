@@ -1,60 +1,65 @@
-<div class="hero-unit">
+<div class="hero-unit home">
   <h1>A560 Histology Cases</h1>
 </div>
 
-<div class="container">
-<div class="row cases margin-top-lg">
-  <h2>Before you start</h2>
-  <div class="col-md-6 margin-top-lg">
-    <a class="round-img" target="_blank" href="/files/Flipped-Class-Assignment.docx"><img ng-src="{{SITE.baseUrl}}/assets/img/Kidney1D1-1.jpg"></a>
-    <h3><a target="_blank" href="/files/Flipped-Class-Assignment.docx">Pre-Flip Assignment</a></h3>
-  </div>
-  <div class="col-md-6 margin-top-lg">
-    <a class="round-img" ui-sref="preTest"><img ng-src="{{SITE.baseUrl}}/assets/img/Diaphragm.jpg"></a>
-    <h3><a ui-sref="preTest">Pre-Test</a></h3>
-  </div>
-</div>
+<div class="wrapper">
+  <div class="container">
+    <div class="row cases margin-top-lg">
+      <h2>Before you start</h2>
+      <div class="col-md-6 margin-top-lg">
+        <a class="round-img" target="_blank" href="{{SITE.baseUrl}}/files/Flipped-Class-Assignment.docx"><img ng-src="{{SITE.baseUrl}}/assets/img/Kidney1D1-1.jpg"></a>
+        <h3><a target="_blank" href="{{SITE.baseUrl}}/files/Flipped-Class-Assignment.docx">Pre-Flip Assignment</a></h3>
+      </div>
+      <div class="col-md-6 margin-top-lg">
+        <a class="round-img" ui-sref="preTest"><img ng-src="{{SITE.baseUrl}}/assets/img/Diaphragm.jpg"></a>
+        <h3><a ui-sref="preTest">Pre-Test</a></h3>
+      </div>
+    </div>
 
-<div class="row cases margin-top-lg">
-  <h2>Cases</h2>
-  <div class="col-md-4 margin-top-lg">
-    <a class="round-img" ui-sref="histoCase.pageType.page({caseName:'A-Mysterious-Mass', pageType: 'pg', pageId: '1'})"><img ng-src="{{SITE.baseUrl}}/assets/img/mm-pg1.png"></a>
-    <h3><a ui-sref="histoCase.pageType.page({caseName:'A-Mysterious-Mass', pageType: 'pg', pageId: '1'})">A Mysterious Mass</a></h3>
-    <p class="italic">A 33-year-old male presents with an anterior mediastinal mass…</p>
-    <a class="reference" ui-sref="histoCase.references({caseName: 'A-Mysterious-Mass'})">References</a>
-  </div>
-  <div class="col-md-4 margin-top-lg">
-    <a class="round-img" ui-sref="histoCase.pageType.page({caseName:'The-Suspicious-Lesion', pageType: 'pg', pageId: '1'})"><img ng-src="{{SITE.baseUrl}}/assets/img/tsl-pg1.png"></a>
-    <h3><a ui-sref="histoCase.pageType.page({caseName:'The-Suspicious-Lesion', pageType: 'pg', pageId: '1'})">The Suspicious Lesion</a></h3>
-    <p class="italic">A 57-year-old female is evaluated for a mammogram with a suspicious lesion…</p>
-    <a class="reference" ui-sref="histoCase.references({caseName: 'The-Suspicious-Lesion'})">References</a>
-  </div>
-  <div class="col-md-4 margin-top-lg">
-    <a class="round-img" ui-sref="histoCase.pageType.page({caseName:'A-Night-in-the-ER', pageType: 'pg', pageId: '1'})"><img ng-src="{{SITE.baseUrl}}/assets/img/UL.png"></a>
-    <h3><a ui-sref="histoCase.pageType.page({caseName:'A-Night-in-the-ER', pageType: 'pg', pageId: '1'})">A Night in the E.R.</a></h3>
-    <p class="italic">While working in the emergency room one evening, an unconscious 41-year-old male is rushed into the scene…</p>
-    <a class="reference" ui-sref="histoCase.references({caseName: 'A-Night-in-the-ER'})">References</a>
-  </div>
-</div>
+    <div class="row cases margin-top-lg">
+      <h2>Cases</h2>
+      <div class="col-md-4 margin-top-lg">
+        <a class="round-img" ui-sref="histoCase.pageType.page({caseName:'a-mysterious-mass', pageType: 'pg', pageId: '1'})"><img ng-src="{{SITE.baseUrl}}/assets/img/mm-pg1.png"></a>
+        <h3><a ui-sref="histoCase.pageType.page({caseName:'a-mysterious-mass', pageType: 'pg', pageId: '1'})">A Mysterious Mass</a></h3>
+        <p class="italic">A 33-year-old male presents with an anterior mediastinal mass…</p>
+        <a class="reference" ui-sref="histoCase.references({caseName: 'a-mysterious-mass'})">References</a>
+      </div>
+      <div class="col-md-4 margin-top-lg">
+        <a class="round-img" ui-sref="histoCase.pageType.page({caseName:'the-suspicious-lesion', pageType: 'pg', pageId: '1'})"><img ng-src="{{SITE.baseUrl}}/assets/img/tsl-pg1.png"></a>
+        <h3><a ui-sref="histoCase.pageType.page({caseName:'the-suspicious-lesion', pageType: 'pg', pageId: '1'})">The Suspicious Lesion</a></h3>
+        <p class="italic">A 57-year-old female is evaluated for a mammogram with a suspicious lesion…</p>
+        <a class="reference" ui-sref="histoCase.references({caseName: 'the-suspicious-lesion'})">References</a>
+      </div>
+      <div class="col-md-4 margin-top-lg">
+        <a class="round-img" ui-sref="histoCase.pageType.page({caseName:'a-night-in-the-er', pageType: 'pg', pageId: '1'})"><img ng-src="{{SITE.baseUrl}}/assets/img/UL.png"></a>
+        <h3><a ui-sref="histoCase.pageType.page({caseName:'a-night-in-the-er', pageType: 'pg', pageId: '1'})">A Night in the E.R.</a></h3>
+        <p class="italic">While working in the emergency room one evening, an unconscious 41-year-old male is rushed into the scene…</p>
+        <a class="reference" ui-sref="histoCase.references({caseName: 'a-night-in-the-er'})">References</a>
+      </div>
+    </div>
 
-<div class="row extras margin-top-lg">
-  <h2>Learn More about the Cases</h2>
-  <div class="col-md-4 margin-top-lg">
-    <a class="round-img" ui-sref="learningObjs"><img ng-src="{{SITE.baseUrl}}/assets/img/adrenal1I4-1d.jpg"><i class="icon ion-ios-checkmark-empty"></i></a>
-    <h3><a ui-sref="learningObjs">Learning Objectives</a></h3>
-    <p>View the <a ui-sref="learningObjs">learning objectives</a> for these cases and see which cases the objectives can be found.</p>
+    <div class="row extras margin-top-lg">
+      <h2>Learn More about the Cases</h2>
+      <div class="col-md-4 margin-top-lg">
+        <a class="round-img" ui-sref="learningObjs"><img ng-src="{{SITE.baseUrl}}/assets/img/adrenal1I4-1d.jpg"><i class="icon ion-ios-checkmark-empty"></i></a>
+        <h3><a ui-sref="learningObjs">Learning Objectives</a></h3>
+        <p>View the <a ui-sref="learningObjs">learning objectives</a> for these cases and see which cases the objectives can be found.</p>
+      </div>
+      <div class="col-md-4 margin-top-lg">
+        <a class="round-img" href="javascript:void(0)"><img ng-src="{{SITE.baseUrl}}/assets/img/myocard1H2-1L.jpg"><i class="icon ion-ios-help-empty"></i></a>
+        <h3>What is a flipped class?</h3>
+        <p>Watch this <a mfp="{type:'iframe'}" href="//www.youtube.com/watch?v=iQWvc6qhTds">video</a> explaining what a flipped
+        class is, and then check out this
+        <a target="_blank" href="//elearninginfographics.com/what-is-a-flipped-classroom-infographic-plus-the-educator-guide-to-flipped-classroom/">infographic</a>
+         to learn more about flipped classes.</p>
+      </div>
+      <div class="col-md-4 margin-top-lg">
+        <a class="round-img" href="javascript:void(0)"><img ng-src="{{SITE.baseUrl}}/assets/img/Hyaline2D5-1d.jpg"><i class="icon ion-ios-cloud-download-outline"></i></a>
+        <h3>Download Links</h3>
+        <p>Download the HAPS 2015 Workshop Presentation as a <a target="_blank" href="{{SITE.baseUrl}}/files/HAPS-2015-Flipped-Histo-Workshop.pptx">.pptx file</a>, a <a target="_blank" href="{{SITE.baseUrl}}/files/HAPS-2015-Flipped-Histo-Workshop.ppt">.ppt file</a>, or a <a target="_blank" href="{{SITE.baseUrl}}/files/HAPS-2015-Flipped-Histo-Workshop.pdf">.pdf file</a>. Also available for download is my <a target="_blank" href="{{SITE.baseUrl}}/files/AAA-2015-Flipped-Class-Poster.pdf">AAA 2015 poster</a>.</p>
+      </div>
+    </div>
+
   </div>
-  <div class="col-md-4 margin-top-lg">
-    <a class="round-img" href="javascript:void(0)"><img ng-src="{{SITE.baseUrl}}/assets/img/myocard1H2-1L.jpg"><i class="icon ion-ios-help-empty"></i></a>
-    <h3>What is a flipped class?</h3>
-    <p>Watch this <a mfp="{type:'iframe'}" href="//www.youtube.com/watch?v=iQWvc6qhTds">video</a> explaining what a flipped
-    class is, and then check out this
-    <a target="_blank" href="//elearninginfographics.com/what-is-a-flipped-classroom-infographic-plus-the-educator-guide-to-flipped-classroom/">infographic</a>
-     to learn more about flipped classes.</p>
-  </div>
-  <div class="col-md-4 margin-top-lg">
-    <a class="round-img" href="javascript:void(0)"><img ng-src="{{SITE.baseUrl}}/assets/img/Hyaline2D5-1d.jpg"><i class="icon ion-ios-cloud-download-outline"></i></a>
-    <h3>Download Links</h3>
-    <p>Download the HAPS 2015 Workshop Presentation as a <a target="_blank" href="/files/HAPS-2015-Flipped-Histo-Workshop.pptx">.pptx file</a>, a <a target="_blank" href="/files/HAPS-2015-Flipped-Histo-Workshop.ppt">.ppt file</a>, or a <a target="_blank" href="/files/HAPS-2015-Flipped-Histo-Workshop.pdf">.pdf file</a>. Also available for download is my <a target="_blank" href="/files/AAA-2015-Flipped-Class-Poster.pdf">AAA 2015 poster</a>.</p>
-  </div>
+
 </div>

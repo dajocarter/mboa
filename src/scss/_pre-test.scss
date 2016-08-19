@@ -1,0 +1,81 @@
+.list-group-item {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .btn {
+    margin: 20px;
+  }
+}
+
+.list-item {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+.list-group-item-text {
+  margin-left: 20px;
+  padding: 5px 0;
+
+  &.correct {
+    color: #44cf6c;
+  }
+}
+
+.graph-bar {
+  &.ng-hide {
+    display: none;
+  }
+
+  &.ng-hide-remove-active {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+}
+
+.graph-bar-outline {
+  float: left;
+  vertical-align: middle;
+  margin-left: 36px;
+  background-color: #f0f0f0;
+  width: 200px;
+  height: 10px;
+}
+
+.graph-bar-color {
+  height: 10px;
+  width: 0px;
+  transition: width 1s ease;
+  transition-delay: 1s;
+
+  &.red {
+    background-color: #ff3e41;
+  }
+
+  &.green {
+    background-color: #44cf6c;
+  }
+}
+
+.graph-bar-percent {
+  float: left;
+  margin-left: 10px;
+  line-height: 1rem;
+  font-size: 12px;
+  font-weight: normal;
+  color: #777;
+}
+
+@media (max-width: 390px) {
+  .graph-bar-percent {
+    margin: 5px 0 0 36px;
+  }
+}

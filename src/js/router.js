@@ -14,12 +14,12 @@ angular.module('mboa').config(function($locationProvider, $urlMatcherFactoryProv
       controller: 'HomeController'
     })
     .state('preTest', {
-      url: '/Pre-Test/',
+      url: '/pre-test/',
       templateUrl: '../../templates/pre-test.html',
       controller: 'PreTestController'
     })
     .state('learningObjs', {
-      url: '/Learning-Objectives/',
+      url: '/learning-objectives/',
       templateUrl: '../../templates/learning-objectives.html'
     })
     .state('histoCase', {

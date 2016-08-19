@@ -22,21 +22,21 @@ angular.module('mboa', ['ui.router', 'ngAnimate'])
     $.magnificPopup.close();
 
     var redirectPairs = {
-      'A-Mysterious-Mass': {
+      'a-mysterious-mass': {
         'thymus': '2',
         'primary': '3',
         'epi-cells': '4',
         'adaptive': '5',
         'medulla': '6'
       },
-      'A-Night-in-the-ER': {
+      'a-night-in-the-er': {
         'ur': '2',
         'CTscan': '4',
         'flow3': '5',
         'secondary': '6',
         't-lymph': '7'
       },
-      'The-Suspicious-Lesion': {
+      'the-suspicious-lesion': {
         'lymph-node': '2',
         'secondary': '3',
         'type3': '4',
@@ -50,9 +50,9 @@ angular.module('mboa', ['ui.router', 'ngAnimate'])
     if (toState.name == "histoCase.pageType.page") {
       // Check to make sure the url is applicable
       switch (toParams.caseName) {
-        case 'A-Mysterious-Mass':
-        case 'A-Night-in-the-ER':
-        case 'The-Suspicious-Lesion':
+        case 'a-mysterious-mass':
+        case 'a-night-in-the-er':
+        case 'the-suspicious-lesion':
           break;
         default:
           event.preventDefault();

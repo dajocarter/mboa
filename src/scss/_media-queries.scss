@@ -1,0 +1,48 @@
+@media (max-width: $mobile-max) {
+  .img-split {
+    margin: 20px 0;
+  }
+
+  #big {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .row {
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6 {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  #big {
+    max-width: 100%;
+  }
+
+  .img-split {
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: $tablet-min) {
+  .row + .row {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $desktop-min) {
+  .img-split {
+    margin: 20px 0;
+  }
+
+  .navbar-inverse .navbar-brand {
+    font-size: 2em;
+  }
+}
