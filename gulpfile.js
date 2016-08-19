@@ -4,15 +4,14 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create();
 
 var AUTOPREFIXER_BROWSERS = [
-  'ie >= 10',
-  'ie_mob >= 10',
-  'ff >= 30',
-  'chrome >= 34',
-  'safari >= 7',
-  'opera >= 23',
-  'ios >= 7',
-  'android >= 4.4',
-  'bb >= 10'
+  "Android 2.3",
+  "Android >= 4",
+  "Chrome >= 20",
+  "Firefox >= 24",
+  "Explorer >= 8",
+  "iOS >= 6",
+  "Opera >= 12",
+  "Safari >= 6"
 ];
 
 gulp.task('images', function() {
@@ -27,13 +26,13 @@ gulp.task('images', function() {
 
 gulp.task('js', function() {
   var vendor = gulp.src([
-    './node_modules/angular/angular.js',
-    './node_modules/angular-ui-router/release/angular-ui-router.js',
-    './node_modules/angular-animate/angular-animate.js',
-    './bower_components/jquery/dist/jquery.js',
+    './node_modules/angular/angular.min.js',
+    './node_modules/angular-ui-router/release/angular-ui-router.min.js',
+    './node_modules/angular-animate/angular-animate.min.js',
+    './bower_components/jquery/dist/jquery.min.js',
     './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
-    './bower_components/magnific-popup/dist/jquery.magnific-popup.js',
-    './bower_components/firebase/firebase-debug.js'
+    './bower_components/magnific-popup/dist/jquery.magnific-popup.min.js',
+    './bower_components/firebase/firebase.js'
   ]);
   var main = gulp.src([
     './src/js/main.js',
@@ -47,15 +46,7 @@ gulp.task('js', function() {
 
   vendor
     .pipe($.newer('./dist/assets/js'))
-    .pipe($.concat('vendor.js'))
-    .pipe($.uglify(false))
-    .on('error', $.notify.onError({
-      title: "Uglify Error:",
-      message: "<%= error.message %>"
-    }))
-    .pipe($.rename({
-      extname: '.min.js'
-    }))
+    .pipe($.concat('vendor.min.js'))
     .pipe(gulp.dest('./dist/assets/js'))
     .pipe(browserSync.stream());
   main
