@@ -1,27 +1,33 @@
-<div class="container">
+<div class="hero-unit {{histoCase.caseName}}">
+  <h1>{{ histoCase.caseName | stripSlug | capitalize }}</h1>
+</div>
 
-  <h1 class="title">{{ histoCase.caseName | stripSlug | capitalize }}</h1>
+<div class="wrapper">
 
-  <div id="icon-legend" class="dropdown">
-    <button
-      class="btn btn-default dropdown-toggle"
-      type="button"
-      id="legend-button"
-      data-toggle="dropdown"
-      aria-haspopup="true"
-      aria-expanded="true"
-      title="Icon Legend">
-      <i class="icon ion-map"></i>
-      <span class="caret"></span>
-    </button>
-    <ul
-      class="dropdown-menu dropdown-menu-right"
-      aria-labelledby="legend-button">
-      <li><i class="icon pull-left ion-ios-help-empty"></i> Hint Available</li>
-      <li><i class="icon pull-left ion-alert-circled"></i> Answer Available</li>
-    </ul>
+  <div class="container">
+
+    <div id="icon-legend" class="dropdown">
+      <button
+        class="btn btn-default dropdown-toggle"
+        type="button"
+        id="legend-button"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="true"
+        title="Icon Legend">
+        <i class="icon ion-map"></i>
+        <span class="caret"></span>
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-right"
+        aria-labelledby="legend-button">
+        <li><i class="icon pull-left ion-ios-help-empty"></i> Hint Available</li>
+        <li><i class="icon pull-left ion-alert-circled"></i> Answer Available</li>
+      </ul>
+    </div>
+
+    <div ui-view class="margin-top-lg"></div>
+
   </div>
-
-  <div ui-view></div>
 
 </div>

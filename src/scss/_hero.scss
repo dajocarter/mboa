@@ -1,11 +1,28 @@
 .hero-unit {
-  background-image: url("../img/Hyaline-Cartilage.jpg");
+  &.home {
+    background-image: url("../img/Hyaline-Cartilage.jpg");
+  }
+
+  &.a-mysterious-mass {
+    background-image: url("../img/mm-pg1.png");
+  }
+
+  &.the-suspicious-lesion {
+    background-image: url("../img/tsl-pg1.png");
+  }
+
+  &.a-night-in-the-er {
+    background-image: url("../img/UL.png");
+  }
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 40vh;
-  position: relative;
-  top: -20px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 51px;
 
   h1 {
     color: white;
@@ -15,5 +32,12 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+
+  + .wrapper {
+    margin-top: 40vh;
+    background: white;
+    position: relative;
+    z-index: 15;
   }
 }
