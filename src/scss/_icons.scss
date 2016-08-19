@@ -1,0 +1,48 @@
+label {
+  position: relative;
+  width: 100%;
+}
+
+.icon.input {
+  position: absolute;
+  right: 1rem;
+  font-size: 2em;
+  display: none;
+
+  &.show-remove-active {
+    animation-name: zoomOut;
+    animation-duration: 1s;
+  }
+
+  &.show-add {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+  }
+}
+
+.ion-ios-help-empty {
+  background-color: orange;
+  color: white;
+  top: 7px;
+  padding: 10px;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.ion-alert-circled {
+  color: blue;
+}
+
+.ion-ios-checkmark {
+  color: #44cf6c;
+  top: 4px;
+
+  &.show-remove-active {
+    animation-delay: 2s;
+  }
+}
