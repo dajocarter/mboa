@@ -1,6 +1,6 @@
 angular.module('mboa').factory('References', function() {
   return {
-    'A-Mysterious-Mass': {
+    'a-mysterious-mass': {
       'refs': [{
         'title': 'Mescher, A. <span class="underline">Junqueira’s Basic Histology: Text and Atlas</span>. 13th ed. New York: McGraw-Hill Medical, 2010.'
       }, {
@@ -46,7 +46,7 @@ angular.module('mboa').factory('References', function() {
         'linkText': 'http://www.beverlydoc.com/our-services/myasthenia-gravis/'
       }]
     },
-    'A-Night-in-the-ER': {
+    'a-night-in-the-er': {
       'refs': [{
         'title': 'A560: Cell Biology and Histology Slides and Laboratory Manual. 2013.',
         'link': '//medsci.indiana.edu/histo/virtual/slide_num.htm',
@@ -96,7 +96,7 @@ angular.module('mboa').factory('References', function() {
         'linkText': 'https://bcrc.bio.umass.edu/histology/?q=node/1418'
       }]
     },
-    'The-Suspicious-Lesion': {
+    'the-suspicious-lesion': {
       'refs': [{
         'title': 'A560: Cell Biology and Histology Slides and Laboratory Manual. 2013.',
         'link': '//medsci.indiana.edu/histo/virtual/slide_num.htm',
