@@ -32,13 +32,13 @@ gulp.task('icons', function() {
 
 gulp.task('js', function() {
   var vendor = gulp.src([
-    './node_modules/angular/angular.min.js',
-    './node_modules/angular-ui-router/release/angular-ui-router.min.js',
-    './node_modules/angular-animate/angular-animate.min.js',
-    './bower_components/jquery/dist/jquery.min.js',
+    './node_modules/angular/angular.js',
+    './node_modules/angular-ui-router/release/angular-ui-router.js',
+    './node_modules/angular-animate/angular-animate.js',
+    './bower_components/jquery/dist/jquery.js',
     './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
-    './bower_components/magnific-popup/dist/jquery.magnific-popup.min.js',
-    './bower_components/firebase/firebase.js'
+    './bower_components/magnific-popup/dist/jquery.magnific-popup.js',
+    './bower_components/firebase/firebase-debug.js'
   ]);
   var main = gulp.src([
     './src/js/main.js',
