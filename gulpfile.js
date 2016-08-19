@@ -24,6 +24,12 @@ gulp.task('images', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task('icons', function() {
+  return gulp.src(['./bower_components/Ionicons/fonts/*'])
+  .pipe($.newer('./dist/assets/fonts'))
+  .pipe(gulp.dest('./dist/assets/fonts'))
+});
+
 gulp.task('js', function() {
   var vendor = gulp.src([
     './node_modules/angular/angular.min.js',
@@ -124,6 +130,6 @@ gulp.task('browserSync', function() {
   });
 });
 
-gulp.task('build', ['templates', 'js', 'sass', 'images']);
+gulp.task('build', ['templates', 'js', 'sass', 'images', 'icons']);
 
 gulp.task('default', ['build', 'browserSync', 'watch']);
