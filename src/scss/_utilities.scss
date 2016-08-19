@@ -1,0 +1,41 @@
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.purple {
+  color: purple;
+}
+
+.red {
+  color: red;
+}
+
+.pink {
+  color: pink;
+}
+
+.dim {
+  background-color: darkgray;
+  border-color: gray;
+  color: gray;
+}

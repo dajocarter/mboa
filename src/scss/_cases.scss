@@ -1,0 +1,169 @@
+.cases,
+.extras {
+  > div * {
+    text-align: center;
+  }
+
+  .reference {
+    display: block;
+  }
+
+  .note {
+    font-size: .75em;
+  }
+}
+
+.note, p.note {
+  font-size: .75em;
+}
+
+figure {
+  margin: 20px auto;
+}
+
+figcaption {
+  text-align: center;
+  word-wrap: break-word;
+  font-size: .75em;
+}
+
+.img-responsive {
+  margin: 0px auto;
+}
+
+.hint {
+  border: 1px solid black;
+  background-color: #efefef;
+  border-radius: 4px;
+  margin: 5px 0;
+  padding: 10px;
+  position: relative;
+
+  &.ng-hide-remove-active {
+    animation-name: flipInX;
+    animation-duration: 1.5s;
+  }
+
+  &.ng-hide-add {
+    animation-name: fadeOut;
+    animation-duration: 1.5s;
+  }
+
+  p {
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1px 2px 0 0;
+    color: red;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.patient-stats {
+  padding-left: 0;
+  list-style: none;
+  width: 75%;
+  margin: 40px auto;
+
+  li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  span {
+    float: left;
+
+    & + span {
+      margin-left: 20px;
+    }
+  }
+}
+
+#resultsGraph {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+
+  .row {
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    & + .row {
+      margin-top: 0;
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  .responses {
+    border-bottom: 1px solid black;
+    height: 90%;
+
+    [class*="question"] {
+      border-right: 1px solid black;
+      height: 100%;
+      position: relative;
+
+      .row {
+        height: 100%;
+      }
+
+      [class*="choice"] {
+        position: absolute;
+        bottom: 0;
+        height: 0px;
+        transition: height 1s ease;
+
+        &:first-child {
+          left: 0;
+          background-color: red;
+        }
+
+        &:nth-child(2) {
+          left: 20%;
+          background-color: blue;
+        }
+
+        &:nth-child(3) {
+          left: 40%;
+          background-color: magenta;
+        }
+
+        &:nth-child(4) {
+          left: 60%;
+          background-color: turquoise;
+        }
+
+        &:last-child {
+          right: 0;
+          background-color: yellow;
+        }
+      }
+    }
+  }
+
+  .labels {
+    height: 10%;
+
+    .option {
+      height: 100%;
+      text-align: center;
+      border-right: 1px solid black;
+    }
+  }
+}
