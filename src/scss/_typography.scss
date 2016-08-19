@@ -35,8 +35,15 @@ body, div, span, p, a, input, textarea, label, td, tr, th, table, thead, tbody {
   font-family: $font-stack-merriweather;
 }
 
-.navbar-inverse .navbar-brand {
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-text,
+.dropdown-menu > li > a {
   font-family: $font-stack-lato;
+  font-size: 1.25em;
+}
+
+.navbar-inverse .navbar-brand {
   font-size: 1.5em;
 }
 
