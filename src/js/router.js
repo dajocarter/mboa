@@ -1,4 +1,10 @@
-angular.module('mboa').config(function($locationProvider, $stateProvider, $urlRouterProvider) {
+angular.module('mboa').config(function($locationProvider, $urlMatcherFactoryProvider, $stateProvider, $urlRouterProvider) {
+
+  // Case-insensitive router
+  $urlMatcherFactoryProvider.caseInsensitive(true);
+  $urlMatcherFactoryProvider.strictMode(false);
+
+  // Gets rid of # in URL
   $locationProvider.html5Mode(true);
 
   $stateProvider
