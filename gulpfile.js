@@ -26,7 +26,6 @@ gulp.task('images', function() {
 
 gulp.task('icons', function() {
   return gulp.src(['./bower_components/Ionicons/fonts/*'])
-  .pipe($.newer('./dist/assets/fonts'))
   .pipe(gulp.dest('./dist/assets/fonts'))
 });
 
