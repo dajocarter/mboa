@@ -50,9 +50,9 @@ angular.module('mboa', ['ui.router', 'ngAnimate'])
     if (toState.name == "histoCase.pageType.page") {
       // Check to make sure the url is applicable
       switch (toParams.caseName) {
-        case 'A-Mysterious-Mass':
-        case 'A-Night-in-the-ER':
-        case 'The-Suspicious-Lesion':
+        case 'a-mysterious-mass':
+        case 'a-night-in-the-er':
+        case 'the-suspicious-lesion':
           break;
         default:
           event.preventDefault();

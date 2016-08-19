@@ -6,7 +6,18 @@ angular.module('mboa').filter('isTrusted', function($sce) {
 
 angular.module('mboa').filter('stripSlug', function() {
   return function(text) {
-    if (text) var newText = text.replace(/-/g, " ");
-    return newText;
+    if (text && typeof text === 'string') {
+      return text.replace(/-/g, " ");
+    }
   };
+});
+
+angular.module('mboa').filter('capitalize', function() {
+  return function(text) {
+    if (text && typeof text === 'string') {
+      return text.replace(/\w\S*/g, function(word) {
+        return (word === 'er') ? 'E.R.' : word.charAt(0).toUpperCase() + word.slice(1);
+      });
+    }
+  }
 });
