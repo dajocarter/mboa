@@ -12,6 +12,7 @@
   "homepage": "http://MyBrainOnAnatomy.com",
   "devDependencies": {
     "browser-sync": "^2.14.0",
+    "connect-modrewrite": "^0.9.0",
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^2.0.0",
     "gulp-autoprefixer": "^3.1.1",

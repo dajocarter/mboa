@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
   $ = require('gulp-load-plugins')(),
   merge = require('merge-stream'),
+  modRewrite = require('connect-modrewrite'),
   browserSync = require('browser-sync').create();
 
 var AUTOPREFIXER_BROWSERS = [
@@ -117,6 +118,17 @@ gulp.task('templates', function() {
 });
 
 gulp.task('serve', ['build'], function() {
+  browserSync.init(null, {
+    server: {
+      baseDir: 'dist',
+      middleware: [
+        modRewrite([
+          '!\\.\\w+$ /index.html [L]'
+        ])
+      ]
+    }
+  });
+  
   gulp.watch(['./dist/index.html']).on('change', browserSync.reload);
   gulp.watch(['./dist/templates/**/*.html'], ['templates', 'js']);
   gulp.watch(['./src/img/*'], ['images']);
