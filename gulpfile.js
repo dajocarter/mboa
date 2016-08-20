@@ -29,7 +29,7 @@ gulp.task('icons', function() {
   .pipe(gulp.dest('./dist/assets/fonts'))
 });
 
-gulp.task('js', function() {
+gulp.task('js', ['templates'], function() {
   var vendor = gulp.src([
     './node_modules/angular/angular.js',
     './node_modules/angular-ui-router/release/angular-ui-router.js',
@@ -116,7 +116,7 @@ gulp.task('templates', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('watch', function() {
+gulp.task('serve', ['build'], function() {
   gulp.watch(['./dist/index.html']).on('change', browserSync.reload);
   gulp.watch(['./dist/templates/**/*.html'], ['templates', 'js']);
   gulp.watch(['./src/img/*'], ['images']);
@@ -124,13 +124,6 @@ gulp.task('watch', function() {
   gulp.watch(['./src/scss/*.scss'], ['sass']);
 });
 
-gulp.task('browserSync', function() {
-  browserSync.init({
-    watchTask: true,
-    server: 'dist'
-  });
-});
+gulp.task('build', ['js', 'sass', 'images', 'icons']);
 
-gulp.task('build', ['templates', 'js', 'sass', 'images', 'icons']);
-
-gulp.task('default', ['build', 'browserSync', 'watch']);
+gulp.task('default', ['serve']);
