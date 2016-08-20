@@ -7,18 +7,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{SITE.baseUrl}}">{{SITE.name}}</a>
+      <a class="navbar-brand" ui-sref="home">{{SITE.name}}</a>
     </div>
 
     <div class="collapse navbar-collapse" id="nav-menu">
       <ul class="nav navbar-nav navbar-right">
-        <li><a ui-sref="preTest">Pre-Test</a></li>
+        <li ui-sref-active="active"><a ui-sref="preTest">Pre-Test</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cases <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a ui-sref="histoCase.pageType.page({caseName:'a-mysterious-mass', pageType: 'pg', pageId: '1'})">A Mysterious Mass</a></li>
-            <li><a ui-sref="histoCase.pageType.page({caseName:'the-suspicious-lesion', pageType: 'pg', pageId: '1'})">The Suspicious Lesion</a></li>
-            <li><a ui-sref="histoCase.pageType.page({caseName:'a-night-in-the-er', pageType: 'pg', pageId: '1'})">A Night in the E.R.</a></li>
+          <ul class="dropdown-menu inverse-dropdown">
+            <li ui-sref-active="active"><a ui-sref="histoCase.pageType.page({caseName:'a-mysterious-mass', pageType: 'pg', pageId: '1'})">A Mysterious Mass</a></li>
+            <li ui-sref-active="active"><a ui-sref="histoCase.pageType.page({caseName:'the-suspicious-lesion', pageType: 'pg', pageId: '1'})">The Suspicious Lesion</a></li>
+            <li ui-sref-active="active"><a ui-sref="histoCase.pageType.page({caseName:'a-night-in-the-er', pageType: 'pg', pageId: '1'})">A Night in the E.R.</a></li>
           </ul
         </li>
       </ul>
