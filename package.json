@@ -34,6 +34,7 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-animate": "^1.5.8",
+    "angular-ui-bootstrap": "^2.1.0",
     "angular-ui-router": "^0.3.1"
   }
 }
