@@ -34,6 +34,7 @@ gulp.task('js', function() {
     './node_modules/angular/angular.js',
     './node_modules/angular-ui-router/release/angular-ui-router.js',
     './node_modules/angular-animate/angular-animate.js',
+    './node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
     './bower_components/jquery/dist/jquery.js',
     './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
     './bower_components/magnific-popup/dist/jquery.magnific-popup.js',
@@ -81,6 +82,7 @@ gulp.task('js', function() {
 gulp.task('sass', function() {
   return gulp.src([
       './bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss',
+      './node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css',
       './bower_components/Ionicons/scss/ionicons.scss',
       './bower_components/magnific-popup/dist/magnific-popup.css',
       './bower_components/animate-sass/_animate.scss',
