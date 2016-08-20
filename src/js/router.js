@@ -31,8 +31,8 @@ angular.module('mboa').config(function($locationProvider, $urlMatcherFactoryProv
       },
       controllerAs: 'histoCase'
     })
-    .state('histoCase.references', {
-      url: '/references',
+    .state('references', {
+      url: '/:caseName/references',
       templateUrl: '../../templates/references.html',
       controller: 'RefsController'
     })
