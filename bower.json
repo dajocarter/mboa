@@ -17,10 +17,10 @@
     "files"
   ],
   "dependencies": {
-    "bootstrap-sass-official": "3.2.0",
-    "jquery": "2.1.1",
+    "bootstrap-sass-official": "3.3.7",
+    "jquery": "3.1.0",
     "Ionicons": "ionicons#^2.0.1",
-    "firebase": "^2.4.1",
+    "firebase": "^3.3.0",
     "magnific-popup": "^1.1.0"
   },
   "devDependencies": {
