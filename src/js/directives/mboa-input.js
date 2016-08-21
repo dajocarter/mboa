@@ -69,10 +69,15 @@ angular.module('mboa').directive('mboaInput', function(Answers, Hints, $uibModal
       };
 
 
-      if (attrs.hint >= 0) scope.hint = Hints[attrs.hint];
+      if (attrs.hint >= 0) {
+        scope.hint = {
+          title: (attrs.type == "input") ? 'Hint' : 'Answer',
+          text: Hints[attrs.hint]
+        };
+      }
 
       scope.openHint = function() {
-        var modalInstance = $uibModal.open({
+        $uibModal.open({
           ariaLabelledBy: 'modal-title',
           ariaDescribedBy: 'modal-body',
           templateUrl: '../../templates/modal-content.html',
@@ -82,12 +87,6 @@ angular.module('mboa').directive('mboaInput', function(Answers, Hints, $uibModal
               return scope.hint;
             }
           }
-        });
-
-        modalInstance.result.then(function () {
-          console.log('Finished');
-        }, function () {
-          console.log('Modal dismissed at: ' + new Date());
         });
       };
     }
