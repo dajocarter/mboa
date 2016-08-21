@@ -40,6 +40,11 @@ label {
   }
 }
 
+.ion-ios-help-empty,
+.ion-alert-circled {
+  cursor: pointer;
+}
+
 .ion-ios-help-empty {
   background-color: $orange;
   color: white;
