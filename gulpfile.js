@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
   $ = require('gulp-load-plugins')(),
   merge = require('merge-stream'),
+  modRewrite = require('connect-modrewrite'),
   browserSync = require('browser-sync').create();
 
 var AUTOPREFIXER_BROWSERS = [
@@ -29,11 +30,12 @@ gulp.task('icons', function() {
   .pipe(gulp.dest('./dist/assets/fonts'))
 });
 
-gulp.task('js', function() {
+gulp.task('js', ['templates'], function() {
   var vendor = gulp.src([
     './node_modules/angular/angular.js',
     './node_modules/angular-ui-router/release/angular-ui-router.js',
     './node_modules/angular-animate/angular-animate.js',
+    './node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
     './bower_components/jquery/dist/jquery.js',
     './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
     './bower_components/magnific-popup/dist/jquery.magnific-popup.js',
@@ -81,6 +83,7 @@ gulp.task('js', function() {
 gulp.task('sass', function() {
   return gulp.src([
       './bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss',
+      './node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css',
       './bower_components/Ionicons/scss/ionicons.scss',
       './bower_components/magnific-popup/dist/magnific-popup.css',
       './bower_components/animate-sass/_animate.scss',
@@ -114,7 +117,18 @@ gulp.task('templates', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('watch', function() {
+gulp.task('serve', ['build'], function() {
+  browserSync.init(null, {
+    server: {
+      baseDir: 'dist',
+      middleware: [
+        modRewrite([
+          '!\\.\\w+$ /index.html [L]'
+        ])
+      ]
+    }
+  });
+  
   gulp.watch(['./dist/index.html']).on('change', browserSync.reload);
   gulp.watch(['./dist/templates/**/*.html'], ['templates', 'js']);
   gulp.watch(['./src/img/*'], ['images']);
@@ -122,13 +136,6 @@ gulp.task('watch', function() {
   gulp.watch(['./src/scss/*.scss'], ['sass']);
 });
 
-gulp.task('browserSync', function() {
-  browserSync.init({
-    watchTask: true,
-    server: 'dist'
-  });
-});
+gulp.task('build', ['js', 'sass', 'images', 'icons']);
 
-gulp.task('build', ['templates', 'js', 'sass', 'images', 'icons']);
-
-gulp.task('default', ['build', 'browserSync', 'watch']);
+gulp.task('default', ['serve']);
