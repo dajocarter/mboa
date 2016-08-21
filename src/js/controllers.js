@@ -37,7 +37,8 @@ angular.module('mboa').controller('RefsController', function($scope, $stateParam
   $scope.creds = References[caseName].creds;
 });
 
-angular.module('mboa').controller('ModalInstanceController', function ($scope, $uibModalInstance) {
+angular.module('mboa').controller('ModalInstanceController', function ($scope, $uibModalInstance, hint) {
+  $scope.hint = hint;
   $scope.close = function () {
     $uibModalInstance.close();
   };

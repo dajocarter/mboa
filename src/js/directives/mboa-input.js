@@ -38,7 +38,6 @@ angular.module('mboa').directive('mboaInput', function(Answers, Hints, $uibModal
       var toggleCorrect = function(right) {
         if (right) {
           scope.correct = true;
-          scope.showHint = false;
           angular.element(element).find('input').addClass('correct');
         } else {
           scope.correct = false;
@@ -72,7 +71,6 @@ angular.module('mboa').directive('mboaInput', function(Answers, Hints, $uibModal
 
       if (attrs.hint >= 0) scope.hint = Hints[attrs.hint];
 
-      scope.showHint = false;
       scope.openHint = function() {
         var modalInstance = $uibModal.open({
           ariaLabelledBy: 'modal-title',
