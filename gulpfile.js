@@ -81,16 +81,19 @@ gulp.task('js', ['templates'], function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src([
-      './bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss',
-      './node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css',
-      './bower_components/Ionicons/scss/ionicons.scss',
-      './bower_components/magnific-popup/dist/magnific-popup.css',
-      './bower_components/animate-sass/_animate.scss',
-      './src/scss/main.scss'
-    ])
+  return gulp.src(['./src/scss/main.scss'])
     .pipe($.sourcemaps.init())
-    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.sass({
+      style: 'expanded',
+      includePaths: [
+        './src/scss',
+        './bower_components/bootstrap-sass-official/assets/stylesheets',
+        './node_modules/angular-ui-bootstrap/dist',
+        './bower_components/Ionicons/scss',
+        './bower_components/magnific-popup/dist',
+        './bower_components/animate-sass'
+      ]
+    }).on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: AUTOPREFIXER_BROWSERS
     }))
