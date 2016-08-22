@@ -1,9 +1,9 @@
 angular.module('mboa').directive('mboaInput', function(Answers, Hints, $uibModal) {
   function getTemplate(tElt, tAttrs) {
-    var alertTA = "<textarea class='check-input'></textarea><i class='ion ion-alert-circled input'></i>";
-    var alertInput = "<input type='text' class='check-input' /><i class='ion ion-alert-circled input'></i>";
-    var gradedInput = "<input type='text' ng-model='bindedModel' ng-change='gradeAnswer(bindedModel)' class='check-input' /><i ng-class='{show: correct}' class='ion ion-ios-checkmark input'></i>";
-    var hintInput = "<input type='text' ng-model='bindedModel' ng-change='gradeAnswer(bindedModel)' class='check-input'><i ng-class='{show: !showHint && !correct}' class='ion ion-ios-help-empty input' ng-click='openHint()'></i><i ng-class='{show: correct}' class='ion ion-ios-checkmark input'></i>";
+    var alertTA = "<textarea class='check-input'></textarea><i class='icon ion-alert-circled input' ng-click='openHint()'></i>";
+    var alertInput = "<input type='text' class='check-input' /><i class='icon ion-alert-circled input'></i>";
+    var gradedInput = "<input type='text' ng-model='bindedModel' ng-change='gradeAnswer(bindedModel)' class='check-input' /><i ng-class='{show: correct}' class='icon ion-ios-checkmark input'></i>";
+    var hintInput = "<input type='text' ng-model='bindedModel' ng-change='gradeAnswer(bindedModel)' class='check-input'><i ng-class='{show: !showHint && !correct}' class='icon ion-ios-help-empty input' ng-click='openHint()'></i><i ng-class='{show: correct}' class='icon ion-ios-checkmark input'></i>";
 
     if (tAttrs.type == "textarea") {
       return alertTA;

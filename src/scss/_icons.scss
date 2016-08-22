@@ -3,7 +3,7 @@ label {
   width: 100%;
 }
 
-.ion.input {
+.icon.input {
   position: absolute;
   right: 1rem;
   font-size: 2em;
@@ -37,6 +37,12 @@ label {
     &.show-remove-active {
       animation-delay: 2s;
     }
+  }
+
+  &.ion-alert-circled {
+    display: block;
+    bottom: 0;
+    right: 0;
   }
 }
 

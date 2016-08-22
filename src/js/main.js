@@ -8,6 +8,14 @@ angular.module('mboa', ['ui.router', 'ngAnimate', 'ui.bootstrap'])
     currentYear: new Date()
   };
 
+  var config = {
+    apiKey: "AIzaSyDlEcavbDWko-W-ykfmbjrZYZJ_exiAc-I",
+    authDomain: "brilliant-heat-5271.firebaseapp.com",
+    databaseURL: "https://brilliant-heat-5271.firebaseio.com",
+    storageBucket: "brilliant-heat-5271.appspot.com",
+  };
+  firebase.initializeApp(config);
+
   $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
     if (!error.state || error.state == 404) {
       $state.go('404server');

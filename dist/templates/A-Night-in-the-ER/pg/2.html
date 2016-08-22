@@ -12,6 +12,21 @@
 <h3>Histology Scavenger Hunt!</h3>
 <p>Take a screenshot of <a target="_blank" href="//medsci.indiana.edu/junqueira/virtual/73_bl_5.html">Slide 73, Spleen, Kornhauser’s Quad</a>, and find the following: <span class="bold">capsule</span>, <span class="bold">central arteriole</span>, <span class="bold">germinal center</span>, <span class="bold">marginal zone</span>, and <span class="bold">red pulp</span>.</p>
 
+<div class="margin-top" ng-controller="fileUploadController">
+  <h4>Upload Screenshot</h4>
+  <p>Submit your screenshot below. When it is uploaded, you will see a gallery of submitted screenshots to see how yours compares.</p>
+  <input type="file" id="file" name="file"/>
+
+  <div id="ner-gallery" class="popup-gallery margin-top row collapse">
+    <h4>Uploaded Images</h4>
+    <div ng-repeat="img in images" class="col-sm-2">
+      <a href="{{ img.url }}" class="image" title="{{ img.name }}">
+        <div class="gallery-img" style="background-image: url('{{ img.url }}');"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
 <p class="margin-top-lg">A few medical residents you are shadowing came from Harvard and they are extremely confused as to the function of the spleen (<span class="italic">watch <a class="popup-video" href="//www.youtube.com/watch?v=aEi_4Cyx4Uw">"What Does the Spleen Do? ft. Harvard Medical School"</a> for homework if you haven’t seen it already!</span>).</p>
 
 <p class="bold margin-top-lg">Kindly explain to them 3 functions of this majestic organ.</p>
@@ -19,17 +34,17 @@
 <div class="row clearfix">
   <div class="list-item col-sm-4">
     <label>
-      1.) <mboa-input type="textarea" ng-model="ignore"></mboa-input>
+      1.) <mboa-input type="textarea" ng-model="UserAnswerA" hint="26"></mboa-input>
     </label>
   </div>
   <div class="list-item col-sm-4">
     <label>
-      2.) <mboa-input type="textarea" ng-model="ignore"></mboa-input>
+      2.) <mboa-input type="textarea" ng-model="UserAnswerB" hint="26"></mboa-input>
     </label>
   </div>
   <div class="list-item col-sm-4">
     <label>
-      3.) <mboa-input type="textarea" ng-model="ignore"></mboa-input>
+      3.) <mboa-input type="textarea" ng-model="UserAnswerC" hint="28"></mboa-input>
     </label>
   </div>
 </div>

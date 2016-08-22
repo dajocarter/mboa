@@ -1,6 +1,4 @@
 angular.module('mboa').directive('mboaGraphBar', function($anchorScroll) {
-  var fb = new Firebase('https://brilliant-heat-5271.firebaseio.com/responses');
-
   return {
     restrict: 'E',
     template: '<div ng-show="submitted" class="graph-bar clearfix"><div class="graph-bar-outline"><div ng-class="{green: right, red: !right}" class="graph-bar-color"></div></div><span class="graph-bar-percent"></span></div>',
@@ -19,7 +17,7 @@ angular.module('mboa').directive('mboaGraphBar', function($anchorScroll) {
           var option = scope.$eval(attrs.option)['choice'];
           scope.right = scope.$eval(attrs.correct) ? true : false;
 
-          fb.child(keys[problem]).once('value', function(snap) {
+          firebase.database().ref('responses').child(keys[problem]).once('value', function(snap) {
             var snap = snap.val();
             var denom = snap.total;
             var numer = snap[option];
