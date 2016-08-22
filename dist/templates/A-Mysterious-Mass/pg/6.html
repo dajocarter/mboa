@@ -15,6 +15,21 @@
 <h3>Histo Scavenger Hunt!</h3>
 <p>Take a snapshot of a thymic (Hassall’s) corpuscle in the medulla, from <a target="_blank" href="//medsci.indiana.edu/junqueira/virtual/msci_76_5.html">Slide 76: Thymus, H&amp;E.</a></p>
 
+<div class="margin-top" ng-controller="fileUploadController">
+  <h4>Upload Screenshot</h4>
+  <p>Submit your screenshot below. When it is uploaded, you will see a gallery of submitted screenshots to see how yours compares.</p>
+  <input type="file" id="file" name="file"/>
+
+  <div id="amm-gallery" class="popup-gallery margin-top row collapse">
+    <h4>Uploaded Images</h4>
+    <div ng-repeat="img in images" class="col-sm-2">
+      <a href="{{ img.url }}" class="image" title="{{ img.name }}">
+        <div class="gallery-img" style="background-image: url('{{ img.url }}');"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
 
 <p class="margin-top-lg">Normally the thymus involutes with age.</p>
 <p class="bold">Compare <a target="_blank" href="//medsci.indiana.edu/histo/virtual/msci_123.html">Slide 123 Thymus, H&amp;E</a> and <a target="_blank" href="http://medsci.indiana.edu/histo/virtual/msci_126.html">Slide 126 Thymus, H&amp;E</a>, then describe what occurs during involution of an organ.</p>

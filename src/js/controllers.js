@@ -74,7 +74,19 @@ angular.module('mboa').controller('fileUploadController', function($scope, $stat
       var url = snapshot.metadata.downloadURLs[0];
       console.log('File available at', url);
 
-      $('#ner-gallery').collapse('show');
+      switch($stateParams.caseName) {
+        case 'a-night-in-the-er':
+          $('#ner-gallery').collapse('show');
+        break;
+
+        case 'the-suspicious-lesion':
+          $('#tsl-gallery').collapse('show');
+        break;
+
+        case 'a-mysterious-mass':
+          $('#amm-gallery').collapse('show');
+        break;
+      }
 
     }).catch(function(error) {
       console.error('Upload failed:', error);
