@@ -19,9 +19,11 @@
   <h6>File URL:</h6>
   <span id="linkbox"></span>
 
-  <div class="popup-gallery">
-    <div ng-repeat="img in images">
-      <a href="{{ img.url }}" class="image" title="{{ img.name }}"><img src="{{ img.url }}" alt="{{ img.name }}" /></a>
+  <div class="popup-gallery row">
+    <div ng-repeat="img in images" class="col-sm-2">
+      <a href="{{ img.url }}" class="image" title="{{ img.name }}">
+        <div class="gallery-img" style="background-image: url('{{ img.url }}');"></div>
+      </a>
     </div>
   </div>
 </div>

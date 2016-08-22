@@ -209,3 +209,23 @@ figcaption {
   text-align: left;
   vertical-align: middle;
 }
+
+.popup-gallery .col-sm-2 {
+  margin-bottom: 15px;
+}
+
+.gallery-img {
+  border: 1px solid black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+
+  @media (min-width: 768px) {
+    height: 90px;
+  }
+
+  @media (min-width: 992px) {
+    height: 126.66px;
+  }
+}

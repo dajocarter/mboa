@@ -87,7 +87,22 @@ angular.module('mboa').controller('fileUploadController', function($scope, $stat
     });
   });
 
-
+  $scope.$watch('images', function(newValue, oldValue) {
+    $timeout(function() {
+      $('.popup-gallery').each(function() {
+        $(this).magnificPopup({
+          delegate: '.image',
+          type: 'image',
+          gallery: {
+            enabled: true
+          },
+          titleSrc: function(item) {
+            return item.el.attr('title');
+          }
+        });
+      });
+    });
+  });
 
   window.onload = function() {
     document.getElementById('file').addEventListener('change', handleFileSelect, false);
