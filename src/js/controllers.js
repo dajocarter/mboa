@@ -73,7 +73,9 @@ angular.module('mboa').controller('fileUploadController', function($scope, $stat
 
       var url = snapshot.metadata.downloadURLs[0];
       console.log('File available at', url);
-      document.getElementById('linkbox').innerHTML = '<a href="' +  url + '">Click For File</a>';
+
+      $('#ner-gallery').collapse('show');
+
     }).catch(function(error) {
       console.error('Upload failed:', error);
     });

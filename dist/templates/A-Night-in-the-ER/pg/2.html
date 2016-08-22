@@ -12,14 +12,13 @@
 <h3>Histology Scavenger Hunt!</h3>
 <p>Take a screenshot of <a target="_blank" href="//medsci.indiana.edu/junqueira/virtual/73_bl_5.html">Slide 73, Spleen, Kornhauser’s Quad</a>, and find the following: <span class="bold">capsule</span>, <span class="bold">central arteriole</span>, <span class="bold">germinal center</span>, <span class="bold">marginal zone</span>, and <span class="bold">red pulp</span>.</p>
 
-<div ng-controller="fileUploadController">
-  <p>Select a file below. When it is uploaded, a link will be displayed to the uploaded file.</p>
-  <h6>Choose File</h6>
+<div class="margin-top" ng-controller="fileUploadController">
+  <h4>Upload Screenshot</h4>
+  <p>Submit your screenshot below. When it is uploaded, you will see a gallery of submitted screenshots to see how yours compares.</p>
   <input type="file" id="file" name="file"/>
-  <h6>File URL:</h6>
-  <span id="linkbox"></span>
 
-  <div class="popup-gallery row">
+  <div id="ner-gallery" class="popup-gallery margin-top row collapse">
+    <h4>Uploaded Images</h4>
     <div ng-repeat="img in images" class="col-sm-2">
       <a href="{{ img.url }}" class="image" title="{{ img.name }}">
         <div class="gallery-img" style="background-image: url('{{ img.url }}');"></div>
