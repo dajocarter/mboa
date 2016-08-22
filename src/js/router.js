@@ -10,8 +10,7 @@ angular.module('mboa').config(function($locationProvider, $urlMatcherFactoryProv
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: '../../templates/index.html',
-      controller: 'HomeController'
+      templateUrl: '../../templates/index.html'
     })
     .state('preTest', {
       url: '/pre-test/',

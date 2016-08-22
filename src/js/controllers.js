@@ -1,7 +1,3 @@
-angular.module('mboa').controller('HomeController', function($scope) {
-  $scope.pageTitle = "My Brain on Anatomy";
-});
-
 angular.module('mboa').controller('PreTestController', function($scope, Problems) {
   $pageTitle = "Pre-Test";
 
