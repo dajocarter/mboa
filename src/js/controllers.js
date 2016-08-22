@@ -24,6 +24,35 @@ angular.module('mboa').controller('PreTestController', function($scope, Problems
   };
 });
 
+angular.module('mboa').controller('CaseController', function($scope) {
+  /************ GRADE THE TABLE *************/
+  /************ Night in the ER => pg 3 *************/
+  $('td input').bind('click', function() {
+    console.log("hello");
+    var answers = ["high", "low", "normal", "normal"];
+    var index = $(this).attr('name');
+    if ($('input:radio[name=' + index + ']:checked').val() === answers[index]) {
+      $('input:radio[name=' + index + ']').parent().removeClass();
+      $(this).parent().addClass('correct');
+    } else {
+      $('input:radio[name=' + index + ']').parent().removeClass();
+      $(this).parent().addClass('wrong');
+    }
+  });
+
+  /************ GRADE THE MULTIPLE CHOICE QUESTION *************/
+  /************ A Mysterious Mass => ans secondary *************/
+  $('#multChoice input').bind('click', function() {
+    var answer = "A";
+    $('#multChoice label').removeClass('correct wrong');
+    if ($(this).val() === answer) {
+      $(this).parent().addClass('correct');
+    } else {
+      $(this).parent().addClass('wrong');
+    }
+  });
+});
+
 angular.module('mboa').controller('RefsController', function($scope, $stateParams, References) {
   var caseName = $stateParams.caseName;
   $scope.caseName = caseName;

@@ -44,7 +44,8 @@ angular.module('mboa').config(function($locationProvider, $urlMatcherFactoryProv
       url: '/:pageId',
       templateUrl: function($stateParams) {
         return '../../templates/' + $stateParams.caseName + '/' + $stateParams.pageType + '/' + $stateParams.pageId + '.html';
-      }
+      },
+      controller: 'CaseController'
     })
     .state('404server', {
       templateUrl: '../../templates/404.html'
