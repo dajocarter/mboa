@@ -1,9 +1,9 @@
-angular.module('mboa').directive('mboaInput', function(Answers, Hints) {
+angular.module('mboa').directive('mboaInput', function(Answers, Hints, $uibModal) {
   function getTemplate(tElt, tAttrs) {
-    var alertTA = "<textarea class='check-input'></textarea><i class='ion ion-alert-circled input'></i>";
-    var alertInput = "<input type='text' class='check-input' /><i class='ion ion-alert-circled input'></i>";
-    var gradedInput = "<input type='text' ng-model='bindedModel' ng-change='gradeAnswer(bindedModel)' class='check-input' /><i ng-class='{show: correct}' class='ion ion-ios-checkmark input'></i>";
-    var hintInput = "<input type='text' ng-model='bindedModel' ng-change='gradeAnswer(bindedModel)' class='check-input'><i ng-class='{show: !showHint && !correct}' class='ion ion-ios-help-empty input' ng-click='toggleHint()'></i><i ng-class='{show: correct}' class='ion ion-ios-checkmark input'></i><div ng-show='showHint' class='hint'>{{hint}}<i class='ion ion-ios-close' ng-click='toggleHint()'></i></div>"
+    var alertTA = "<textarea class='check-input'></textarea><i class='icon ion-alert-circled input' ng-click='openHint()'></i>";
+    var alertInput = "<input type='text' class='check-input' /><i class='icon ion-alert-circled input'></i>";
+    var gradedInput = "<input type='text' ng-model='bindedModel' ng-change='gradeAnswer(bindedModel)' class='check-input' /><i ng-class='{show: correct}' class='icon ion-ios-checkmark input'></i>";
+    var hintInput = "<input type='text' ng-model='bindedModel' ng-change='gradeAnswer(bindedModel)' class='check-input'><i ng-class='{show: !showHint && !correct}' class='icon ion-ios-help-empty input' ng-click='openHint()'></i><i ng-class='{show: correct}' class='icon ion-ios-checkmark input'></i>";
 
     if (tAttrs.type == "textarea") {
       return alertTA;
@@ -38,7 +38,6 @@ angular.module('mboa').directive('mboaInput', function(Answers, Hints) {
       var toggleCorrect = function(right) {
         if (right) {
           scope.correct = true;
-          scope.showHint = false;
           angular.element(element).find('input').addClass('correct');
         } else {
           scope.correct = false;
@@ -70,11 +69,25 @@ angular.module('mboa').directive('mboaInput', function(Answers, Hints) {
       };
 
 
-      if (attrs.hint >= 0) scope.hint = Hints[attrs.hint];
+      if (attrs.hint >= 0) {
+        scope.hint = {
+          title: (attrs.type == "input") ? 'Hint' : 'Answer',
+          text: Hints[attrs.hint]
+        };
+      }
 
-      scope.showHint = false;
-      scope.toggleHint = function() {
-        scope.showHint = !scope.showHint;
+      scope.openHint = function() {
+        $uibModal.open({
+          ariaLabelledBy: 'modal-title',
+          ariaDescribedBy: 'modal-body',
+          templateUrl: '../../templates/modal-content.html',
+          controller: 'ModalInstanceController',
+          resolve: {
+            hint: function () {
+              return scope.hint;
+            }
+          }
+        });
       };
     }
   };

@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
   $ = require('gulp-load-plugins')(),
   merge = require('merge-stream'),
+  modRewrite = require('connect-modrewrite'),
   browserSync = require('browser-sync').create();
 
 var AUTOPREFIXER_BROWSERS = [
@@ -29,15 +30,16 @@ gulp.task('icons', function() {
   .pipe(gulp.dest('./dist/assets/fonts'))
 });
 
-gulp.task('js', function() {
+gulp.task('js', ['templates'], function() {
   var vendor = gulp.src([
     './node_modules/angular/angular.js',
     './node_modules/angular-ui-router/release/angular-ui-router.js',
     './node_modules/angular-animate/angular-animate.js',
+    './node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
+    './node_modules/firebase/firebase.js',
     './bower_components/jquery/dist/jquery.js',
     './bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
-    './bower_components/magnific-popup/dist/jquery.magnific-popup.js',
-    './bower_components/firebase/firebase-debug.js'
+    './bower_components/magnific-popup/dist/jquery.magnific-popup.js'
   ]);
   var main = gulp.src([
     './src/js/main.js',
@@ -79,15 +81,19 @@ gulp.task('js', function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src([
-      './bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss',
-      './bower_components/Ionicons/scss/ionicons.scss',
-      './bower_components/magnific-popup/dist/magnific-popup.css',
-      './bower_components/animate-sass/_animate.scss',
-      './src/scss/main.scss'
-    ])
+  return gulp.src(['./src/scss/main.scss'])
     .pipe($.sourcemaps.init())
-    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.sass({
+      style: 'expanded',
+      includePaths: [
+        './src/scss',
+        './bower_components/bootstrap-sass-official/assets/stylesheets',
+        './node_modules/angular-ui-bootstrap/dist',
+        './bower_components/Ionicons/scss',
+        './bower_components/magnific-popup/dist',
+        './bower_components/animate-sass'
+      ]
+    }).on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: AUTOPREFIXER_BROWSERS
     }))
@@ -114,21 +120,25 @@ gulp.task('templates', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('watch', function() {
+gulp.task('serve', ['build'], function() {
+  browserSync.init(null, {
+    server: {
+      baseDir: 'dist',
+      middleware: [
+        modRewrite([
+          '!\\.\\w+$ /index.html [L]'
+        ])
+      ]
+    }
+  });
+  
   gulp.watch(['./dist/index.html']).on('change', browserSync.reload);
   gulp.watch(['./dist/templates/**/*.html'], ['templates', 'js']);
   gulp.watch(['./src/img/*'], ['images']);
-  gulp.watch(['./src/js/*.js'], ['js']);
-  gulp.watch(['./src/scss/*.scss'], ['sass']);
+  gulp.watch(['./src/js/**/*.js'], ['js']);
+  gulp.watch(['./src/scss/**/*.scss'], ['sass']);
 });
 
-gulp.task('browserSync', function() {
-  browserSync.init({
-    watchTask: true,
-    server: 'dist'
-  });
-});
+gulp.task('build', ['js', 'sass', 'images', 'icons']);
 
-gulp.task('build', ['templates', 'js', 'sass', 'images', 'icons']);
-
-gulp.task('default', ['build', 'browserSync', 'watch']);
+gulp.task('default', ['serve']);

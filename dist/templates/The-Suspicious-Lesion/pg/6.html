@@ -17,4 +17,19 @@
 <p class="bold margin-top">Histology Scavenger Hunt!</p>
 <p>Take a screenshot of a high endothelial venule in the paracortex, from <a target="_blank" href="//medsci.indiana.edu/junqueira/virtual/msci_42_5.html">Slide 42: Lymph Node, H&amp;E</a>.</p>
 
+<div class="margin-top" ng-controller="fileUploadController">
+  <h4>Upload Screenshot</h4>
+  <p>Submit your screenshot below. When it is uploaded, you will see a gallery of submitted screenshots to see how yours compares.</p>
+  <input type="file" id="file" name="file"/>
+
+  <div id="tsl-gallery" class="popup-gallery margin-top row collapse">
+    <h4>Uploaded Images</h4>
+    <div ng-repeat="img in images" class="col-sm-2">
+      <a href="{{ img.url }}" class="image" title="{{ img.name }}">
+        <div class="gallery-img" style="background-image: url('{{ img.url }}');"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
 <p>Then go <a ui-sref="histoCase.pageType.page({pageType: 'pg', pageId: '7'})">learn the flow of lymph through a node</a>.</p>

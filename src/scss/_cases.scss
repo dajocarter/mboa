@@ -170,7 +170,7 @@ figcaption {
 
 #icon-legend {
   float: right;
-  margin-top: 1em;
+  margin: 1em 0;
 
   li {
     line-height: 1.5em;
@@ -180,7 +180,7 @@ figcaption {
     }
   }
 
-  .ion {
+  .icon {
     font-size: 1.5em;
     vertical-align: middle;
     margin: 0 0.25em;
@@ -188,5 +188,44 @@ figcaption {
     &.ion-ios-help-empty {
       padding: 0 0.3em;
     }
+  }
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.popup-gallery .col-sm-2 {
+  margin-bottom: 15px;
+}
+
+.gallery-img {
+  border: 1px solid black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+
+  @media (min-width: 768px) {
+    height: 90px;
+  }
+
+  @media (min-width: 992px) {
+    height: 126.66px;
   }
 }
