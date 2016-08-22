@@ -38,6 +38,12 @@ label {
       animation-delay: 2s;
     }
   }
+
+  &.ion-alert-circled {
+    display: block;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .ion-ios-help-empty,
