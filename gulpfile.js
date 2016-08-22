@@ -135,8 +135,8 @@ gulp.task('serve', ['build'], function() {
   gulp.watch(['./dist/index.html']).on('change', browserSync.reload);
   gulp.watch(['./dist/templates/**/*.html'], ['templates', 'js']);
   gulp.watch(['./src/img/*'], ['images']);
-  gulp.watch(['./src/js/*.js'], ['js']);
-  gulp.watch(['./src/scss/*.scss'], ['sass']);
+  gulp.watch(['./src/js/**/*.js'], ['js']);
+  gulp.watch(['./src/scss/**/*.scss'], ['sass']);
 });
 
 gulp.task('build', ['js', 'sass', 'images', 'icons']);
