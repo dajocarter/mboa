@@ -18,6 +18,12 @@
   <input type="file" id="file" name="file"/>
   <h6>File URL:</h6>
   <span id="linkbox"></span>
+
+  <div class="popup-gallery">
+    <div ng-repeat="img in images">
+      <a href="{{ img.url }}" class="image" title="{{ img.name }}"><img src="{{ img.url }}" alt="{{ img.name }}" /></a>
+    </div>
+  </div>
 </div>
 
 <p class="margin-top-lg">A few medical residents you are shadowing came from Harvard and they are extremely confused as to the function of the spleen (<span class="italic">watch <a class="popup-video" href="//www.youtube.com/watch?v=aEi_4Cyx4Uw">"What Does the Spleen Do? ft. Harvard Medical School"</a> for homework if you haven’t seen it already!</span>).</p>

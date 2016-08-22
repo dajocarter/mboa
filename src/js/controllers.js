@@ -43,11 +43,11 @@ angular.module('mboa').controller('ModalInstanceController', function ($scope, $
   };
 });
 
-angular.module('mboa').controller('fileUploadController', function($scope, $stateParams) {
+angular.module('mboa').controller('fileUploadController', function($scope, $stateParams, $timeout) {
   var auth = firebase.auth();
   var databaseRef = firebase.database().ref();
   var storageRef = firebase.storage().ref();
-  
+
   function handleFileSelect(evt) {
     evt.stopPropagation();
     evt.preventDefault();
@@ -58,7 +58,7 @@ angular.module('mboa').controller('fileUploadController', function($scope, $stat
     storageRef.child('images/' + $stateParams.caseName + '/' + file.name).put(file, metadata).then(function(snapshot) {
       console.log('Uploaded', snapshot.totalBytes, 'bytes.');
       console.log(snapshot.metadata);
-      
+
       var newImgKey = databaseRef.child('images/' + $stateParams.caseName).push({
         url: snapshot.metadata.downloadURLs[0],
         fullPath: snapshot.metadata.fullPath,
@@ -70,7 +70,7 @@ angular.module('mboa').controller('fileUploadController', function($scope, $stat
       }).catch(function(error) {
         console.log('error saving img data to db', error);
       });
-      
+
       var url = snapshot.metadata.downloadURLs[0];
       console.log('File available at', url);
       document.getElementById('linkbox').innerHTML = '<a href="' +  url + '">Click For File</a>';
@@ -78,7 +78,17 @@ angular.module('mboa').controller('fileUploadController', function($scope, $stat
       console.error('Upload failed:', error);
     });
   }
-  
+
+  var images = [];
+  databaseRef.child('images/' + $stateParams.caseName).on('child_added', function(snapshot) {
+    images.push(snapshot.val());
+    $timeout(function() {
+      $scope.images = images;
+    });
+  });
+
+
+
   window.onload = function() {
     document.getElementById('file').addEventListener('change', handleFileSelect, false);
     document.getElementById('file').disabled = true;
