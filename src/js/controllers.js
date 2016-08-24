@@ -1,12 +1,19 @@
-angular.module('mboa').controller('PreTestController', function($scope, Problems) {
+angular.module('mboa').controller('PreTestController', function($scope, $timeout, Problems) {
   $pageTitle = "Pre-Test";
 
   $scope.problems = Problems;
+  var keys = ['one', 'two', 'three', 'four', 'five'];
 
-  $scope.submitForm = function() {
+  $scope.submitForm = function(problems) {
     $scope.submitted = true;
-    var keys = ['one', 'two', 'three', 'four', 'five'];
 
+    saveToDatabase();
+
+    showPercentBars(problems);
+
+  };
+
+  var saveToDatabase = function() {
     for (var i = 0; i < $scope.problems.length; i++) {
       var problem = $scope.problems[i];
       for (var j = 0; j < problem.options.length; j++) {
@@ -21,6 +28,34 @@ angular.module('mboa').controller('PreTestController', function($scope, Problems
         }
       }
     }
+  }
+
+  var showPercentBars = function(problems) {
+    var numbers = ['a', 'b', 'c', 'd', 'e'];
+
+    firebase.database().ref('responses').once('value', function(snap) {
+      var snap = snap.val();
+      for (var i = 0; i < keys.length; i++) {
+        var problem = keys[i];
+        for (var option in snap[problem]) {
+          if (option !== 'total') {
+            if (snap[problem].hasOwnProperty(option)) {
+              // Calculate percent
+              var denom = snap[problem].total;
+              var numer = snap[problem][option];
+              var percent = numer ? ((numer / denom) * 100) : 0;
+              var roundedPercent = Number(Math.round(percent + 'e3') + 'e-3').toFixed(3);
+              // Apply percent to progress bar
+              problems[i]['options'][numbers.indexOf(option)]['percent'] = roundedPercent;
+            }
+          }
+        }
+      }
+      // Update progress bars
+      $timeout(function(){
+        $scope.problems = problems;
+      });
+    });
   };
 });
 
