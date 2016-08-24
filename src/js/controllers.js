@@ -1,6 +1,8 @@
 angular.module('mboa').controller('PreTestController', function($scope, $timeout, Problems) {
   $pageTitle = "Pre-Test";
 
+  $scope.hideResults = true;
+
   $scope.problems = Problems;
   var keys = ['one', 'two', 'three', 'four', 'five'];
 
@@ -54,6 +56,7 @@ angular.module('mboa').controller('PreTestController', function($scope, $timeout
       // Update progress bars
       $timeout(function(){
         $scope.problems = problems;
+        $scope.hideResults = false;
       });
     });
   };
