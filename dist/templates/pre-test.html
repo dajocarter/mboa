@@ -2,7 +2,7 @@
 	<h1>Histo Flip Pre-Test</h1>
 	<p>Select the best response for the following questions.</p>
 	<div id="pre-test" class="list-group">
-		<form ng-submit="submitForm()">
+		<form ng-submit="submitForm(problems)">
 			<div class="list-group-item clearfix" ng-repeat="problem in problems">
 				<h4 class="list-group-item-heading">{{$index + 1}}. {{problem.text}}</h4>
 					<a ng-if="problem.img" mfp="{type:'image'}" ng-attr-title="{{problem.text}}" ng-href="{{SITE.baseUrl}}/assets/img/{{problem.img}}">
