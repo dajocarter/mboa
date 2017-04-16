@@ -3,7 +3,7 @@ angular.module('mboa', ['ui.router', 'ngAnimate', 'ui.bootstrap'])
 /********** GLOBAL **********/
 .run(function($rootScope, $state, $stateParams, $anchorScroll) {
   $rootScope.SITE = {
-    baseUrl: 'https://www.mybrainonanatomy.com',
+    baseUrl: 'https://mboa.netlify.com',
     name: 'My Brain On Anatomy',
     currentYear: new Date()
   };
